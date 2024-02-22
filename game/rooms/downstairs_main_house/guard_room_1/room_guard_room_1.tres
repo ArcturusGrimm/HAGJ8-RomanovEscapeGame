@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://v1rpghhm0wcc"]
+
+[ext_resource type="Script" path="res://game/rooms/downstairs_main_house/guard_room_1/room_guard_room_1_state.gd" id="1_15p4f"]
+
+[resource]
+resource_name = "GuardRoom1"
+script = ExtResource("1_15p4f")
+script_name = "GuardRoom1"
+scene = "res://game/rooms/guard_room_1/room_guard_room_1.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

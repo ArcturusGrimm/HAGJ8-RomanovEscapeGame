@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgoa4uns18u56"]
+
+[ext_resource type="Script" path="res://game/rooms/downstairs_main_house/foyer/room_foyer.gd" id="1_v1fxn"]
+
+[node name="RoomFoyer" type="Node2D"]
+script = ExtResource("1_v1fxn")
+script_name = "Foyer"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]

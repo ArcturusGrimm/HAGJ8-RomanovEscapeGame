@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd7xcwi5s4aic"]
+
+[ext_resource type="Script" path="res://game/rooms/downstairs_main_house/living_room/room_living_room.gd" id="1_p30eg"]
+
+[node name="RoomLivingRoom" type="Node2D"]
+script = ExtResource("1_p30eg")
+script_name = "LivingRoom"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]

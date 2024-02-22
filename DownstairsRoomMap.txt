@@ -1,0 +1,14 @@
+I		SideEntrance
+II		EmptyInterior1
+III		Interior1
+IV		GuardRoom1
+V		GuardRoom2
+VI		Foyer
+VII		LivingRoom
+VIII	StorageRoom1
+IX		MessHall1
+X		MessHall2
+XI		BathroomDownstairs
+XII		StorageCloset1
+XIII	CourtyardStaircase
+XIV		FrontEntrance

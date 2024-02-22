@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://b0vi0hfi5ftv7"]
+
+[ext_resource type="Script" path="res://game/rooms/downstairs_main_house/storage_closet_1/room_storage_closet_1_state.gd" id="1_q2dgm"]
+
+[resource]
+resource_name = "StorageCloset1"
+script = ExtResource("1_q2dgm")
+script_name = "StorageCloset1"
+scene = "res://game/rooms/storage_closet_1/room_storage_closet_1.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

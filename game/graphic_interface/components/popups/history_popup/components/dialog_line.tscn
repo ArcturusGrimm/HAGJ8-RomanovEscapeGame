@@ -1,13 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://csxt1kmbrbbkp"]
+[gd_scene load_steps=2 format=3 uid="uid://deeda3kpskuoc"]
 
-[ext_resource type="FontFile" uid="uid://3gf18y013o6g" path="res://game/graphic_interface/fonts/monkeyisland_1991.ttf" id="1_3vsak"]
+[ext_resource type="FontFile" uid="uid://bggu0c7iatqbm" path="res://game/graphic_interface/fonts/monkeyisland_1991.ttf" id="1_bde6q"]
 
 [node name="DialogLine" type="RichTextLabel"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_horizontal = 3
-theme_override_fonts/normal_font = ExtResource("1_3vsak")
+theme_override_fonts/normal_font = ExtResource("1_bde6q")
 bbcode_enabled = true
 text = "Popochiu: Hi!"
 fit_content = true

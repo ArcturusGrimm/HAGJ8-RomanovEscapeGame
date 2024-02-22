@@ -1,9 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c3ldxnhycltvj"]
+[gd_scene load_steps=6 format=3 uid="uid://o2vncc0cilr3"]
 
 [ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_f1xcy"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/popups/save_and_load_popup/save_and_load_popup.gd" id="2_okte3"]
-[ext_resource type="Texture2D" uid="uid://dyv0arxbu8pnh" path="res://game/graphic_interface/resources/sprites/close.png" id="3_1kq3v"]
-[ext_resource type="Texture2D" uid="uid://yfo77aa787yg" path="res://game/graphic_interface/resources/sprites/close_highlight.png" id="4_j3dpg"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/popups/save_and_load_popup/save_and_load_popup.gd" id="2_d2qfm"]
+[ext_resource type="Texture2D" uid="uid://crrbf5cy4gf3r" path="res://game/graphic_interface/resources/sprites/close.png" id="3_gx3kx"]
+[ext_resource type="Texture2D" uid="uid://brpqmie0v0ft8" path="res://game/graphic_interface/resources/sprites/close_highlight.png" id="4_hs71y"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u4bt4"]
 bg_color = Color(0, 0, 0, 0.498039)
@@ -16,7 +16,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_f1xcy")
 theme_override_styles/panel = SubResource("StyleBoxFlat_u4bt4")
-script = ExtResource("2_okte3")
+script = ExtResource("2_d2qfm")
 script_name = &"SaveAndLoadPopup"
 
 [node name="PopupPanel" type="PanelContainer" parent="."]
@@ -44,9 +44,9 @@ unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 4
-texture_normal = ExtResource("3_1kq3v")
-texture_pressed = ExtResource("4_j3dpg")
-texture_hover = ExtResource("4_j3dpg")
+texture_normal = ExtResource("3_gx3kx")
+texture_pressed = ExtResource("4_hs71y")
+texture_hover = ExtResource("4_hs71y")
 
 [node name="Slots" type="VBoxContainer" parent="PopupPanel/VBoxContainer"]
 unique_name_in_owner = true

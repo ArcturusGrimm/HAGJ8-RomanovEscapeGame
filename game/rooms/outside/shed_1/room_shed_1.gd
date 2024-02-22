@@ -1,9 +1,9 @@
 @tool
 extends PopochiuRoom
 
-const Data := preload('room_hallway_outside_commandant_state.gd')
+const Data := preload('room_shed_1_state.gd')
 
-var state: Data = load('res://game/rooms/hallway_outside_commandant/room_hallway_outside_commandant.tres')
+var state: Data = load('res://game/rooms/shed_1/room_shed_1.tres')
 
 
 #region Virtual ####################################################################################

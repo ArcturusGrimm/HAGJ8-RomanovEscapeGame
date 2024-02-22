@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cpdivrmtxposq"]
+
+[ext_resource type="Script" path="res://game/rooms/upstairs_main_house/commandant_hallway/room_commandant_hallway_state.gd" id="1_1gaj0"]
+
+[resource]
+resource_name = "CommandantHallway"
+script = ExtResource("1_1gaj0")
+script_name = "CommandantHallway"
+scene = "res://game/rooms/commandant_hallway/room_commandant_hallway.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

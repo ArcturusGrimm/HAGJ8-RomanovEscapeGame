@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://v1s8f8cdnok"]
+
+[ext_resource type="Script" path="res://game/rooms/outside/garden_1/room_garden_1.gd" id="1_1fkvu"]
+
+[node name="RoomGarden1" type="Node2D"]
+script = ExtResource("1_1fkvu")
+script_name = "Garden1"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]

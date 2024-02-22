@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://f2cmr1locmsi"]
+
+[ext_resource type="Script" path="res://game/rooms/upstairs_main_house/hallway_outside_commandant/room_hallway_outside_commandant_state.gd" id="1_3qceh"]
+
+[resource]
+resource_name = "HallwayOutsideCommandant"
+script = ExtResource("1_3qceh")
+script_name = "HallwayOutsideCommandant"
+scene = "res://game/rooms/hallway_outside_commandant/room_hallway_outside_commandant.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bhl60183mjhdd"]
+
+[ext_resource type="Script" path="res://game/rooms/upstairs_main_house/anna_demidova_bedroom/room_anna_demidova_bedroom_state.gd" id="1_j6kvy"]
+
+[resource]
+resource_name = "AnnaDemidovaBedroom"
+script = ExtResource("1_j6kvy")
+script_name = "AnnaDemidovaBedroom"
+scene = "res://game/rooms/anna_demidova_bedroom/room_anna_demidova_bedroom.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

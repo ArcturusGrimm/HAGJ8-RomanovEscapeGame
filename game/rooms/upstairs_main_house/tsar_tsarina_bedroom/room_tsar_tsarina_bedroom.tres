@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://dk63idkeq2dgl"]
 
-[ext_resource type="Script" path="res://game/rooms/tsar_tsarina_bedroom/room_tsar_tsarina_bedroom_state.gd" id="1_bjlyp"]
+[ext_resource type="Script" path="res://game/rooms/upstairs_main_house/tsar_tsarina_bedroom/room_tsar_tsarina_bedroom_state.gd" id="1_bjlyp"]
 
 [resource]
 resource_name = "TsarTsarinaBedroom"

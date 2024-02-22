@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://6c0al57jr53a"]
+
+[ext_resource type="Script" path="res://game/rooms/upstairs_main_house/bathroom_upstairs/room_bathroom_upstairs_state.gd" id="1_fdxs7"]
+
+[resource]
+resource_name = "BathroomUpstairs"
+script = ExtResource("1_fdxs7")
+script_name = "BathroomUpstairs"
+scene = "res://game/rooms/bathroom_upstairs/room_bathroom_upstairs.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

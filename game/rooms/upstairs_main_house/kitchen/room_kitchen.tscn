@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bobw387k5h23h"]
+
+[ext_resource type="Script" path="res://game/rooms/upstairs_main_house/kitchen/room_kitchen.gd" id="1_xaon0"]
+
+[node name="RoomKitchen" type="Node2D"]
+script = ExtResource("1_xaon0")
+script_name = "Kitchen"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]

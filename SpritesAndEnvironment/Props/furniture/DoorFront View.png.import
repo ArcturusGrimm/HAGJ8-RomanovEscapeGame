@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l3vu3siwro6s"
-path="res://.godot/imported/suitCaseOne.png-d552d3a06af26bb4410860a8f4cc22e0.ctex"
+uid="uid://c48firkfrv6yw"
+path="res://.godot/imported/DoorFront View.png-7aa0f4e83d75e4fa9ff5c39686a97b51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Props/suitCaseOne.png"
-dest_files=["res://.godot/imported/suitCaseOne.png-d552d3a06af26bb4410860a8f4cc22e0.ctex"]
+source_file="res://SpritesAndEnvironment/Props/furniture/DoorFront View.png"
+dest_files=["res://.godot/imported/DoorFront View.png-7aa0f4e83d75e4fa9ff5c39686a97b51.ctex"]
 
 [params]
 

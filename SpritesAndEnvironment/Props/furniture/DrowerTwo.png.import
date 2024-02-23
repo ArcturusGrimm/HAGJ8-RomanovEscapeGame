@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6igxifdbatsl"
-path="res://.godot/imported/LampOne.png-40d1882c9b826693f014b034b065d22f.ctex"
+uid="uid://buydfjucjc22n"
+path="res://.godot/imported/DrowerTwo.png-1389e6b4c66f575d66011d41fb7e5879.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Props/LampOne.png"
-dest_files=["res://.godot/imported/LampOne.png-40d1882c9b826693f014b034b065d22f.ctex"]
+source_file="res://SpritesAndEnvironment/Props/furniture/DrowerTwo.png"
+dest_files=["res://.godot/imported/DrowerTwo.png-1389e6b4c66f575d66011d41fb7e5879.ctex"]
 
 [params]
 

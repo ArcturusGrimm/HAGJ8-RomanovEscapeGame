@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq2pmu4nuqui7"
-path="res://.godot/imported/LampTwo.png-8292c88f5359a0754a23e87cd905b93c.ctex"
+uid="uid://bkxwl8icp22th"
+path="res://.godot/imported/suitCaseTwo.png-d84b94f2bfc550fb6c6a756e92d5e779.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Props/LampTwo.png"
-dest_files=["res://.godot/imported/LampTwo.png-8292c88f5359a0754a23e87cd905b93c.ctex"]
+source_file="res://SpritesAndEnvironment/Props/suitCaseTwo.png"
+dest_files=["res://.godot/imported/suitCaseTwo.png-d84b94f2bfc550fb6c6a756e92d5e779.ctex"]
 
 [params]
 

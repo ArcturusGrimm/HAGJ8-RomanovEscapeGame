@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnywucujas4mx"]
+
+[ext_resource type="Script" path="res://game/rooms/interior_1/room_interior_1.gd" id="1_gxr26"]
+
+[node name="RoomInterior1" type="Node2D"]
+script = ExtResource("1_gxr26")
+script_name = "Interior1"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]

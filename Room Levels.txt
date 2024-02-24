@@ -1,0 +1,51 @@
+Upstairs Main house
+	Anna Demidova Bedroom
+	Bathroom upstairs
+	commandant bedroom
+	commandant hallway
+	dining room
+	grand duchess bedroom
+	kitchen
+	salon
+	terrace upstairs
+	tsar and tsarina bedroom
+	upstairs main entrance
+	upstairs staircase
+	water closet staircase
+	water closet upstairs
+
+Outside
+	Backyard 1
+	backyard archway
+	bath house
+	bath house roof
+	cellar 1
+	courtyard 1
+	courtyard gate
+	courtyard passage
+	garden 1
+	pallisade 1
+	pallisade 2
+	pallisade gate 1
+	pallisade gate 2
+	shed 1
+
+Downstairs Two-Story Lodge
+	bunkhouse 1
+	janitor closet
+
+Downstairs Main House
+	bathroom downstairs
+	courtyard staircase
+	empty interior
+	foyer
+	front entrance
+	guard room 1
+	guard room 2
+	interior 1
+	living room
+	mess hall 1
+	mess hall 2
+	side entrance
+	storage closet 1
+	storage room 1

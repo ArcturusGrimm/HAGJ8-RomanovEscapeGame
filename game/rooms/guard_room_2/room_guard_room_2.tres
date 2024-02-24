@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dhyxgdabjcv75"]
+
+[ext_resource type="Script" path="res://game/rooms/guard_room_2/room_guard_room_2_state.gd" id="1_5o871"]
+
+[resource]
+resource_name = "GuardRoom2"
+script = ExtResource("1_5o871")
+script_name = "GuardRoom2"
+scene = "res://game/rooms/guard_room_2/room_guard_room_2.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

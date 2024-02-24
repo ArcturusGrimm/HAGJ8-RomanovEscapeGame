@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cmmn2qc36uech"]
+
+[ext_resource type="Script" path="res://game/rooms/upstairs_staircase/room_upstairs_staircase_state.gd" id="1_gshrm"]
+
+[resource]
+resource_name = "UpstairsStaircase"
+script = ExtResource("1_gshrm")
+script_name = "UpstairsStaircase"
+scene = "res://game/rooms/upstairs_staircase/room_upstairs_staircase.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://brhhuo81aae7k"]
+
+[ext_resource type="Script" path="res://game/rooms/courtyard_staircase/room_courtyard_staircase_state.gd" id="1_cypsp"]
+
+[resource]
+resource_name = "CourtyardStaircase"
+script = ExtResource("1_cypsp")
+script_name = "CourtyardStaircase"
+scene = "res://game/rooms/courtyard_staircase/room_courtyard_staircase.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

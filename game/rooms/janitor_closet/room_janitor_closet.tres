@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://hg3qr4trfsx3"]
+
+[ext_resource type="Script" path="res://game/rooms/janitor_closet/room_janitor_closet_state.gd" id="1_menk2"]
+
+[resource]
+resource_name = "JanitorCloset"
+script = ExtResource("1_menk2")
+script_name = "JanitorCloset"
+scene = "res://game/rooms/janitor_closet/room_janitor_closet.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

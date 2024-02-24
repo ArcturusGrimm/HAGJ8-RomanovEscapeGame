@@ -2,7 +2,6 @@
 extends "res://addons/popochiu/engine/interfaces/i_room.gd"
 
 # classes ----
-const PRTsarTsarinaBedroom := preload('res://game/rooms/tsar_tsarina_bedroom/room_tsar_tsarina_bedroom.gd')
 const PRGrandDuchessBedroom := preload('res://game/rooms/grand_duchess_bedroom/room_grand_duchess_bedroom.gd')
 const PRDiningRoom := preload('res://game/rooms/dining_room/room_dining_room.gd')
 const PRUpstairsStaircase := preload('res://game/rooms/upstairs_staircase/room_upstairs_staircase.gd')
@@ -47,10 +46,10 @@ const PRStorageCloset1 := preload('res://game/rooms/storage_closet_1/room_storag
 const PRCourtyardStaircase := preload('res://game/rooms/courtyard_staircase/room_courtyard_staircase.gd')
 const PRFrontEntrance := preload('res://game/rooms/front_entrance/room_front_entrance.gd')
 const PRInterior1 := preload('res://game/rooms/interior_1/room_interior_1.gd')
+const PRTsarTsarinaBedroom := preload('res://game/rooms/tsar_tsarina_bedroom/room_tsar_tsarina_bedroom.gd')
 # ---- classes
 
 # nodes ----
-var TsarTsarinaBedroom: PRTsarTsarinaBedroom : get = get_TsarTsarinaBedroom
 var GrandDuchessBedroom: PRGrandDuchessBedroom : get = get_GrandDuchessBedroom
 var DiningRoom: PRDiningRoom : get = get_DiningRoom
 var UpstairsStaircase: PRUpstairsStaircase : get = get_UpstairsStaircase
@@ -95,10 +94,10 @@ var StorageCloset1: PRStorageCloset1 : get = get_StorageCloset1
 var CourtyardStaircase: PRCourtyardStaircase : get = get_CourtyardStaircase
 var FrontEntrance: PRFrontEntrance : get = get_FrontEntrance
 var Interior1: PRInterior1 : get = get_Interior1
+var TsarTsarinaBedroom: PRTsarTsarinaBedroom : get = get_TsarTsarinaBedroom
 # ---- nodes
 
 # functions ----
-func get_TsarTsarinaBedroom() -> PRTsarTsarinaBedroom: return super.get_runtime_room('TsarTsarinaBedroom')
 func get_GrandDuchessBedroom() -> PRGrandDuchessBedroom: return super.get_runtime_room('GrandDuchessBedroom')
 func get_DiningRoom() -> PRDiningRoom: return super.get_runtime_room('DiningRoom')
 func get_UpstairsStaircase() -> PRUpstairsStaircase: return super.get_runtime_room('UpstairsStaircase')
@@ -143,5 +142,6 @@ func get_StorageCloset1() -> PRStorageCloset1: return super.get_runtime_room('St
 func get_CourtyardStaircase() -> PRCourtyardStaircase: return super.get_runtime_room('CourtyardStaircase')
 func get_FrontEntrance() -> PRFrontEntrance: return super.get_runtime_room('FrontEntrance')
 func get_Interior1() -> PRInterior1: return super.get_runtime_room('Interior1')
+func get_TsarTsarinaBedroom() -> PRTsarTsarinaBedroom: return super.get_runtime_room('TsarTsarinaBedroom')
 # ---- functions
 

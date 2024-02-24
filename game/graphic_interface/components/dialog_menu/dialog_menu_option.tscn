@@ -1,13 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://uteuowglfihl"]
+[gd_scene load_steps=3 format=3 uid="uid://c3nv705icfxtm"]
 
-[ext_resource type="FontFile" uid="uid://bggu0c7iatqbm" path="res://game/graphic_interface/fonts/monkeyisland_1991.ttf" id="1_0np26"]
+[ext_resource type="FontFile" uid="uid://cgbl7ndc0wokb" path="res://game/graphic_interface/fonts/monkeyisland_1991.ttf" id="1_gy5p3"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_we03b"]
 
 [node name="DialogOption" type="Button"]
 offset_right = 320.0
 offset_bottom = 17.0
-theme_override_fonts/font = ExtResource("1_0np26")
+theme_override_fonts/font = ExtResource("1_gy5p3")
 theme_override_font_sizes/font_size = 12
 theme_override_styles/focus = SubResource("StyleBoxEmpty_we03b")
 text = "asdasd"

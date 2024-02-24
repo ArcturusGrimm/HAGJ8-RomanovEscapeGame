@@ -1,11 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://cnqr8mglx5xse"]
+[gd_scene load_steps=11 format=3 uid="uid://b4d6jb0nymo85"]
 
-[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_jw36i"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/popups/history_popup/history_popup.gd" id="2_8tmi1"]
-[ext_resource type="PackedScene" uid="uid://deeda3kpskuoc" path="res://addons/popochiu/engine/objects/graphic_interface/history/components/dialog_line.tscn" id="3_svo5v"]
-[ext_resource type="PackedScene" uid="uid://d2gfucunj06b" path="res://addons/popochiu/engine/objects/graphic_interface/history/components/interaction_line.tscn" id="4_0aqk1"]
-[ext_resource type="Texture2D" uid="uid://crrbf5cy4gf3r" path="res://game/graphic_interface/resources/sprites/close.png" id="5_wulv3"]
-[ext_resource type="Texture2D" uid="uid://brpqmie0v0ft8" path="res://game/graphic_interface/resources/sprites/close_highlight.png" id="6_vxhmt"]
+[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_s0p46"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/popups/history_popup/history_popup.gd" id="2_0repg"]
+[ext_resource type="PackedScene" uid="uid://32ajcjs28qe4" path="res://addons/popochiu/engine/objects/graphic_interface/history/components/dialog_line.tscn" id="3_2q6ky"]
+[ext_resource type="PackedScene" uid="uid://c2r5que8xia3f" path="res://addons/popochiu/engine/objects/graphic_interface/history/components/interaction_line.tscn" id="4_qcroa"]
+[ext_resource type="Texture2D" uid="uid://daq5v4btuew8t" path="res://game/graphic_interface/resources/sprites/close.png" id="5_wpjro"]
+[ext_resource type="Texture2D" uid="uid://bq5dgcnvsnwww" path="res://game/graphic_interface/resources/sprites/close_highlight.png" id="6_uxrao"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_roir4"]
 bg_color = Color(0, 0, 0, 0.498039)
@@ -31,11 +31,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_jw36i")
+theme = ExtResource("1_s0p46")
 theme_override_styles/panel = SubResource("StyleBoxFlat_roir4")
-script = ExtResource("2_8tmi1")
-dialog_line = ExtResource("3_svo5v")
-interaction_line = ExtResource("4_0aqk1")
+script = ExtResource("2_0repg")
+dialog_line = ExtResource("3_2q6ky")
+interaction_line = ExtResource("4_qcroa")
 
 [node name="PopupPanel" type="PanelContainer" parent="."]
 custom_minimum_size = Vector2(256, 144)
@@ -62,9 +62,9 @@ unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 4
-texture_normal = ExtResource("5_wulv3")
-texture_pressed = ExtResource("6_vxhmt")
-texture_hover = ExtResource("6_vxhmt")
+texture_normal = ExtResource("5_wpjro")
+texture_pressed = ExtResource("6_uxrao")
+texture_hover = ExtResource("6_uxrao")
 
 [node name="Empty" type="Label" parent="PopupPanel/VBoxContainer"]
 unique_name_in_owner = true

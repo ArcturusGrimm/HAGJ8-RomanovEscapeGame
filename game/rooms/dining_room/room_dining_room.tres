@@ -1,10 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://n4u6plhlwlu3"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bohad24kbatvb"]
 
-[ext_resource type="Script" path="res://game/rooms/dining_room/room_dining_room_state.gd" id="1_pbwxm"]
+[ext_resource type="Script" path="res://game/rooms/dining_room/room_dining_room_state.gd" id="1_y47lm"]
 
 [resource]
 resource_name = "DiningRoom"
-script = ExtResource("1_pbwxm")
+script = ExtResource("1_y47lm")
 script_name = "DiningRoom"
 scene = "res://game/rooms/dining_room/room_dining_room.tscn"
 visited = false

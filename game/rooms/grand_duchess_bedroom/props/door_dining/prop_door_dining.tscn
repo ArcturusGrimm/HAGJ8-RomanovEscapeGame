@@ -1,11 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bnvalb7cay6vy"]
+[gd_scene load_steps=2 format=3 uid="uid://c4w5wm3wegug2"]
 
-[ext_resource type="Script" path="res://game/rooms/tsar_tsarina_bedroom/props/door/prop_door.gd" id="1_7yq1v"]
+[ext_resource type="Script" path="res://game/rooms/grand_duchess_bedroom/props/door_dining/prop_door_dining.gd" id="1_4hdya"]
 
-[node name="Door" type="Area2D"]
-script = ExtResource("1_7yq1v")
-script_name = "Door"
-description = "Door"
+[node name="DoorDining" type="Area2D"]
+script = ExtResource("1_4hdya")
+script_name = "DoorDining"
+description = "Door Dining"
 cursor = 1
 interaction_polygon = PackedVector2Array()
 

@@ -1,10 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://duou4yco7ds6s"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://76yv1pqhwu5i"]
 
-[ext_resource type="Script" path="res://game/rooms/grand_duchess_bedroom/room_grand_duchess_bedroom_state.gd" id="1_6tde5"]
+[ext_resource type="Script" path="res://game/rooms/grand_duchess_bedroom/room_grand_duchess_bedroom_state.gd" id="1_y745n"]
 
 [resource]
 resource_name = "GrandDuchessBedroom"
-script = ExtResource("1_6tde5")
+script = ExtResource("1_y745n")
 script_name = "GrandDuchessBedroom"
 scene = "res://game/rooms/grand_duchess_bedroom/room_grand_duchess_bedroom.tscn"
 visited = false

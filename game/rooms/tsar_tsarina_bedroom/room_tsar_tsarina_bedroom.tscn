@@ -1,48 +1,47 @@
-[gd_scene load_steps=8 format=3 uid="uid://tsiway5nqiat"]
+[gd_scene load_steps=8 format=3 uid="uid://c3guyru8jrbjn"]
 
-[ext_resource type="Script" path="res://game/rooms/tsar_tsarina_bedroom/room_tsar_tsarina_bedroom.gd" id="1_kseb6"]
-[ext_resource type="PackedScene" uid="uid://betia31j8s7la" path="res://game/rooms/tsar_tsarina_bedroom/walkable_areas/floor/walkable_area_floor.tscn" id="2_6odtx"]
-[ext_resource type="PackedScene" uid="uid://daef84jpui5wi" path="res://game/rooms/tsar_tsarina_bedroom/props/background/prop_background.tscn" id="2_x1aid"]
-[ext_resource type="Texture2D" uid="uid://dyoojd5dlfjq6" path="res://Sprites/environment/Basement.jpg" id="3_djvqm"]
-[ext_resource type="PackedScene" uid="uid://bho0p8omnoicy" path="res://game/rooms/tsar_tsarina_bedroom/props/door/prop_door.tscn" id="5_haxqj"]
-[ext_resource type="Texture2D" uid="uid://c48firkfrv6yw" path="res://Sprites/Props/furniture/DoorFront View.png" id="6_2sdla"]
+[ext_resource type="Script" path="res://game/rooms/tsar_tsarina_bedroom/room_tsar_tsarina_bedroom.gd" id="1_s1qrq"]
+[ext_resource type="PackedScene" uid="uid://bd8pqutcgup0a" path="res://game/rooms/tsar_tsarina_bedroom/walkable_areas/floor/walkable_area_floor.tscn" id="2_cxhru"]
+[ext_resource type="PackedScene" uid="uid://d0pts3h151bec" path="res://game/rooms/tsar_tsarina_bedroom/props/background/prop_background.tscn" id="2_objqh"]
+[ext_resource type="Texture2D" uid="uid://dyoojd5dlfjq6" path="res://Sprites/environment/Basement.jpg" id="3_qqdys"]
+[ext_resource type="PackedScene" uid="uid://bnvalb7cay6vy" path="res://game/rooms/tsar_tsarina_bedroom/props/door/prop_door.tscn" id="4_ugkvc"]
+[ext_resource type="Texture2D" uid="uid://c48firkfrv6yw" path="res://Sprites/Props/furniture/DoorFront View.png" id="6_okxps"]
 
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_hj51b"]
-vertices = PackedVector2Array(846, 227, 885, 491, -870, 514, 603, 234, -589, 166, 482, 159, -694, 264, -851, 254)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 3, 2, 6), PackedInt32Array(6, 2, 7)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(482, 159, -589, 166, -694, 264, -851, 254, -870, 514, 885, 491, 846, 227, 603, 234)])
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_k7orw"]
+vertices = PackedVector2Array(887, 500, -895, 502, -856, 277, -679, 256, -603, 159, 452, 163, 570, 247, 853, 241)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(0, 3, 4, 5, 6), PackedInt32Array(0, 6, 7)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-603, 159, 452, 163, 570, 247, 853, 241, 887, 500, -895, 502, -856, 277, -679, 256)])
 source_geometry_group_name = &"navigation_polygon_source_group"
 agent_radius = 0.0
 
 [node name="RoomTsarTsarinaBedroom" type="Node2D"]
-script = ExtResource("1_kseb6")
+script = ExtResource("1_s1qrq")
 script_name = "TsarTsarinaBedroom"
 popochiu_placeholder = null
 
 [node name="WalkableAreas" type="Node2D" parent="."]
 
-[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_6odtx")]
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_cxhru")]
 position = Vector2(960, 540)
 
 [node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
 modulate = Color(0, 1, 0, 1)
-position = Vector2(-7, -5)
-navigation_polygon = SubResource("NavigationPolygon_hj51b")
+navigation_polygon = SubResource("NavigationPolygon_k7orw")
 
 [node name="Props" type="Node2D" parent="."]
 
-[node name="Background" parent="Props" instance=ExtResource("2_x1aid")]
+[node name="Background" parent="Props" instance=ExtResource("2_objqh")]
 position = Vector2(960, 540)
-texture = ExtResource("3_djvqm")
-baseline = 125
+texture = ExtResource("3_qqdys")
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
-[node name="Door" parent="Props" instance=ExtResource("5_haxqj")]
-position = Vector2(660, 309)
-scale = Vector2(0.500697, 0.500697)
-texture = ExtResource("6_2sdla")
-baseline = 722
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+[node name="Door" parent="Props" instance=ExtResource("4_ugkvc")]
+position = Vector2(706, 306)
+scale = Vector2(0.503352, 0.503352)
+texture = ExtResource("6_okxps")
+baseline = 723
+walk_to_point = Vector2(119.201, 842.352)
+interaction_polygon = PackedVector2Array(-311.909, -224.495, 423.163, -228.468, 423.163, 721.165, -315.882, 709.245)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

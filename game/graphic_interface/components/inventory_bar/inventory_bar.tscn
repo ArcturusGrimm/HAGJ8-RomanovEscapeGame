@@ -1,15 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://cpq05dbetqfic"]
+[gd_scene load_steps=5 format=3 uid="uid://dm40mvu7md603"]
 
-[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_kmd3l"]
-[ext_resource type="Texture2D" uid="uid://b60le34j6kq8x" path="res://game/graphic_interface/components/inventory_bar/inventory_bg.png" id="2_0h44c"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/inventory_bar/inventory_bar.gd" id="3_woa4b"]
+[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_wih3f"]
+[ext_resource type="Texture2D" uid="uid://ey7v3mcmfefw" path="res://game/graphic_interface/components/inventory_bar/inventory_bg.png" id="2_keqmr"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/inventory_bar/inventory_bar.gd" id="3_vw4iu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_75cei"]
 content_margin_left = 3.0
 content_margin_top = 1.0
 content_margin_right = 3.0
 content_margin_bottom = 5.0
-texture = ExtResource("2_0h44c")
+texture = ExtResource("2_keqmr")
 texture_margin_left = 11.0
 texture_margin_top = 1.0
 texture_margin_right = 1.0
@@ -19,9 +19,9 @@ region_rect = Rect2(0, 0, 36, 24)
 texture_filter = 1
 offset_right = 36.0
 offset_bottom = 24.0
-theme = ExtResource("1_kmd3l")
+theme = ExtResource("1_wih3f")
 theme_override_styles/panel = SubResource("StyleBoxTexture_75cei")
-script = ExtResource("3_woa4b")
+script = ExtResource("3_vw4iu")
 
 [node name="Box" type="HBoxContainer" parent="."]
 layout_mode = 2

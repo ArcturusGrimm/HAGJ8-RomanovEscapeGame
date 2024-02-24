@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxkwkxd73a3p7"]
+[gd_scene load_steps=5 format=3 uid="uid://c7a84ps6pie7x"]
 
-[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_2fp4y"]
-[ext_resource type="FontFile" uid="uid://bggu0c7iatqbm" path="res://game/graphic_interface/fonts/monkeyisland_1991.ttf" id="2_nth5r"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/system_text/system_text.gd" id="3_e0i6s"]
+[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_hgokq"]
+[ext_resource type="FontFile" uid="uid://cgbl7ndc0wokb" path="res://game/graphic_interface/fonts/monkeyisland_1991.ttf" id="2_s2ntf"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/system_text/system_text.gd" id="3_31vfw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4eue6"]
 content_margin_left = 8.0
@@ -29,11 +29,11 @@ offset_right = -33.0
 offset_bottom = 9.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_2fp4y")
-theme_override_fonts/normal_font = ExtResource("2_nth5r")
+theme = ExtResource("1_hgokq")
+theme_override_fonts/normal_font = ExtResource("2_s2ntf")
 theme_override_styles/normal = SubResource("StyleBoxFlat_4eue6")
 bbcode_enabled = true
 text = "[center]Text from the game itself[/center]"
 fit_content = true
 scroll_active = false
-script = ExtResource("3_e0i6s")
+script = ExtResource("3_31vfw")

@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://d4d3y0k2dbipc"]
+[gd_scene load_steps=5 format=3 uid="uid://dlxigmkj2wgs5"]
 
-[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_hme3c"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/dialog_menu/dialog_menu.gd" id="2_5ll6p"]
-[ext_resource type="PackedScene" uid="uid://uteuowglfihl" path="res://game/graphic_interface/components/dialog_menu/dialog_menu_option.tscn" id="3_hftua"]
+[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_ukw28"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/dialog_menu/dialog_menu.gd" id="2_ov75k"]
+[ext_resource type="PackedScene" uid="uid://c3nv705icfxtm" path="res://game/graphic_interface/components/dialog_menu/dialog_menu_option.tscn" id="3_kirt7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b2awe"]
 bg_color = Color(0, 0, 0.6, 1)
@@ -15,10 +15,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
-theme = ExtResource("1_hme3c")
+theme = ExtResource("1_ukw28")
 theme_override_styles/panel = SubResource("StyleBoxFlat_b2awe")
-script = ExtResource("2_5ll6p")
-option_scene = ExtResource("3_hftua")
+script = ExtResource("2_ov75k")
+option_scene = ExtResource("3_kirt7")
 used = Color(0.698039, 0.698039, 0.698039, 1)
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
@@ -32,14 +32,14 @@ size_flags_horizontal = 3
 size_flags_vertical = 8
 theme_override_constants/separation = 1
 
-[node name="DialogOption" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_hftua")]
+[node name="DialogOption" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_kirt7")]
 layout_mode = 2
 text = "Option 1"
 
-[node name="DialogOption2" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_hftua")]
+[node name="DialogOption2" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_kirt7")]
 layout_mode = 2
 text = "Option 2"
 
-[node name="DialogOption3" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_hftua")]
+[node name="DialogOption3" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_kirt7")]
 layout_mode = 2
 text = "Option 3"

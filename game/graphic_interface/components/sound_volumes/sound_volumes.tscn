@@ -1,14 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bflauv2hst4sa"]
+[gd_scene load_steps=3 format=3 uid="uid://b7681188sjl2"]
 
-[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_lqyyu"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/sound_volumes/sound_volumes.gd" id="2_ephle"]
+[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_0aniy"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/sound_volumes/sound_volumes.gd" id="2_hseai"]
 
 [node name="SoundVolumes" type="GridContainer" groups=["popochiu_gui_component"]]
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource("1_lqyyu")
+theme = ExtResource("1_0aniy")
 columns = 2
-script = ExtResource("2_ephle")
+script = ExtResource("2_hseai")
 
 [node name="ChannelsContainer" type="VBoxContainer" parent="."]
 layout_mode = 2

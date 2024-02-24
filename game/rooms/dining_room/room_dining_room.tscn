@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dty5l0yibuek7"]
+[gd_scene load_steps=2 format=3 uid="uid://duwirdn6c3mby"]
 
-[ext_resource type="Script" path="res://game/rooms/dining_room/room_dining_room.gd" id="1_v8suy"]
+[ext_resource type="Script" path="res://game/rooms/dining_room/room_dining_room.gd" id="1_nwwb4"]
 
 [node name="RoomDiningRoom" type="Node2D"]
-script = ExtResource("1_v8suy")
+script = ExtResource("1_nwwb4")
 script_name = "DiningRoom"
 popochiu_placeholder = null
 

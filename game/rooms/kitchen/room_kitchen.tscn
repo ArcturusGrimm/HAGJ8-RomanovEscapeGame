@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://bpos4jdlrvfex"]
+
+[ext_resource type="Script" path="res://game/rooms/kitchen/room_kitchen.gd" id="1_pdh7f"]
+[ext_resource type="PackedScene" uid="uid://t7a1j6dp0c57" path="res://game/rooms/kitchen/walkable_areas/floor/walkable_area_floor.tscn" id="2_8apu3"]
+[ext_resource type="PackedScene" uid="uid://d0c0x6qptbhd7" path="res://game/rooms/kitchen/props/background/prop_background.tscn" id="2_qh52w"]
+[ext_resource type="Texture2D" uid="uid://covedq5s1nkw" path="res://Sprites/environment/BasementV2.jpg" id="3_wf1v3"]
+[ext_resource type="PackedScene" uid="uid://uto35m6n17hr" path="res://game/rooms/kitchen/props/table/prop_table.tscn" id="5_7j7s2"]
+[ext_resource type="Texture2D" uid="uid://mj5nuvaweaoq" path="res://Sprites/Props/furniture/table.png" id="6_274st"]
+[ext_resource type="PackedScene" uid="uid://ck36wamnvqt6" path="res://game/rooms/kitchen/props/door_staircase/prop_door_staircase.tscn" id="7_8ixbd"]
+[ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="8_drvep"]
+[ext_resource type="PackedScene" uid="uid://dpgseyrme2c0r" path="res://game/rooms/kitchen/props/door_wc_staircase/prop_door_wc_staircase.tscn" id="9_4b3mq"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_asohk"]
+vertices = PackedVector2Array(440, 171, 716, 169, 921, 328, 930, 512, 245, 349, 222, 234, -362, 90, 341, 82, -251, 239, -438, 178, -934, 515, -901, 324, -274, 359, -735, 174)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5), PackedInt32Array(6, 7, 0, 5, 8, 9), PackedInt32Array(3, 10, 11, 12), PackedInt32Array(13, 9, 8, 12, 11), PackedInt32Array(3, 12, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-362, 90, 341, 82, 440, 171, 716, 169, 921, 328, 930, 512, -934, 515, -901, 324, -735, 174, -438, 178), PackedVector2Array(-251, 239, -274, 359, 245, 349, 222, 234)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
+
+[node name="RoomKitchen" type="Node2D"]
+script = ExtResource("1_pdh7f")
+script_name = "Kitchen"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_8apu3")]
+position = Vector2(960, 540)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_asohk")
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Background" parent="Props" instance=ExtResource("2_qh52w")]
+position = Vector2(960, 540)
+texture = ExtResource("3_wf1v3")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Table" parent="Props" instance=ExtResource("5_7j7s2")]
+position = Vector2(960, 719)
+scale = Vector2(0.421819, 0.421819)
+texture = ExtResource("6_274st")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="DoorStaircase" parent="Props" instance=ExtResource("7_8ixbd")]
+position = Vector2(1789, 449)
+scale = Vector2(0.520002, 0.520002)
+texture = ExtResource("8_drvep")
+walk_to_point = Vector2(-273.076, 596.151)
+interaction_polygon = PackedVector2Array(-215.384, -161.538, 205.768, -367.306, 182.691, 742.304, -215.384, 474.998)
+
+[node name="DoorWcStaircase" parent="Props" instance=ExtResource("9_4b3mq")]
+position = Vector2(98.0001, 444)
+scale = Vector2(-0.520001, 0.559998)
+texture = ExtResource("8_drvep")
+walk_to_point = Vector2(-284.615, 589.288)
+interaction_polygon = PackedVector2Array(-211.538, -157.144, 101.923, -308.93, 182.692, -308.93, 182.692, 703.574, 92.3077, 701.789, -221.153, 482.145)
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]

@@ -9,7 +9,6 @@ extends PopochiuProp
 # When the node is clicked
 func _on_click() -> void:
 	# Replace the call to E.command_fallback() to implement your code.
-	E.command_fallback()
 	# E.g. you can make the character walk to the Prop and then say
 	# something:
 	await C.player.walk_to_clicked()
@@ -19,11 +18,10 @@ func _on_click() -> void:
 # When the node is right clicked
 func _on_right_click() -> void:
 	# Replace the call to E.command_fallback() to implement your code.
-	E.command_fallback()
 	# E.g. you can make the character walk to the Prop and then say
 	# something:
-#	await C.player.face_clicked()
-#	await C.player.say("A deck of cards")
+	#await C.player.face_clicked()
+	#await C.player.say("A deck of cards")
 
 
 # When the node is middle clicked

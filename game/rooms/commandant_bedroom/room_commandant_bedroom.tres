@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://jxon5txvtmft"]
+
+[ext_resource type="Script" path="res://game/rooms/commandant_bedroom/room_commandant_bedroom_state.gd" id="1_whrqo"]
+
+[resource]
+resource_name = "CommandantBedroom"
+script = ExtResource("1_whrqo")
+script_name = "CommandantBedroom"
+scene = "res://game/rooms/commandant_bedroom/room_commandant_bedroom.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

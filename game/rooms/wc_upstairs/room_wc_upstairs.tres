@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bwyw5hgn386ks"]
+
+[ext_resource type="Script" path="res://game/rooms/wc_upstairs/room_wc_upstairs_state.gd" id="1_ou465"]
+
+[resource]
+resource_name = "WcUpstairs"
+script = ExtResource("1_ou465")
+script_name = "WcUpstairs"
+scene = "res://game/rooms/wc_upstairs/room_wc_upstairs.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://7s2dgxkcg3em"]
+[gd_scene load_steps=15 format=3 uid="uid://7s2dgxkcg3em"]
 
 [ext_resource type="Script" path="res://game/rooms/grand_duchess_bedroom/room_grand_duchess_bedroom.gd" id="1_rk3g6"]
 [ext_resource type="PackedScene" uid="uid://13tc834sa4cx" path="res://game/rooms/grand_duchess_bedroom/walkable_areas/floor/walkable_area_floor.tscn" id="2_mg2u0"]
@@ -11,11 +11,13 @@
 [ext_resource type="PackedScene" uid="uid://c3phanmj0pceh" path="res://game/rooms/grand_duchess_bedroom/hotspots/window/hotspot_window.tscn" id="9_2a4lr"]
 [ext_resource type="PackedScene" uid="uid://dkry7ggvkn44h" path="res://game/rooms/grand_duchess_bedroom/props/bed/prop_bed.tscn" id="9_234gm"]
 [ext_resource type="Texture2D" uid="uid://cg5onjk6paxpr" path="res://Sprites/Props/furniture/BedFrontOne.png" id="10_lea1m"]
+[ext_resource type="PackedScene" uid="uid://b2gfk7u3bdxop" path="res://game/rooms/grand_duchess_bedroom/props/dresser/prop_dresser.tscn" id="11_oank1"]
+[ext_resource type="Texture2D" uid="uid://buydfjucjc22n" path="res://Sprites/Props/furniture/DrowerTwo.png" id="12_7b174"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_rwjqa"]
-vertices = PackedVector2Array(519, 88, 765, 262, 932, 516, -913, 504, -891, 361, -830, 259, -572, 62)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5, 6)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-572, 62, 519, 88, 765, 262, 932, 516, -913, 504, -891, 361, -830, 259)])
+vertices = PackedVector2Array(765, 262, 932, 516, -913, 504, -891, 361, -605, 237, -176, 235, 395, 124, 390, 56, 509, 59, -805, 232, -661, 135, -165, 46, 55, 38, 76, 115)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5), PackedInt32Array(6, 7, 8, 0), PackedInt32Array(9, 10, 4, 3), PackedInt32Array(5, 11, 12, 13), PackedInt32Array(6, 0, 5, 13)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-176, 235, -165, 46, 55, 38, 76, 115, 395, 124, 390, 56, 509, 59, 765, 262, 932, 516, -913, 504, -891, 361, -805, 232, -661, 135, -605, 237)])
 source_geometry_group_name = &"navigation_polygon_source_group"
 agent_radius = 0.0
 
@@ -62,6 +64,12 @@ texture = ExtResource("8_un4ty")
 baseline = 717
 walk_to_point = Vector2(80.026, 566.584)
 interaction_polygon = PackedVector2Array(-323.305, -220.872, 408.133, -225.673, 424.138, 723.435, -331.923, 727.407)
+
+[node name="Dresser" parent="Props" instance=ExtResource("11_oank1")]
+position = Vector2(1182, 437)
+scale = Vector2(0.280002, 0.280002)
+texture = ExtResource("12_7b174")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://diay1qtjokfjj"]
+[gd_scene load_steps=19 format=3 uid="uid://diay1qtjokfjj"]
 
 [ext_resource type="Script" path="res://game/rooms/salon/room_salon.gd" id="1_x5p57"]
+[ext_resource type="PackedScene" uid="uid://cv5gk7yi5psl7" path="res://game/rooms/salon/props/background/prop_background.tscn" id="2_j76ua"]
+[ext_resource type="PackedScene" uid="uid://dvhg1oulp7mjb" path="res://game/rooms/salon/walkable_areas/floor/walkable_area_floor.tscn" id="2_wdb2p"]
+[ext_resource type="Texture2D" uid="uid://c2dapdvdjat2y" path="res://Sprites/environment/livingRoom.jpg" id="3_qppdw"]
+[ext_resource type="PackedScene" uid="uid://c01frdu4vbcwm" path="res://game/rooms/salon/props/couch/prop_couch.tscn" id="4_ql5dx"]
+[ext_resource type="Texture2D" uid="uid://wh8hkqwxwmmi" path="res://Sprites/Props/furniture/couch.png" id="5_6c0bm"]
+[ext_resource type="PackedScene" uid="uid://ccaq63gdgm7sy" path="res://game/rooms/salon/props/table/prop_table.tscn" id="7_askuo"]
+[ext_resource type="Texture2D" uid="uid://mj5nuvaweaoq" path="res://Sprites/Props/furniture/table.png" id="8_28swt"]
+[ext_resource type="Texture2D" uid="uid://bcadcg81i70s6" path="res://Sprites/Props/furniture/DrowerOne.png" id="8_81xwx"]
+[ext_resource type="PackedScene" uid="uid://bl0lamshleh64" path="res://game/rooms/salon/props/drawer/prop_drawer.tscn" id="9_schjw"]
+[ext_resource type="Texture2D" uid="uid://dx8hq2oc5a60s" path="res://Sprites/Props/furniture/CabinetOne.png" id="10_31qea"]
+[ext_resource type="PackedScene" uid="uid://be64nhvsvwj1b" path="res://game/rooms/salon/props/cabinet/prop_cabinet.tscn" id="11_r0d26"]
+[ext_resource type="PackedScene" uid="uid://ymb75yx5ewwq" path="res://game/rooms/salon/props/lamp/prop_lamp.tscn" id="13_gu28y"]
+[ext_resource type="Texture2D" uid="uid://6igxifdbatsl" path="res://Sprites/Props/LampOne.png" id="14_eo7tv"]
+[ext_resource type="PackedScene" uid="uid://bx8rawof1w5up" path="res://game/rooms/salon/props/door_hallway_com/prop_door_hallway_com.tscn" id="15_yynyt"]
+[ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="16_p0l7r"]
+[ext_resource type="PackedScene" uid="uid://eokj2s272f0q" path="res://game/rooms/salon/props/door_dining/prop_door_dining.tscn" id="17_ihjti"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_xne7g"]
+vertices = PackedVector2Array(573, 149, 566, 108, 602, 114, 878, 336, -390, 333, 373, 323, 914, 503, -926, 517, -907, 358, -663, 169, -456, 170, -337, 210, 325, 208, -310, 159)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 3, 6, 7, 8), PackedInt32Array(4, 8, 9, 10, 11), PackedInt32Array(12, 11, 10, 13, 0), PackedInt32Array(5, 12, 0, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-663, 169, -456, 170, -310, 159, 573, 149, 566, 108, 602, 114, 878, 336, 914, 503, -926, 517, -907, 358), PackedVector2Array(-337, 210, -390, 333, 373, 323, 325, 208)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
 
 [node name="RoomSalon" type="Node2D"]
 script = ExtResource("1_x5p57")
@@ -9,7 +32,65 @@ popochiu_placeholder = null
 
 [node name="WalkableAreas" type="Node2D" parent="."]
 
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_wdb2p")]
+position = Vector2(960, 540)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_xne7g")
+
 [node name="Props" type="Node2D" parent="."]
+
+[node name="Background" parent="Props" instance=ExtResource("2_j76ua")]
+position = Vector2(960, 540)
+texture = ExtResource("3_qppdw")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Couch" parent="Props" instance=ExtResource("4_ql5dx")]
+position = Vector2(1260, 501)
+scale = Vector2(0.319998, 0.319998)
+texture = ExtResource("5_6c0bm")
+baseline = 309
+walk_to_point = Vector2(571.879, 675.005)
+interaction_polygon = PackedVector2Array(-709.38, -181.252, 731.256, -175.002, 903.132, 118.751, 862.507, 481.254, -812.506, 500.004, -912.507, 146.876)
+
+[node name="Drawer" parent="Props" instance=ExtResource("9_schjw")]
+position = Vector2(828, 528)
+scale = Vector2(0.199998, 0.199998)
+texture = ExtResource("8_81xwx")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Cabinet" parent="Props" instance=ExtResource("11_r0d26")]
+position = Vector2(547, 386)
+scale = Vector2(0.440002, 0.440002)
+texture = ExtResource("10_31qea")
+walk_to_point = Vector2(-256.816, 813.632)
+interaction_polygon = PackedVector2Array(-513.633, -663.633, 270.453, -665.905, 263.635, 618.178, -493.179, 615.906)
+
+[node name="Table" parent="Props" instance=ExtResource("7_askuo")]
+position = Vector2(968, 697)
+scale = Vector2(0.6, 0.4)
+texture = ExtResource("8_28swt")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Lamp" parent="Props" instance=ExtResource("13_gu28y")]
+position = Vector2(831, 386)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("14_eo7tv")
+walk_to_point = Vector2(-468.75, 2131.25)
+interaction_polygon = PackedVector2Array(-193.75, -518.75, 118.75, -531.25, 93.75, 531.25, -206.25, 500)
+
+[node name="DoorHallwayCom" parent="Props" instance=ExtResource("15_yynyt")]
+position = Vector2(103, 471)
+scale = Vector2(-0.56, 0.56)
+texture = ExtResource("16_p0l7r")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="DoorDining" parent="Props" instance=ExtResource("17_ihjti")]
+position = Vector2(1801, 489)
+scale = Vector2(0.479998, 0.559998)
+texture = ExtResource("16_p0l7r")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

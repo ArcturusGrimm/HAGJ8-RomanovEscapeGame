@@ -12,9 +12,9 @@ func _on_click() -> void:
 	E.command_fallback()
 	# E.g. you can make the character walk to the Prop and then say
 	# something:
-	await C.walk_to_clicked()
-	await C.face_clicked()
-	E.goto_room('DiningRoom')
+	await C.player.walk_to_clicked()
+	await C.player.face_clicked()
+	E.goto_room('Salon')
 
 
 # When the node is right clicked

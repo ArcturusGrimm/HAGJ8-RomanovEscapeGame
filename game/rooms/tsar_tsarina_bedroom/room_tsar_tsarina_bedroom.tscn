@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bd8pqutcgup0a" path="res://game/rooms/tsar_tsarina_bedroom/walkable_areas/floor/walkable_area_floor.tscn" id="2_cxhru"]
 [ext_resource type="PackedScene" uid="uid://d0pts3h151bec" path="res://game/rooms/tsar_tsarina_bedroom/props/background/prop_background.tscn" id="2_objqh"]
 [ext_resource type="Texture2D" uid="uid://dkmakp56bqs5k" path="res://Sprites/environment/Room.jpg" id="4_fcwpa"]
-[ext_resource type="PackedScene" uid="uid://bqo4q7eum4wob" path="res://game/rooms/tsar_tsarina_bedroom/props/door/prop_door.tscn" id="4_ugkvc"]
+[ext_resource type="PackedScene" uid="uid://bnvalb7cay6vy" path="res://game/rooms/tsar_tsarina_bedroom/props/door/prop_door.tscn" id="4_ugkvc"]
 [ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="6_2fxcr"]
 [ext_resource type="PackedScene" uid="uid://bdnwggprw3yix" path="res://game/rooms/tsar_tsarina_bedroom/props/bed/prop_bed.tscn" id="7_554jy"]
 [ext_resource type="PackedScene" uid="uid://dw05xbgm356p1" path="res://game/rooms/tsar_tsarina_bedroom/hotspots/window/hotspot_window.tscn" id="7_cva6i"]

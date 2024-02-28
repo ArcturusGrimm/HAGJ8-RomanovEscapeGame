@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4yxt2lrxm1tl"
-path="res://.godot/imported/Janitor_Room.jpg-8675b3fcc5fa5de9e295d73544ac2f15.ctex"
+uid="uid://ds0s0oqfa383e"
+path="res://.godot/imported/clock.png-3157a67221627f5993641cebee8e0055.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/environment/Janitor_Room.jpg"
-dest_files=["res://.godot/imported/Janitor_Room.jpg-8675b3fcc5fa5de9e295d73544ac2f15.ctex"]
+source_file="res://Sprites/environment/clock.png"
+dest_files=["res://.godot/imported/clock.png-3157a67221627f5993641cebee8e0055.ctex"]
 
 [params]
 

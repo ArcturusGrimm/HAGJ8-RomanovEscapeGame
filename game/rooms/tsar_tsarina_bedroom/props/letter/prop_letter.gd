@@ -20,11 +20,11 @@ func _on_click() -> void:
 # When the node is right clicked
 func _on_right_click() -> void:
 	# Replace the call to E.command_fallback() to implement your code.
-	E.command_fallback()
+	
 	# E.g. you can make the character walk to the Prop and then say
 	# something:
-#	await C.player.face_clicked()
-#	await C.player.say("A deck of cards")
+	await C.player.face_clicked()
+	await C.player.say("A letter penned in my daughter Olga's had. It reads: Mighty Tsar, fear not. The bear is far away catching fish. Its cubs will not bother our gathering. Follow the path, cross right, and then immediatly left. There we will unite.")
 
 
 # When the node is middle clicked

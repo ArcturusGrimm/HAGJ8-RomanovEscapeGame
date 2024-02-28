@@ -1,10 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://c3guyru8jrbjn"]
+[gd_scene load_steps=16 format=3 uid="uid://c3guyru8jrbjn"]
 
 [ext_resource type="Script" path="res://game/rooms/tsar_tsarina_bedroom/room_tsar_tsarina_bedroom.gd" id="1_s1qrq"]
 [ext_resource type="PackedScene" uid="uid://bd8pqutcgup0a" path="res://game/rooms/tsar_tsarina_bedroom/walkable_areas/floor/walkable_area_floor.tscn" id="2_cxhru"]
 [ext_resource type="PackedScene" uid="uid://d0pts3h151bec" path="res://game/rooms/tsar_tsarina_bedroom/props/background/prop_background.tscn" id="2_objqh"]
 [ext_resource type="Texture2D" uid="uid://dkmakp56bqs5k" path="res://Sprites/environment/Room.jpg" id="4_fcwpa"]
-[ext_resource type="PackedScene" uid="uid://bnvalb7cay6vy" path="res://game/rooms/tsar_tsarina_bedroom/props/door/prop_door.tscn" id="4_ugkvc"]
+[ext_resource type="PackedScene" uid="uid://bqo4q7eum4wob" path="res://game/rooms/tsar_tsarina_bedroom/props/door/prop_door.tscn" id="4_ugkvc"]
 [ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="6_2fxcr"]
 [ext_resource type="PackedScene" uid="uid://bdnwggprw3yix" path="res://game/rooms/tsar_tsarina_bedroom/props/bed/prop_bed.tscn" id="7_554jy"]
 [ext_resource type="PackedScene" uid="uid://dw05xbgm356p1" path="res://game/rooms/tsar_tsarina_bedroom/hotspots/window/hotspot_window.tscn" id="7_cva6i"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://mj5nuvaweaoq" path="res://Sprites/Props/furniture/table.png" id="10_i5tl2"]
 [ext_resource type="PackedScene" uid="uid://coh8ysfjfce4w" path="res://game/rooms/tsar_tsarina_bedroom/props/letter/prop_letter.tscn" id="11_b5lc4"]
 [ext_resource type="Texture2D" uid="uid://b1fsf5tthvxsf" path="res://Sprites/Props/Hero Props/paperNote.png" id="12_fex4t"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="14_dk5uv"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_k7orw"]
 vertices = PackedVector2Array(799, 493, 919, 521, -895, 502, 271, 495, -271, 177, -755, 171, -539, 81, -409, 55, 423, 49, 805, 275, 775, 363, -121, 367, 297, 365, -913, 373, 591, 91)
@@ -42,14 +43,6 @@ position = Vector2(960, 540)
 texture = ExtResource("4_fcwpa")
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
-[node name="Door" parent="Props" instance=ExtResource("4_ugkvc")]
-position = Vector2(1750, 316)
-scale = Vector2(0.663352, 0.663352)
-texture = ExtResource("6_2fxcr")
-baseline = 723
-walk_to_point = Vector2(-242.707, 637.67)
-interaction_polygon = PackedVector2Array(-203.512, -149.242, 185.422, -357.276, 194.467, 758.27, -212.557, 474.861)
-
 [node name="Bed" parent="Props" instance=ExtResource("7_554jy")]
 position = Vector2(424, 674)
 scale = Vector2(-0.4, 0.4)
@@ -73,6 +66,13 @@ texture = ExtResource("12_fex4t")
 walk_to_point = Vector2(944.117, 944.116)
 interaction_polygon = PackedVector2Array(-351.018, -593.1, -351.018, 641.516, 496.267, 665.723, 496.267, -689.932)
 
+[node name="Door" parent="Props" instance=ExtResource("4_ugkvc")]
+position = Vector2(1714, 278)
+scale = Vector2(0.76, 0.76)
+texture = ExtResource("6_2fxcr")
+walk_to_point = Vector2(-236.842, 560.526)
+interaction_polygon = PackedVector2Array(-209.211, -151.316, 182.895, -319.737, 177.632, 693.421, -203.948, 472.368)
+
 [node name="Hotspots" type="Node2D" parent="."]
 
 [node name="Window" parent="Hotspots" instance=ExtResource("7_cva6i")]
@@ -85,3 +85,6 @@ interaction_polygon = PackedVector2Array(-137, -481, 57, -483, 61, -79, -143, -8
 [node name="Markers" type="Node2D" parent="."]
 
 [node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="Characters" instance=ExtResource("14_dk5uv")]
+position = Vector2(1147, 650)

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjwesrfgykaxt"]
+
+[ext_resource type="Script" path="res://game/rooms/mess_hall_1/walkable_areas/floor/walkable_area_floor.gd" id="1_bbuf4"]
+
+[node name="Floor" type="Node2D"]
+script = ExtResource("1_bbuf4")
+script_name = "Floor"
+description = "Floor"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://o5kvvcetena5"]
+
+[ext_resource type="Script" path="res://game/rooms/mess_hall_2/room_mess_hall_2_state.gd" id="1_txwnh"]
+
+[resource]
+resource_name = "MessHall2"
+script = ExtResource("1_txwnh")
+script_name = "MessHall2"
+scene = "res://game/rooms/mess_hall_2/room_mess_hall_2.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

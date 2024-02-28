@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://duwirdn6c3mby"]
+[gd_scene load_steps=16 format=3 uid="uid://duwirdn6c3mby"]
 
 [ext_resource type="Script" path="res://game/rooms/dining_room/room_dining_room.gd" id="1_nwwb4"]
 [ext_resource type="PackedScene" uid="uid://drxeldmerpaiu" path="res://game/rooms/dining_room/walkable_areas/floor/walkable_area_floor.tscn" id="2_7s0r6"]
@@ -13,11 +13,12 @@
 [ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="9_lai3i"]
 [ext_resource type="PackedScene" uid="uid://27euxbuyprxn" path="res://game/rooms/dining_room/props/table/prop_table.tscn" id="12_mw7u2"]
 [ext_resource type="Texture2D" uid="uid://mj5nuvaweaoq" path="res://Sprites/Props/furniture/table.png" id="13_p54y7"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="14_glypx"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_aiut3"]
-vertices = PackedVector2Array(549, 134, 655, 201, 904, 402, 329, 365, 282, 195, -588, 131, -381, 210, 941, 509, -932, 519, -413, 378, -662, 264, -680, 206)
+vertices = PackedVector2Array(549, 134, 655, 201, 904, 402, 349, 369, 282, 195, -588, 131, -381, 210, 941, 509, -932, 519, -420, 388, -662, 264, -680, 206)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 0, 4, 6), PackedInt32Array(3, 2, 7, 8, 9), PackedInt32Array(9, 8, 10, 6), PackedInt32Array(5, 6, 10, 11)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-588, 131, 549, 134, 655, 201, 904, 402, 941, 509, -932, 519, -662, 264, -680, 206), PackedVector2Array(-413, 378, 329, 365, 282, 195, -381, 210)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-588, 131, 549, 134, 655, 201, 904, 402, 941, 509, -932, 519, -662, 264, -680, 206), PackedVector2Array(-420, 388, 349, 369, 282, 195, -381, 210)])
 source_geometry_group_name = &"navigation_polygon_source_group"
 agent_radius = 0.0
 
@@ -85,7 +86,7 @@ interaction_polygon = PackedVector2Array(-323.157, -228.329, 417.305, -228.329, 
 position = Vector2(942, 661)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("13_p54y7")
-baseline = 165
+baseline = 228
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Hotspots" type="Node2D" parent="."]
@@ -95,3 +96,6 @@ interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 [node name="Markers" type="Node2D" parent="."]
 
 [node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="Characters" instance=ExtResource("14_glypx")]
+position = Vector2(473, 720)

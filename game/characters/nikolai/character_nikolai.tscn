@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://du7rk6ognccw5"]
+
+[ext_resource type="Script" path="res://game/characters/nikolai/character_nikolai.gd" id="1_ed7ug"]
+[ext_resource type="Texture2D" uid="uid://bfopuekd18nif" path="res://Sprites/Characters/Nikolai/Nikolai.png" id="2_6fjcj"]
+
+[node name="CharacterNikolai" type="Area2D"]
+script = ExtResource("1_ed7ug")
+flips_when = 2
+popochiu_placeholder = null
+script_name = "Nikolai"
+description = "Nikolai"
+clickable = false
+cursor = 8
+interaction_polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[node name="ScalingPolygon" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)
+
+[node name="BaselineHelper" type="Line2D" parent="."]
+points = PackedVector2Array(-10000, 0, 10000, 0)
+width = 1.0
+
+[node name="WalkToHelper" type="Marker2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="WalkToHelper"]
+offset_left = -2.5
+offset_top = -2.5
+offset_right = 2.5
+offset_bottom = 2.5
+color = Color(0, 1, 1, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -256)
+scale = Vector2(0.52, 0.52)
+texture = ExtResource("2_6fjcj")
+
+[node name="DialogPos" type="Marker2D" parent="."]
+position = Vector2(0, -546)

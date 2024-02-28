@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dk1rof5678emf"]
+
+[ext_resource type="Script" path="res://game/rooms/staircase_landing_2/room_staircase_landing_2_state.gd" id="1_5x2at"]
+
+[resource]
+resource_name = "StaircaseLanding2"
+script = ExtResource("1_5x2at")
+script_name = "StaircaseLanding2"
+scene = "res://game/rooms/staircase_landing_2/room_staircase_landing_2.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

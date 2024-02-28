@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://bnvalb7cay6vy"]
+[gd_scene load_steps=2 format=3 uid="uid://bqo4q7eum4wob"]
 
 [ext_resource type="Script" path="res://game/rooms/tsar_tsarina_bedroom/props/door/prop_door.gd" id="1_7yq1v"]
 

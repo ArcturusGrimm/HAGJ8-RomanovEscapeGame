@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://blrqstpmwfg3p"]
+
+[ext_resource type="Script" path="res://game/rooms/mess_hall_2/props/chair_1/prop_chair_1.gd" id="1_c8qq0"]
+
+[node name="Chair1" type="Area2D"]
+script = ExtResource("1_c8qq0")
+script_name = "Chair1"
+description = "Chair 1"
+clickable = false
+cursor = 1
+interaction_polygon = PackedVector2Array()
+
+[node name="BaselineHelper" type="Line2D" parent="."]
+points = PackedVector2Array(-10000, 0, 10000, 0)
+width = 1.0
+
+[node name="WalkToHelper" type="Marker2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="WalkToHelper"]
+offset_left = -2.5
+offset_top = -2.5
+offset_right = 2.5
+offset_bottom = 2.5
+color = Color(0, 1, 1, 1)
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

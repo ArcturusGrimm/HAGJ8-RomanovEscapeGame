@@ -81,16 +81,18 @@ walk_to_point = Vector2(-468.75, 2131.25)
 interaction_polygon = PackedVector2Array(-193.75, -518.75, 118.75, -531.25, 93.75, 531.25, -206.25, 500)
 
 [node name="DoorHallwayCom" parent="Props" instance=ExtResource("15_yynyt")]
-position = Vector2(103, 471)
-scale = Vector2(-0.56, 0.56)
+position = Vector2(132, 404)
+scale = Vector2(-0.68, 0.68)
 texture = ExtResource("16_p0l7r")
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+walk_to_point = Vector2(-235.294, 555.882)
+interaction_polygon = PackedVector2Array(-216.176, -155.882, 188.235, -305.882, 188.235, 698.529, -210.294, 473.529)
 
 [node name="DoorDining" parent="Props" instance=ExtResource("17_ihjti")]
-position = Vector2(1801, 489)
-scale = Vector2(0.479998, 0.559998)
+position = Vector2(1786, 390)
+scale = Vector2(0.600003, 0.700004)
 texture = ExtResource("16_p0l7r")
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+walk_to_point = Vector2(-259.999, 538.569)
+interaction_polygon = PackedVector2Array(-213.332, -149.999, 186.666, -305.713, 181.666, 702.853, -208.332, 471.426)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

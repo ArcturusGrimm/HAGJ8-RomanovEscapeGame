@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bpos4jdlrvfex"]
+[gd_scene load_steps=13 format=3 uid="uid://bpos4jdlrvfex"]
 
 [ext_resource type="Script" path="res://game/rooms/kitchen/room_kitchen.gd" id="1_pdh7f"]
 [ext_resource type="PackedScene" uid="uid://t7a1j6dp0c57" path="res://game/rooms/kitchen/walkable_areas/floor/walkable_area_floor.tscn" id="2_8apu3"]
@@ -6,14 +6,16 @@
 [ext_resource type="Texture2D" uid="uid://covedq5s1nkw" path="res://Sprites/environment/BasementV2.jpg" id="3_wf1v3"]
 [ext_resource type="PackedScene" uid="uid://uto35m6n17hr" path="res://game/rooms/kitchen/props/table/prop_table.tscn" id="5_7j7s2"]
 [ext_resource type="Texture2D" uid="uid://mj5nuvaweaoq" path="res://Sprites/Props/furniture/table.png" id="6_274st"]
+[ext_resource type="Texture2D" uid="uid://4nu1x0upu0wt" path="res://Sprites/Props/furniture/ChinaCabinet.png" id="6_pyjjx"]
 [ext_resource type="PackedScene" uid="uid://ck36wamnvqt6" path="res://game/rooms/kitchen/props/door_staircase/prop_door_staircase.tscn" id="7_8ixbd"]
 [ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="8_drvep"]
 [ext_resource type="PackedScene" uid="uid://dpgseyrme2c0r" path="res://game/rooms/kitchen/props/door_wc_staircase/prop_door_wc_staircase.tscn" id="9_4b3mq"]
+[ext_resource type="PackedScene" uid="uid://2a385r8p0uqu" path="res://game/rooms/kitchen/props/china_cabinet/prop_china_cabinet.tscn" id="10_i7far"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_asohk"]
-vertices = PackedVector2Array(440, 171, 716, 169, 921, 328, 930, 512, 245, 349, 222, 234, -362, 90, 341, 82, -251, 239, -438, 178, -934, 515, -901, 324, -274, 359, -735, 174)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5), PackedInt32Array(6, 7, 0, 5, 8, 9), PackedInt32Array(3, 10, 11, 12), PackedInt32Array(13, 9, 8, 12, 11), PackedInt32Array(3, 12, 4)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-362, 90, 341, 82, 440, 171, 716, 169, 921, 328, 930, 512, -934, 515, -901, 324, -735, 174, -438, 178), PackedVector2Array(-251, 239, -274, 359, 245, 349, 222, 234)])
+vertices = PackedVector2Array(440, 171, 716, 169, 921, 328, 930, 512, 249, 408, 217, 285, 205, 95, 341, 82, 203, 149, -246, 297, -17, 166, -217, 157, -438, 178, -934, 515, -281, 424, -901, 324, -735, 174, -362, 90, -242, 88)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5), PackedInt32Array(6, 7, 0, 5, 8), PackedInt32Array(8, 5, 9, 10), PackedInt32Array(11, 10, 9, 12), PackedInt32Array(4, 3, 13, 14), PackedInt32Array(14, 13, 15, 16, 12, 9), PackedInt32Array(11, 12, 17, 18)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-362, 90, -242, 88, -217, 157, -17, 166, 203, 149, 205, 95, 341, 82, 440, 171, 716, 169, 921, 328, 930, 512, -934, 515, -901, 324, -735, 174, -438, 178), PackedVector2Array(-246, 297, -281, 424, 249, 408, 217, 285)])
 source_geometry_group_name = &"navigation_polygon_source_group"
 agent_radius = 0.0
 
@@ -25,7 +27,7 @@ popochiu_placeholder = null
 [node name="WalkableAreas" type="Node2D" parent="."]
 
 [node name="Floor" parent="WalkableAreas" instance=ExtResource("2_8apu3")]
-position = Vector2(960, 540)
+position = Vector2(960, 538)
 
 [node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
 modulate = Color(0, 1, 0, 1)
@@ -38,15 +40,21 @@ position = Vector2(960, 540)
 texture = ExtResource("3_wf1v3")
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
+[node name="ChinaCabinet" parent="Props" instance=ExtResource("10_i7far")]
+position = Vector2(943, 408)
+scale = Vector2(0.319998, 0.319998)
+texture = ExtResource("6_pyjjx")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
 [node name="Table" parent="Props" instance=ExtResource("5_7j7s2")]
-position = Vector2(960, 719)
+position = Vector2(960, 778)
 scale = Vector2(0.421819, 0.421819)
 texture = ExtResource("6_274st")
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="DoorStaircase" parent="Props" instance=ExtResource("7_8ixbd")]
-position = Vector2(1789, 449)
-scale = Vector2(0.520002, 0.520002)
+position = Vector2(1789, 425)
+scale = Vector2(0.599997, 0.599997)
 texture = ExtResource("8_drvep")
 walk_to_point = Vector2(-273.076, 596.151)
 interaction_polygon = PackedVector2Array(-215.384, -161.538, 205.768, -367.306, 182.691, 742.304, -215.384, 474.998)

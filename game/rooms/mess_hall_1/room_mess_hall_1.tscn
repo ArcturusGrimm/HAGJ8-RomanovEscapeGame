@@ -1,0 +1,71 @@
+[gd_scene load_steps=12 format=3 uid="uid://do3mu4slc5n1x"]
+
+[ext_resource type="Script" path="res://game/rooms/mess_hall_1/room_mess_hall_1.gd" id="1_5sraq"]
+[ext_resource type="PackedScene" uid="uid://cjwesrfgykaxt" path="res://game/rooms/mess_hall_1/walkable_areas/floor/walkable_area_floor.tscn" id="2_26ujm"]
+[ext_resource type="PackedScene" uid="uid://qwwl6brsnih6" path="res://game/rooms/mess_hall_1/props/background/prop_background.tscn" id="2_a5wda"]
+[ext_resource type="Texture2D" uid="uid://covedq5s1nkw" path="res://Sprites/environment/BasementV2.jpg" id="3_q67gx"]
+[ext_resource type="PackedScene" uid="uid://bw454mbc5uqb8" path="res://game/rooms/mess_hall_1/props/door_mess_hall/prop_door_mess_hall.tscn" id="4_5tih8"]
+[ext_resource type="PackedScene" uid="uid://bbnq7j28tu5dc" path="res://game/rooms/mess_hall_1/props/door_front/prop_door_front.tscn" id="5_0kswm"]
+[ext_resource type="Texture2D" uid="uid://c48firkfrv6yw" path="res://Sprites/Props/furniture/DoorFront View.png" id="5_d0l21"]
+[ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="7_mh2cm"]
+[ext_resource type="PackedScene" uid="uid://brpct3cf5owhq" path="res://game/rooms/mess_hall_1/props/china_cabinet/prop_china_cabinet.tscn" id="8_oaagn"]
+[ext_resource type="Texture2D" uid="uid://4nu1x0upu0wt" path="res://Sprites/Props/furniture/ChinaCabinet.png" id="9_7rp3o"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ycgbk"]
+vertices = PackedVector2Array(690, 175, 907, 367, 938, 517, -944, 526, -938, 315, -734, 165)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-734, 165, 690, 175, 907, 367, 938, 517, -944, 526, -938, 315)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
+
+[node name="RoomMessHall1" type="Node2D"]
+script = ExtResource("1_5sraq")
+script_name = "MessHall1"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_26ujm")]
+position = Vector2(960, 540)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_ycgbk")
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Background" parent="Props" instance=ExtResource("2_a5wda")]
+position = Vector2(960, 540)
+texture = ExtResource("3_q67gx")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="DoorMessHall" parent="Props" instance=ExtResource("4_5tih8")]
+modulate = Color(1, 1, 1, 0.556863)
+position = Vector2(449, 646)
+scale = Vector2(0.480005, 0.600002)
+texture = ExtResource("5_d0l21")
+baseline = 721
+walk_to_point = Vector2(477.079, 526.665)
+interaction_polygon = PackedVector2Array(-327.08, -231.666, 416.663, -236.666, 441.662, 721.664, -327.08, 719.997)
+
+[node name="DoorFront" parent="Props" instance=ExtResource("5_0kswm")]
+position = Vector2(1814, 484)
+scale = Vector2(0.544697, 0.544697)
+texture = ExtResource("7_mh2cm")
+walk_to_point = Vector2(-189.096, 585.647)
+interaction_polygon = PackedVector2Array(-211.127, -145.035, 154.214, -306.593, 159.722, 703.144, -220.306, 460.807)
+
+[node name="ChinaCabinet" parent="Props" instance=ExtResource("8_oaagn")]
+position = Vector2(1132, 372)
+scale = Vector2(0.32, 0.32)
+texture = ExtResource("9_7rp3o")
+walk_to_point = Vector2(65.6246, 1040.63)
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]

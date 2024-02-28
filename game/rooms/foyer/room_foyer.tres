@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bj3w5auab1dpl"]
+
+[ext_resource type="Script" path="res://game/rooms/foyer/room_foyer_state.gd" id="1_r41ff"]
+
+[resource]
+resource_name = "Foyer"
+script = ExtResource("1_r41ff")
+script_name = "Foyer"
+scene = "res://game/rooms/foyer/room_foyer.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

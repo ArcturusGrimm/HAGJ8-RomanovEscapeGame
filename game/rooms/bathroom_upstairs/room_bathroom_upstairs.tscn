@@ -1,6 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://bygxq4ixk066q"]
+[gd_scene load_steps=11 format=3 uid="uid://bygxq4ixk066q"]
 
 [ext_resource type="Script" path="res://game/rooms/bathroom_upstairs/room_bathroom_upstairs.gd" id="1_pqahj"]
+[ext_resource type="PackedScene" uid="uid://dfle83k01j4sk" path="res://game/rooms/bathroom_upstairs/walkable_areas/floor/walkable_area_floor.tscn" id="2_6vkcp"]
+[ext_resource type="PackedScene" uid="uid://nwdqka3a3svu" path="res://game/rooms/bathroom_upstairs/props/background/prop_background.tscn" id="2_b30m1"]
+[ext_resource type="Texture2D" uid="uid://dkmakp56bqs5k" path="res://Sprites/environment/Room.jpg" id="3_j50ec"]
+[ext_resource type="PackedScene" uid="uid://ca72f3kh755yu" path="res://game/rooms/bathroom_upstairs/props/bathtub/prop_bathtub.tscn" id="4_kaf5k"]
+[ext_resource type="Texture2D" uid="uid://3qw8i2twv4xl" path="res://Sprites/Props/Bathtub.png" id="5_x8cqh"]
+[ext_resource type="PackedScene" uid="uid://3kq0hwhkm2ko" path="res://game/rooms/bathroom_upstairs/props/door_wc_stairs/prop_door_wc_stairs.tscn" id="6_6xctl"]
+[ext_resource type="PackedScene" uid="uid://doj65utftbb5g" path="res://game/rooms/bathroom_upstairs/hotspots/window/hotspot_window.tscn" id="7_duvp2"]
+[ext_resource type="Texture2D" uid="uid://c48firkfrv6yw" path="res://Sprites/Props/furniture/DoorFront View.png" id="8_d6011"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_xckj7"]
+vertices = PackedVector2Array(892, 308, 940, 520, -945, 520, -878, 289, -326, 203, 291, 211, -566, 50, -361, 47, 526, 49, 328, 71)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5), PackedInt32Array(6, 7, 4, 3), PackedInt32Array(8, 0, 5, 9)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-566, 50, -361, 47, -326, 203, 291, 211, 328, 71, 526, 49, 892, 308, 940, 520, -945, 520, -878, 289)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
 
 [node name="RoomBathroomUpstairs" type="Node2D"]
 script = ExtResource("1_pqahj")
@@ -9,9 +24,43 @@ popochiu_placeholder = null
 
 [node name="WalkableAreas" type="Node2D" parent="."]
 
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_6vkcp")]
+position = Vector2(960, 540)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_xckj7")
+
 [node name="Props" type="Node2D" parent="."]
 
+[node name="Background" parent="Props" instance=ExtResource("2_b30m1")]
+position = Vector2(960, 540)
+texture = ExtResource("3_j50ec")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Bathtub" parent="Props" instance=ExtResource("4_kaf5k")]
+position = Vector2(920, 575)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("5_x8cqh")
+clickable = true
+walk_to_point = Vector2(-794.444, 530.556)
+interaction_polygon = PackedVector2Array(-719.444, -316.667, 708.334, -316.667, 825, -94.4445, 655.556, 280.556, -616.666, 325, -825, -83.3334)
+
+[node name="DoorWcStairs" parent="Props" instance=ExtResource("6_6xctl")]
+modulate = Color(1, 1, 1, 0.419608)
+position = Vector2(304, 618)
+scale = Vector2(0.48, 0.64)
+texture = ExtResource("8_d6011")
+baseline = 725
+walk_to_point = Vector2(489.583, 565.625)
+interaction_polygon = PackedVector2Array(-333.333, -235.938, 435.417, -237.5, 427.083, 735.938, -322.917, 723.438)
+
 [node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Window" parent="Hotspots" instance=ExtResource("7_duvp2")]
+position = Vector2(911, 252)
+walk_to_point = Vector2(-376, 464)
+interaction_polygon = PackedVector2Array(-94, -198, 105, -196, 110, 194, -93, 198)
 
 [node name="Regions" type="Node2D" parent="."]
 

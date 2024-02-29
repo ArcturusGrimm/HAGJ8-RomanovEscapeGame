@@ -54,6 +54,7 @@ interaction_polygon = PackedVector2Array(-318.479, -217.799, 431.488, -234.236, 
 position = Vector2(944, 659)
 scale = Vector2(0.320002, 0.320002)
 texture = ExtResource("8_7w4bm")
+clickable = true
 baseline = 209
 walk_to_point = Vector2(-581.245, 724.994)
 interaction_polygon = PackedVector2Array(-353.122, -162.499, 424.997, -168.749, 546.871, 534.371, -424.997, 521.871)
@@ -62,7 +63,8 @@ interaction_polygon = PackedVector2Array(-353.122, -162.499, 424.997, -168.749, 
 position = Vector2(532, 342)
 scale = Vector2(0.48, 0.48)
 texture = ExtResource("10_0lfgb")
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+walk_to_point = Vector2(70.8333, 675)
+interaction_polygon = PackedVector2Array(-339.583, -466.667, 427.083, -470.833, 402.083, 500, -300, 504.167)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

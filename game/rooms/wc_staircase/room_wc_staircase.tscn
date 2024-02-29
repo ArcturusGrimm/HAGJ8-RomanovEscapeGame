@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://4i2e6u5fvc74" path="res://game/rooms/wc_staircase/props/door_wc/prop_door_wc.tscn" id="9_if20q"]
 [ext_resource type="PackedScene" uid="uid://bhml3lfefr21d" path="res://game/rooms/wc_staircase/props/door_kitchen/prop_door_kitchen.tscn" id="10_ifnf4"]
 [ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="11_2r87t"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="13_tkrc3"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/Nikolai/character_Nikolai.tscn" id="13_tkrc3"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_jkq8k"]
 vertices = PackedVector2Array(342, -24, 558, -35, 811, 317, -1058, 319, -58, 46, -62, -117, 232, -120, -779, -22, -594, -24, -581, 46)

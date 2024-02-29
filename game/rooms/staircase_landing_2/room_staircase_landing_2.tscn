@@ -67,6 +67,7 @@ interaction_polygon = PackedVector2Array(-210.475, -152.011, 154.241, -292.125, 
 
 [node name="Stairs" parent="Hotspots" instance=ExtResource("11_sj75y")]
 position = Vector2(587, 469)
+walk_to_point = Vector2(370, 499)
 interaction_polygon = PackedVector2Array(-580, -289, 24, -148, 307, 114, 282, 452, -207, 162, -318, 14, -580, -138)
 
 [node name="Regions" type="Node2D" parent="."]
@@ -76,4 +77,4 @@ interaction_polygon = PackedVector2Array(-580, -289, 24, -148, 307, 114, 282, 45
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="CharacterNikolai *" parent="Characters" instance=ExtResource("12_1xoky")]
-position = Vector2(358, 1016)
+position = Vector2(980, 963)

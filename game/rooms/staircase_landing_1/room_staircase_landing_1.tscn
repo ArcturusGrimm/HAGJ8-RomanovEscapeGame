@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://crqb3157rusj3" path="res://game/rooms/staircase_landing_1/props/door_foyer/prop_door_foyer.tscn" id="5_t67ul"]
 [ext_resource type="PackedScene" uid="uid://7mby7my6opyi" path="res://game/rooms/staircase_landing_1/props/door_living_room/prop_door_living_room.tscn" id="6_x35ac"]
 [ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="7_754ea"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="10_hjhxu"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/Nikolai/character_Nikolai.tscn" id="10_hjhxu"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_wcjft"]
 vertices = PackedVector2Array(376, 199, 724, 521, -732, 516, -405, 196)
@@ -69,4 +69,4 @@ interaction_polygon = PackedVector2Array(-211.607, -153.916, 161.607, -291.439, 
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="CharacterNikolai *" parent="Characters" instance=ExtResource("10_hjhxu")]
-position = Vector2(460, 912)
+position = Vector2(959, 814)

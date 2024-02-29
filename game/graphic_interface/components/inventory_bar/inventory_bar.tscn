@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dm40mvu7md603"]
 
-[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_wih3f"]
-[ext_resource type="Texture2D" uid="uid://ey7v3mcmfefw" path="res://game/graphic_interface/components/inventory_bar/inventory_bg.png" id="2_keqmr"]
+[ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="res://addons/popochiu/engine/objects/graphic_interface/resources/popochiu_theme.tres" id="1_wih3f"]
+[ext_resource type="Texture2D" uid="uid://ey7v3mcmfefw" path="res://addons/popochiu/engine/objects/graphic_interface/components/inventory_bar/inventory_bg.png" id="2_keqmr"]
 [ext_resource type="Script" path="res://game/graphic_interface/components/inventory_bar/inventory_bar.gd" id="3_vw4iu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_75cei"]

@@ -285,15 +285,19 @@ animation = &"gui"
 
 [node name="DialogText" parent="." instance=ExtResource("3_p6sdq")]
 layout_mode = 1
+scale = Vector2(2.54136, 1.87305)
 
 [node name="HoverText" parent="." instance=ExtResource("4_s5r6u")]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_top = -19.0
-offset_bottom = -4.0
+offset_left = -593.0
+offset_top = -50.0
+offset_right = -593.0
+offset_bottom = -35.0
 grow_vertical = 0
+scale = Vector2(1.6, 2.28)
 
 [node name="SystemText" parent="." instance=ExtResource("5_dn0yk")]
 layout_mode = 1

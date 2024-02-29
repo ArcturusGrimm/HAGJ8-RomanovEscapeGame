@@ -14,3 +14,7 @@ Jade - 3D Assets/Character Design/Art\
 Connor - Writing/Game Design/Level Design\
 Angela - Music\
 Josh - Programming/Game Design/Level Design
+
+## Development
+Made for the Historically Accurate Game Jam 8.\
+Made using the [Godot](https://godotengine.org/) engine and the [Popochiu](https://github.com/carenalgas/popochiu) framework

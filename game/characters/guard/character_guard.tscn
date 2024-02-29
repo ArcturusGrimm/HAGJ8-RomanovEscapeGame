@@ -22,6 +22,7 @@ frame_4/duration = 1.0
 
 [node name="CharacterGuard" type="Area2D"]
 script = ExtResource("1_e3284")
+can_move = false
 popochiu_placeholder = null
 script_name = "Guard"
 description = "Guard"
@@ -29,7 +30,7 @@ cursor = 8
 interaction_polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 
 [node name="InteractionPolygon" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+polygon = PackedVector2Array(-56, -524, 50, -528, 120, -231, 62, -13, -61, -2, -128, -232)
 
 [node name="ScalingPolygon" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)
@@ -50,7 +51,9 @@ color = Color(0, 1, 1, 1)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -277)
 scale = Vector2(0.532652, 0.502644)
 texture = SubResource("AnimatedTexture_jbebc")
 
 [node name="DialogPos" type="Marker2D" parent="."]
+position = Vector2(-1, -566)

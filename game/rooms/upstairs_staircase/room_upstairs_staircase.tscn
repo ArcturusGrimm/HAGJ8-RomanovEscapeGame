@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://ccn3dso34rljt" path="res://game/rooms/upstairs_staircase/props/door_kitchen/prop_door_kitchen.tscn" id="6_pgao5"]
 [ext_resource type="PackedScene" uid="uid://s8q5r5unpwul" path="res://game/rooms/upstairs_staircase/props/stairs_down/prop_stairs_down.tscn" id="7_cmoqw"]
 [ext_resource type="Texture2D" uid="uid://dsex45whufxs2" path="res://Sprites/Props/Downstairs_hole.png" id="9_mbnbk"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="10_hi0hy"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="10_hi0hy"]
 [ext_resource type="PackedScene" uid="uid://cerfs0068glx8" path="res://game/characters/guard/character_guard.tscn" id="11_c6r8m"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_ne8tp"]
@@ -73,5 +73,5 @@ interaction_polygon = PackedVector2Array(-158.871, -78.2258, 130.645, -80.6451, 
 position = Vector2(1535, 854)
 
 [node name="CharacterGuard *" parent="Characters" instance=ExtResource("11_c6r8m")]
-position = Vector2(733, 476)
+position = Vector2(733, 795)
 scale = Vector2(-1.04547, 1.04714)

@@ -1,6 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://cerfs0068glx8"]
+[gd_scene load_steps=8 format=3 uid="uid://cerfs0068glx8"]
 
 [ext_resource type="Script" path="res://game/characters/guard/character_guard.gd" id="1_e3284"]
+[ext_resource type="Texture2D" uid="uid://crqu50sjihjlf" path="res://Sprites/Characters/Guard/Guard1.png" id="2_kcked"]
+[ext_resource type="Texture2D" uid="uid://bmejqbuxm77j5" path="res://Sprites/Characters/Guard/Guard2.png" id="3_6cdme"]
+[ext_resource type="Texture2D" uid="uid://clrwie02kcn5g" path="res://Sprites/Characters/Guard/Guard3.png" id="4_bb8mw"]
+[ext_resource type="Texture2D" uid="uid://cpw8m3lno1n6b" path="res://Sprites/Characters/Guard/Guard4.png" id="5_wekxc"]
+[ext_resource type="Texture2D" uid="uid://djp1hrqmkoyed" path="res://Sprites/Characters/Guard/Guard5.png" id="6_a7blv"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_jbebc"]
+frames = 5
+speed_scale = 2.4
+frame_0/texture = ExtResource("2_kcked")
+frame_1/texture = ExtResource("3_6cdme")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4_bb8mw")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("5_wekxc")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("6_a7blv")
+frame_4/duration = 1.0
 
 [node name="CharacterGuard" type="Area2D"]
 script = ExtResource("1_e3284")
@@ -11,19 +29,16 @@ cursor = 8
 interaction_polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 
 [node name="InteractionPolygon" type="CollisionPolygon2D" parent="."]
-visible = false
 polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 
 [node name="ScalingPolygon" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)
 
 [node name="BaselineHelper" type="Line2D" parent="."]
-visible = false
 points = PackedVector2Array(-10000, 0, 10000, 0)
 width = 1.0
 
 [node name="WalkToHelper" type="Marker2D" parent="."]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="WalkToHelper"]
 offset_left = -2.5
@@ -35,6 +50,6 @@ color = Color(0, 1, 1, 1)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AnimatedTexture_jbebc")
 
 [node name="DialogPos" type="Marker2D" parent="."]
-visible = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c64ak44m0e78s"]
+[gd_scene load_steps=14 format=3 uid="uid://c64ak44m0e78s"]
 
 [ext_resource type="Script" path="res://game/rooms/commandant_hallway/room_commandant_hallway.gd" id="1_iyy5f"]
 [ext_resource type="PackedScene" uid="uid://clhmvi1ksb0qv" path="res://game/rooms/commandant_hallway/props/background/prop_background.tscn" id="2_6b55d"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="9_anyi8"]
 [ext_resource type="PackedScene" uid="uid://bfgea23d0xfdk" path="res://game/rooms/commandant_hallway/props/chair/prop_chair.tscn" id="10_0hkkn"]
 [ext_resource type="Texture2D" uid="uid://bkdkpc4vhpmwk" path="res://Sprites/Props/furniture/chair.png" id="11_l3483"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="12_pu7ut"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_u4sn3"]
 vertices = PackedVector2Array(678, 165, 875, 329, 927, 522, -929, 522, 456, 179, 345, 80, -894, 342, -444, 169, -724, 164, -364, 86)
@@ -76,3 +77,6 @@ interaction_polygon = PackedVector2Array(-335, -505, 255, -490, 220, 195, -335, 
 [node name="Markers" type="Node2D" parent="."]
 
 [node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="Characters" instance=ExtResource("12_pu7ut")]
+position = Vector2(242, 863)

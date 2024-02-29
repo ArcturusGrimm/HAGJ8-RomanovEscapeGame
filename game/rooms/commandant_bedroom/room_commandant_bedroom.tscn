@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cjq4rwpmgwc0q"]
+[gd_scene load_steps=18 format=3 uid="uid://cjq4rwpmgwc0q"]
 
 [ext_resource type="Script" path="res://game/rooms/commandant_bedroom/room_commandant_bedroom.gd" id="1_43r0b"]
 [ext_resource type="PackedScene" uid="uid://c1dm6u1mavtqk" path="res://game/rooms/commandant_bedroom/walkable_areas/floor/walkable_area_floor.tscn" id="2_1vh8y"]
@@ -8,16 +8,14 @@
 [ext_resource type="PackedScene" uid="uid://dcumpujiooyxa" path="res://game/rooms/commandant_bedroom/props/couch/prop_couch.tscn" id="5_i7f1i"]
 [ext_resource type="Texture2D" uid="uid://cknomrbbjgdl0" path="res://Sprites/Props/Hero Props/Piano.png" id="5_l1pkd"]
 [ext_resource type="PackedScene" uid="uid://bywh2ybwfco0g" path="res://game/rooms/commandant_bedroom/props/table/prop_table.tscn" id="6_3jkvs"]
-[ext_resource type="PackedScene" uid="uid://rywj0bii8tb6" path="res://game/rooms/commandant_bedroom/props/keys/prop_keys.tscn" id="7_iqvav"]
 [ext_resource type="Texture2D" uid="uid://wh8hkqwxwmmi" path="res://Sprites/Props/furniture/couch.png" id="7_o2wl6"]
 [ext_resource type="Texture2D" uid="uid://mj5nuvaweaoq" path="res://Sprites/Props/furniture/table.png" id="9_c8ffr"]
-[ext_resource type="Texture2D" uid="uid://dhke36o4m7hne" path="res://Sprites/Props/Hero Props/Keys.png" id="11_uuklp"]
 [ext_resource type="PackedScene" uid="uid://cd05fufp7cbd0" path="res://game/rooms/commandant_bedroom/props/documents/prop_documents.tscn" id="12_1sk6l"]
 [ext_resource type="Texture2D" uid="uid://camnl4xdch3mn" path="res://Sprites/Props/Hero Props/Documents.png" id="13_ke6wj"]
 [ext_resource type="PackedScene" uid="uid://j6dstuom6png" path="res://game/rooms/commandant_bedroom/hotspots/window/hotspot_window.tscn" id="15_jik3r"]
 [ext_resource type="PackedScene" uid="uid://ca53oj6vahj30" path="res://game/rooms/commandant_bedroom/props/door_hallway/prop_door_hallway.tscn" id="15_t7vcr"]
 [ext_resource type="Texture2D" uid="uid://c48firkfrv6yw" path="res://Sprites/Props/furniture/DoorFront View.png" id="16_ir4kv"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="18_xfsd7"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="18_xfsd7"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_pqclq"]
 vertices = PackedVector2Array(672, 183, 897, 341, 913, 515, 579, 364, 539, 283, -113, 183, 92, 283, -924, 520, -906, 343, -609, 283, 78, 371, -238, 230, -263, 282, -770, 196, -622, 230)
@@ -59,6 +57,7 @@ interaction_polygon = PackedVector2Array(-524.997, -384.613, 349.998, -390.383, 
 position = Vector2(1248, 509)
 scale = Vector2(0.36, 0.36)
 texture = ExtResource("7_o2wl6")
+baseline = -166
 walk_to_point = Vector2(-19.4444, 652.778)
 interaction_polygon = PackedVector2Array(-697.222, -191.667, 725, -191.667, 891.667, 166.667, 836.111, 502.778, -811.111, 491.667, -888.889, 180.556)
 
@@ -70,17 +69,11 @@ clickable = false
 baseline = 144
 interaction_polygon = PackedVector2Array(-552.51, -78.1255, 495.009, -101.563, 555.01, 375.004, -597.511, 402.348)
 
-[node name="Keys" parent="Props" instance=ExtResource("7_iqvav")]
-position = Vector2(1810, 349)
-scale = Vector2(0.12, 0.12)
-texture = ExtResource("11_uuklp")
-walk_to_point = Vector2(-1225, 3708.33)
-interaction_polygon = PackedVector2Array(-358.334, -525, 266.666, -600, 750, 650, -575, 533.333)
-
 [node name="Documents" parent="Props" instance=ExtResource("12_1sk6l")]
-position = Vector2(1243, 496)
+position = Vector2(1283, 496)
 scale = Vector2(0.0799976, 0.0799976)
 texture = ExtResource("13_ke6wj")
+baseline = 600
 walk_to_point = Vector2(-662.52, 3112.59)
 interaction_polygon = PackedVector2Array(-812.524, -325.01, 925.028, -350.011, 850.024, 537.516, -812.524, 575.017)
 

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="AudioCueMusic" load_steps=3 format=3 uid="uid://dj1y1mn2ng2nl"]
+
+[ext_resource type="AudioStream" uid="uid://bf38i4xy68yel" path="res://game/rooms/tsar_tsarina_bedroom/props/Main_Theme.wav" id="1_gup8f"]
+[ext_resource type="Script" path="res://addons/popochiu/engine/audio_manager/audio_cue_music.gd" id="2_kler4"]
+
+[resource]
+resource_name = "main_theme"
+script = ExtResource("2_kler4")
+audio = ExtResource("1_gup8f")
+loop = true
+is_2d = false
+can_play_simultaneous = true
+pitch = 1.0
+volume = -9.215
+rnd_pitch = Vector2(0, 0)
+rnd_volume = Vector2(0, 0)
+max_distance = 2000
+attenuation = 1.0
+bus = "Master"

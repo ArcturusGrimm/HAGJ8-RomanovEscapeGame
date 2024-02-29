@@ -24,6 +24,8 @@ func _on_room_transition_finished() -> void:
 # At this point, the screen is black, processing is disabled and all characters
 # have been removed from the $Characters node.
 func _on_room_exited() -> void:
+	if Globals.OlgaPiano:
+		A.main_theme.play()
 	pass
 
 

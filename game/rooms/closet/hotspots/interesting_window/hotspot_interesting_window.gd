@@ -9,22 +9,22 @@ extends PopochiuHotspot
 # When the node is clicked
 func _on_click() -> void:
 	# Replace the call to E.command_fallback() with your code.
-	E.command_fallback()
 	# E.g. Make the player-controlled character walk to the Hotspot and then say
 	# something:
-#	await C.player.walk_to_clicked()
-#	await C.player.face_clicked()
-#	await C.player.say("Can't open it")
+	await C.player.walk_to_clicked()
+	await C.player.face_clicked()
+	await C.player.say("British officer: If you can get me the Commandant's files, I can arrange for you and your family's escape")
+	await C.player.say("Nikolai: I shall arrange that for you")
+	Globals.talkedWithOfficer = true
 
 
 # When the node is right clicked
 func _on_right_click() -> void:
 	# Replace the call to E.command_fallback() with your code.
-	E.command_fallback()
 	# E.g. Make the player-controlled character walk to the Hotspot and then say
 	# something:
-#	await C.player.face_clicked()
-#	await C.player.say("A closed door")
+	await C.player.face_clicked()
+	await C.player.say("I bet I could get in contact with someone from that window")
 
 
 # When the node is middle clicked

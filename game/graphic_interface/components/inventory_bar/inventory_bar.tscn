@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dm40mvu7md603"]
+[gd_scene load_steps=5 format=3 uid="uid://bd1wnl8e5c5fh"]
 
 [ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="res://addons/popochiu/engine/objects/graphic_interface/resources/popochiu_theme.tres" id="1_wih3f"]
-[ext_resource type="Texture2D" uid="uid://ey7v3mcmfefw" path="res://addons/popochiu/engine/objects/graphic_interface/components/inventory_bar/inventory_bg.png" id="2_keqmr"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/inventory_bar/inventory_bar.gd" id="3_vw4iu"]
+[ext_resource type="Texture2D" uid="uid://v5qibsj8jx1r" path="res://game/graphic_interface/components/inventory_bar/inventory_bg.png" id="2_keqmr"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/inventory_bar/inventory_bar.gd" id="3_bnfnk"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_75cei"]
 content_margin_left = 3.0
@@ -21,7 +21,7 @@ offset_right = 36.0
 offset_bottom = 24.0
 theme = ExtResource("1_wih3f")
 theme_override_styles/panel = SubResource("StyleBoxTexture_75cei")
-script = ExtResource("3_vw4iu")
+script = ExtResource("3_bnfnk")
 
 [node name="Box" type="HBoxContainer" parent="."]
 layout_mode = 2

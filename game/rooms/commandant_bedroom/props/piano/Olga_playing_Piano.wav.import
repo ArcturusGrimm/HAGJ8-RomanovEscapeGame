@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dbqp85isbd2ue"
-path="res://.godot/imported/Olga_playing_Piano.wav-d0ebf6517489de6e9b5dede5d4badaaa.sample"
+path="res://.godot/imported/Olga_playing_Piano.wav-59121568c8422d006a85c4da29fe586d.sample"
 
 [deps]
 
-source_file="res://music/Olga_playing_Piano.wav"
-dest_files=["res://.godot/imported/Olga_playing_Piano.wav-d0ebf6517489de6e9b5dede5d4badaaa.sample"]
+source_file="res://game/rooms/commandant_bedroom/props/piano/Olga_playing_Piano.wav"
+dest_files=["res://.godot/imported/Olga_playing_Piano.wav-59121568c8422d006a85c4da29fe586d.sample"]
 
 [params]
 

@@ -1,29 +1,29 @@
-[gd_scene load_steps=21 format=3 uid="uid://he231xgclki5"]
+[gd_scene load_steps=21 format=3 uid="uid://covbbre1sjlwl"]
 
-[ext_resource type="Texture2D" uid="uid://c6grf11y0hhsa" path="res://game/graphic_interface/components/settings_bar/sprites/toolbar_bg.png" id="1_ovccu"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/settings_bar.gd" id="2_ooqea"]
-[ext_resource type="Texture2D" uid="uid://dly6jv2ydl6am" path="res://game/graphic_interface/components/settings_bar/sprites/btn_save.png" id="3_ken03"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_save.gd" id="4_u5aiy"]
-[ext_resource type="Texture2D" uid="uid://bgsgb7wn2gllu" path="res://game/graphic_interface/components/settings_bar/sprites/btn_load.png" id="5_fw866"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_load.gd" id="6_iexl7"]
-[ext_resource type="Texture2D" uid="uid://2prorqctqiyo" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_speed_01.png" id="7_mjnfg"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_dialog_speed.gd" id="8_rke7o"]
-[ext_resource type="Texture2D" uid="uid://cm6084527x61w" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_speed_02.png" id="9_cvj70"]
-[ext_resource type="Texture2D" uid="uid://br2w68k6jxeg1" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_speed_03.png" id="10_1imit"]
-[ext_resource type="Texture2D" uid="uid://dmy5phmr4gurh" path="res://game/graphic_interface/components/settings_bar/sprites/btn_audio.png" id="11_f877x"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_sound_settings.gd" id="12_obb3k"]
-[ext_resource type="Texture2D" uid="uid://dh2t2v7rnwn73" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_auto_01.png" id="13_xgluj"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_dialog_auto.gd" id="14_1c7oa"]
-[ext_resource type="Texture2D" uid="uid://b2x15v5535npp" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_auto_02.png" id="15_u0i6x"]
-[ext_resource type="Texture2D" uid="uid://cfe24gjujhxum" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_history.png" id="16_bxts8"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_dialog_history.gd" id="17_ypw72"]
-[ext_resource type="Texture2D" uid="uid://b5aloth45cxs1" path="res://game/graphic_interface/components/settings_bar/sprites/btn_quit.png" id="18_ttw5i"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_quit.gd" id="19_w0yfk"]
+[ext_resource type="Texture2D" uid="uid://pvw7nmp7ewn4" path="res://game/graphic_interface/components/settings_bar/sprites/toolbar_bg.png" id="1_51fa6"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/settings_bar.gd" id="2_c268r"]
+[ext_resource type="Texture2D" uid="uid://dfvxqrcusv5vw" path="res://game/graphic_interface/components/settings_bar/sprites/btn_save.png" id="3_sbq6e"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_save.gd" id="4_k4dx3"]
+[ext_resource type="Texture2D" uid="uid://1x7ivqsewb3f" path="res://game/graphic_interface/components/settings_bar/sprites/btn_load.png" id="5_7fkl7"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_load.gd" id="6_j5snn"]
+[ext_resource type="Texture2D" uid="uid://dvhdhk5ke7kkq" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_speed_01.png" id="7_ndyke"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_dialog_speed.gd" id="8_gmnbn"]
+[ext_resource type="Texture2D" uid="uid://h7rk1fpc8pj0" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_speed_02.png" id="9_ulngd"]
+[ext_resource type="Texture2D" uid="uid://c1c8hokwd5tjo" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_speed_03.png" id="10_wg861"]
+[ext_resource type="Texture2D" uid="uid://shtp7wb0l43y" path="res://game/graphic_interface/components/settings_bar/sprites/btn_audio.png" id="11_r4y30"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_sound_settings.gd" id="12_oyvc5"]
+[ext_resource type="Texture2D" uid="uid://dqyesmh5aeawv" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_auto_01.png" id="13_3swc3"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_dialog_auto.gd" id="14_rqqj6"]
+[ext_resource type="Texture2D" uid="uid://c626fv632qd0i" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_auto_02.png" id="15_nv7me"]
+[ext_resource type="Texture2D" uid="uid://baby0a1i1r0wm" path="res://game/graphic_interface/components/settings_bar/sprites/btn_dialog_history.png" id="16_byuj8"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_dialog_history.gd" id="17_yw1nt"]
+[ext_resource type="Texture2D" uid="uid://ct7secegxjnbb" path="res://game/graphic_interface/components/settings_bar/sprites/btn_quit.png" id="18_4odl6"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/settings_bar/buttons/btn_quit.gd" id="19_q71lk"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3b8bi"]
 content_margin_left = 3.0
 content_margin_right = 3.0
-texture = ExtResource("1_ovccu")
+texture = ExtResource("1_51fa6")
 texture_margin_left = 1.0
 texture_margin_top = 1.0
 texture_margin_right = 11.0
@@ -34,8 +34,9 @@ region_rect = Rect2(0, 0, 36, 24)
 texture_filter = 1
 offset_right = 122.0
 offset_bottom = 24.0
+scale = Vector2(3, 3)
 theme_override_styles/panel = SubResource("StyleBoxTexture_3b8bi")
-script = ExtResource("2_ooqea")
+script = ExtResource("2_c268r")
 
 [node name="Box" type="HBoxContainer" parent="."]
 layout_mode = 2
@@ -43,52 +44,52 @@ mouse_filter = 2
 
 [node name="BtnSave" type="TextureButton" parent="Box"]
 layout_mode = 2
-texture_normal = ExtResource("3_ken03")
-script = ExtResource("4_u5aiy")
+texture_normal = ExtResource("3_sbq6e")
+script = ExtResource("4_k4dx3")
 description = "Save game"
 script_name = "SaveGame"
 
 [node name="BtnLoad" type="TextureButton" parent="Box"]
 visible = false
 layout_mode = 2
-texture_normal = ExtResource("5_fw866")
-script = ExtResource("6_iexl7")
+texture_normal = ExtResource("5_7fkl7")
+script = ExtResource("6_j5snn")
 description = "Load game"
 script_name = "LoadGame"
 
 [node name="BtnDialogSpeed" type="TextureButton" parent="Box"]
 layout_mode = 2
-texture_normal = ExtResource("7_mjnfg")
-script = ExtResource("8_rke7o")
-btn_states = [ExtResource("7_mjnfg"), ExtResource("9_cvj70"), ExtResource("10_1imit")]
+texture_normal = ExtResource("7_ndyke")
+script = ExtResource("8_gmnbn")
+btn_states = [ExtResource("7_ndyke"), ExtResource("9_ulngd"), ExtResource("10_wg861")]
 description = "Text speed"
 script_name = "TextSpeed"
 
 [node name="BtnSoundSettings" type="TextureButton" parent="Box"]
 layout_mode = 2
-texture_normal = ExtResource("11_f877x")
-script = ExtResource("12_obb3k")
+texture_normal = ExtResource("11_r4y30")
+script = ExtResource("12_oyvc5")
 description = "Sound settings"
 script_name = "SoundSettings"
 
 [node name="BtnDialogAuto" type="TextureButton" parent="Box"]
 layout_mode = 2
-texture_normal = ExtResource("13_xgluj")
-script = ExtResource("14_1c7oa")
-btn_states = [ExtResource("13_xgluj"), ExtResource("15_u0i6x")]
+texture_normal = ExtResource("13_3swc3")
+script = ExtResource("14_rqqj6")
+btn_states = [ExtResource("13_3swc3"), ExtResource("15_nv7me")]
 description = "Continue mode"
 script_name = "ContinueMode"
 
 [node name="BtnDialogHistory" type="TextureButton" parent="Box"]
 layout_mode = 2
-texture_normal = ExtResource("16_bxts8")
-script = ExtResource("17_ypw72")
+texture_normal = ExtResource("16_byuj8")
+script = ExtResource("17_yw1nt")
 description = "History"
 script_name = "History"
 
 [node name="BtnQuit" type="TextureButton" parent="Box"]
 layout_mode = 2
-texture_normal = ExtResource("18_ttw5i")
-script = ExtResource("19_w0yfk")
+texture_normal = ExtResource("18_4odl6")
+script = ExtResource("19_q71lk")
 description = "Quit"
 script_name = "Quit"

@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dp1reakbo8f2v" path="res://game/rooms/palisade_2/hotspots/palisade_gate/hotspot_palisade_gate.tscn" id="5_8qf5u"]
 [ext_resource type="PackedScene" uid="uid://lsebe080daj7" path="res://game/rooms/palisade_2/hotspots/courtyard_gate/hotspot_courtyard_gate.tscn" id="6_pwv8h"]
 [ext_resource type="PackedScene" uid="uid://fjerv8yxcux4" path="res://game/rooms/palisade_2/hotspots/main_house_entrance/hotspot_main_house_entrance.tscn" id="7_0gkee"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="7_3savx"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="7_3savx"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_ngp37"]
 vertices = PackedVector2Array(758, -118, 865, 55, 859, 216, -929, 213, -927, -121)

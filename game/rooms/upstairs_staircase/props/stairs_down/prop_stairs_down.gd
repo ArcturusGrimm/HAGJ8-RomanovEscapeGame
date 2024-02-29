@@ -11,9 +11,12 @@ func _on_click() -> void:
 	# Replace the call to E.command_fallback() to implement your code.
 	# E.g. you can make the character walk to the Prop and then say
 	# something:
-	await C.player.walk_to_clicked()
-	await C.player.face_clicked()
-	E.goto_room('StaircaseLanding1')
+	if Globals.OlgaPiano:
+		await C.player.walk_to_clicked()
+		await C.player.face_clicked()
+		E.goto_room('StaircaseLanding1')
+	else:
+		await C.player.say("I can't go downstairs while that guard is watching. If only I could distract him...")
 
 
 # When the node is right clicked

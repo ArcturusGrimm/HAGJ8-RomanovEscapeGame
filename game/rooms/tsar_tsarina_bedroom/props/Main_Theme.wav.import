@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bf38i4xy68yel"
-path="res://.godot/imported/Main_Theme-Second_Version.wav-9094ed7c96fbde879f249f8b5a2950d9.sample"
+path="res://.godot/imported/Main_Theme.wav-0820dd2af39720fd45dc165eac93d2bc.sample"
 
 [deps]
 
-source_file="res://music/Main_Theme-Second_Version.wav"
-dest_files=["res://.godot/imported/Main_Theme-Second_Version.wav-9094ed7c96fbde879f249f8b5a2950d9.sample"]
+source_file="res://game/rooms/tsar_tsarina_bedroom/props/Main_Theme.wav"
+dest_files=["res://.godot/imported/Main_Theme.wav-0820dd2af39720fd45dc165eac93d2bc.sample"]
 
 [params]
 

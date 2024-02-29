@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="8_drvep"]
 [ext_resource type="PackedScene" uid="uid://dpgseyrme2c0r" path="res://game/rooms/kitchen/props/door_wc_staircase/prop_door_wc_staircase.tscn" id="9_4b3mq"]
 [ext_resource type="PackedScene" uid="uid://2a385r8p0uqu" path="res://game/rooms/kitchen/props/china_cabinet/prop_china_cabinet.tscn" id="10_i7far"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/Nikolai/character_Nikolai.tscn" id="12_ckish"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="12_ckish"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_asohk"]
 vertices = PackedVector2Array(440, 171, 716, 169, 921, 328, 930, 512, 249, 408, 217, 285, 205, 95, 341, 82, 203, 149, -246, 297, -17, 166, -217, 157, -438, 178, -934, 515, -281, 424, -901, 324, -735, 174, -362, 90, -242, 88)

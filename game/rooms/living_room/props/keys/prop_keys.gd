@@ -11,25 +11,19 @@ func _on_click() -> void:
 	# Replace the call to E.command_fallback() to implement your code.
 	# E.g. you can make the character walk to the Prop and then say
 	# something:
-	await C.player.say("Nikolai: My dear family, what is our situation?")
-	await C.player.say("Tatiana: Trupp and the other servants have made arrangements to leave the building with a British officer. Maria has managed to secure safe passage with a man she has managed to woo in the guard. It's just up to us to get ourselves out. ")
-	await C.player.say("Nikolai: Are the guards unsuspicious?")
-	await C.player.say("Olga: They are more relaxed this evening. Most likely drunk too. The Commandant is off with the red guard. I imagine his absence is related to the gunfire outside. ")
-	await C.player.say("Nikolai: It most likely is, we must make our escape before he returns.")
-	await C.player.say("Anastasia: Alexi needs his medicine,, before we go. I think the guards keep it on the other side of the house, maybe in one of the water closets by the staircase.")
-	await C.player.say("Nikolai: We will take everything we need out of here with us. That being said, our contact with the British is going to want the Commandant’s documents as well, we can not leave without them.")
-	await C.player.say("Alexi: That’s right dad!")
-	await C.player.say("Nikolai: Let’s not waste anymore time then. Let us make use of the chaos tonight and secure our freedom from these dogs. Ura!")
+	await C.player.walk_to_clicked()
+	await C.player.face_clicked()
+	await C.player.say("Now we can get outside!")
+	Globals.CommandantKey = true
 
 
 # When the node is right clicked
 func _on_right_click() -> void:
 	# Replace the call to E.command_fallback() to implement your code.
-	
 	# E.g. you can make the character walk to the Prop and then say
 	# something:
 	await C.player.face_clicked()
-	await C.player.say("Our makeshift planning table. Ah, the memnories...")
+	await C.player.say("Those look like the keys the guards use to lock the outside doors")
 
 
 # When the node is middle clicked

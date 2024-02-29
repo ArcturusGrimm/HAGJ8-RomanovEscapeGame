@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ca1se8chuw38g"]
+[gd_scene load_steps=15 format=3 uid="uid://ca1se8chuw38g"]
 
 [ext_resource type="Script" path="res://game/rooms/living_room/room_living_room.gd" id="1_dln1y"]
 [ext_resource type="PackedScene" uid="uid://ca8b8nxaxqkoh" path="res://game/rooms/living_room/walkable_areas/floor/walkable_area_floor.tscn" id="2_1sptt"]
@@ -10,7 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://c48firkfrv6yw" path="res://Sprites/Props/furniture/DoorFront View.png" id="7_0sany"]
 [ext_resource type="PackedScene" uid="uid://lrx27dwr8l4w" path="res://game/rooms/living_room/props/couch/prop_couch.tscn" id="8_hj3cd"]
 [ext_resource type="Texture2D" uid="uid://wh8hkqwxwmmi" path="res://Sprites/Props/furniture/couch.png" id="9_relll"]
+[ext_resource type="PackedScene" uid="uid://b0fg8sqwgob1n" path="res://game/rooms/living_room/props/keys/prop_keys.tscn" id="11_a7ti4"]
 [ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="11_gbkog"]
+[ext_resource type="Texture2D" uid="uid://dhke36o4m7hne" path="res://Sprites/Props/Hero Props/Keys.png" id="12_yn2lg"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_dtvc7"]
 vertices = PackedVector2Array(26, 249, 754, 229, 929, 383, 933, 515, -907, 519, -906, 387, -601, 112, -29, 110)
@@ -61,6 +63,14 @@ scale = Vector2(0.32, 0.32)
 texture = ExtResource("9_relll")
 walk_to_point = Vector2(-78.125, 768.75)
 interaction_polygon = PackedVector2Array(-715.625, -193.75, 721.875, -184.375, 950, 140.625, 868.75, 512.5, -831.25, 528.125, -968.75, 178.125)
+
+[node name="Keys" parent="Props" instance=ExtResource("11_a7ti4")]
+position = Vector2(1290, 593)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("12_yn2lg")
+link_to_item = "CommandantKeys"
+walk_to_point = Vector2(-516.667, 1758.33)
+interaction_polygon = PackedVector2Array(-333.334, -541.667, 316.666, -683.333, 691.666, 691.667, -633.334, 483.333)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

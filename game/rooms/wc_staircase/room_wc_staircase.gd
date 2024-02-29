@@ -10,7 +10,8 @@ var state: Data = load('res://game/rooms/wc_staircase/room_wc_staircase.tres')
 # What happens when Popochiu loads the room. At this point the room is in the
 # tree but it is not visible
 func _on_room_entered() -> void:
-	pass
+	if Globals.OlgaPiano:
+		C.Guard.disable()
 
 
 # What happens when the room changing transition finishes. At this point the room

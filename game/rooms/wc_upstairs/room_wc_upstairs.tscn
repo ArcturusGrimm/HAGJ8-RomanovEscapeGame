@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bo3osk0o2yydd"]
+[gd_scene load_steps=13 format=3 uid="uid://bo3osk0o2yydd"]
 
 [ext_resource type="Script" path="res://game/rooms/wc_upstairs/room_wc_upstairs.gd" id="1_32g7o"]
 [ext_resource type="PackedScene" uid="uid://50g2vvpels44" path="res://game/rooms/wc_upstairs/props/background/prop_background.tscn" id="2_jsdhg"]
@@ -8,12 +8,14 @@
 [ext_resource type="Texture2D" uid="uid://bprvggesb4tu2" path="res://Sprites/Props/furniture/Toilet.png" id="5_q2nkc"]
 [ext_resource type="PackedScene" uid="uid://bf4tkhrj8ww0d" path="res://game/rooms/wc_upstairs/props/door_wc_stairs/prop_door_wc_stairs.tscn" id="7_qhfie"]
 [ext_resource type="Texture2D" uid="uid://c48firkfrv6yw" path="res://Sprites/Props/furniture/DoorFront View.png" id="8_clb0w"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="9_nbcdh"]
+[ext_resource type="PackedScene" uid="uid://bnj1x2rwkvhlu" path="res://game/rooms/wc_upstairs/props/medicine_cabinet/prop_medicine_cabinet.tscn" id="9_4gx6g"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="9_nbcdh"]
+[ext_resource type="Texture2D" uid="uid://1p0eltilpsro" path="res://Sprites/Props/furniture/CabinetTwo.png" id="10_ldpnx"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_ctatv"]
-vertices = PackedVector2Array(-356, 82, -196, 82, -210, 226, -438, 171, 452, 180, 713, 167, 923, 331, 933, 526, -930, 525, 177, 216, 187, 91, 344, 82, -738, 174, -928, 332)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7, 8, 9), PackedInt32Array(9, 10, 11, 4), PackedInt32Array(2, 9, 8), PackedInt32Array(12, 3, 2, 8, 13)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-356, 82, -196, 82, -210, 226, 177, 216, 187, 91, 344, 82, 452, 180, 713, 167, 923, 331, 933, 526, -930, 525, -928, 332, -738, 174, -438, 171)])
+vertices = PackedVector2Array(452, 180, 713, 167, 923, 331, 933, 526, -930, 525, 245, 204, 79, 211, -290, 228, -738, 174, -438, 171, -928, 332)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5), PackedInt32Array(6, 5, 4, 7), PackedInt32Array(8, 9, 7, 4, 10)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-290, 228, 79, 211, 245, 204, 452, 180, 713, 167, 923, 331, 933, 526, -930, 525, -928, 332, -738, 174, -438, 171)])
 source_geometry_group_name = &"navigation_polygon_source_group"
 agent_radius = 0.0
 
@@ -39,7 +41,7 @@ texture = ExtResource("3_lffd7")
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Toilet" parent="Props" instance=ExtResource("4_eqh1e")]
-position = Vector2(961, 521)
+position = Vector2(793, 521)
 scale = Vector2(0.400002, 0.400002)
 texture = ExtResource("5_q2nkc")
 walk_to_point = Vector2(-59.9995, 679.996)
@@ -53,6 +55,13 @@ texture = ExtResource("8_clb0w")
 baseline = 718
 walk_to_point = Vector2(469.643, 534.209)
 interaction_polygon = PackedVector2Array(-332.143, -239.473, 419.643, -240.789, 430.357, 736.84, -332.143, 730.261)
+
+[node name="MedicineCabinet" parent="Props" instance=ExtResource("9_4gx6g")]
+position = Vector2(1174, 435)
+scale = Vector2(0.479999, 0.479999)
+texture = ExtResource("10_ldpnx")
+walk_to_point = Vector2(114.583, 712.502)
+interaction_polygon = PackedVector2Array(-356.251, -481.251, 406.251, -456.251, 387.501, 489.584, -291.667, 475.001)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

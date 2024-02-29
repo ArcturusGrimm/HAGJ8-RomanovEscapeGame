@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dlxigmkj2wgs5"]
+[gd_scene load_steps=5 format=3 uid="uid://b0i4burucdk5m"]
 
 [ext_resource type="Theme" uid="uid://dpequqav4rjaf" path="" id="1_ukw28"]
-[ext_resource type="Script" path="res://game/graphic_interface/components/dialog_menu/dialog_menu.gd" id="2_ov75k"]
-[ext_resource type="PackedScene" uid="uid://c3nv705icfxtm" path="res://game/graphic_interface/components/dialog_menu/dialog_menu_option.tscn" id="3_kirt7"]
+[ext_resource type="Script" path="res://game/graphic_interface/components/dialog_menu/dialog_menu.gd" id="2_e5mhn"]
+[ext_resource type="PackedScene" uid="uid://u7rfueyw8xeh" path="res://game/graphic_interface/components/dialog_menu/dialog_menu_option.tscn" id="3_bo23l"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b2awe"]
 bg_color = Color(0, 0, 0.6, 1)
@@ -17,8 +17,8 @@ grow_horizontal = 2
 grow_vertical = 0
 theme = ExtResource("1_ukw28")
 theme_override_styles/panel = SubResource("StyleBoxFlat_b2awe")
-script = ExtResource("2_ov75k")
-option_scene = ExtResource("3_kirt7")
+script = ExtResource("2_e5mhn")
+option_scene = ExtResource("3_bo23l")
 used = Color(0.698039, 0.698039, 0.698039, 1)
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
@@ -32,14 +32,14 @@ size_flags_horizontal = 3
 size_flags_vertical = 8
 theme_override_constants/separation = 1
 
-[node name="DialogOption" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_kirt7")]
+[node name="DialogOption" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_bo23l")]
 layout_mode = 2
 text = "Option 1"
 
-[node name="DialogOption2" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_kirt7")]
+[node name="DialogOption2" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_bo23l")]
 layout_mode = 2
 text = "Option 2"
 
-[node name="DialogOption3" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_kirt7")]
+[node name="DialogOption3" parent="ScrollContainer/DialogOptionsContainer" instance=ExtResource("3_bo23l")]
 layout_mode = 2
 text = "Option 3"

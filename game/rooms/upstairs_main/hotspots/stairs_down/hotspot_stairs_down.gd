@@ -11,9 +11,12 @@ func _on_click() -> void:
 	# Replace the call to E.command_fallback() with your code.
 	# E.g. Make the player-controlled character walk to the Hotspot and then say
 	# something:
-	await C.player.walk_to_clicked()
-	await C.player.face_clicked()
-	E.goto_room('FrontEntrance')
+	if Globals.OlgaPiano:
+		await C.player.walk_to_clicked()
+		await C.player.face_clicked()
+		E.goto_room('FrontEntrance')
+	else:
+		await C.player.say("I can't go downstairs while that guard is watching. If only I could distract him...")
 
 
 # When the node is right clicked

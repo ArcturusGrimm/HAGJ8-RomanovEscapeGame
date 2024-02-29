@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bsfrmuln6ublg" path="res://Sprites/environment/Cellar.jpg" id="3_ssd0u"]
 [ext_resource type="PackedScene" uid="uid://2k53otlrnktq" path="res://game/rooms/cellar/props/palisade_keys/prop_palisade_keys.tscn" id="6_ttjn4"]
 [ext_resource type="Texture2D" uid="uid://dhke36o4m7hne" path="res://Sprites/Props/Hero Props/Keys.png" id="7_oghit"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="9_akns8"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="9_akns8"]
 [ext_resource type="PackedScene" uid="uid://tt4s1griippg" path="res://game/rooms/cellar/props/door_shed/prop_door_shed.tscn" id="10_ux83r"]
 [ext_resource type="Texture2D" uid="uid://cd2d6a4if65v3" path="res://Sprites/Props/furniture/DoorFront_View_Ext.png" id="11_oct1r"]
 

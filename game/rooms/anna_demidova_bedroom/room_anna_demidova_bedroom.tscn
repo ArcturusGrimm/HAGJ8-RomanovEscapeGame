@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://8fiikq8xpush"]
+[gd_scene load_steps=22 format=3 uid="uid://8fiikq8xpush"]
 
 [ext_resource type="Script" path="res://game/rooms/anna_demidova_bedroom/room_anna_demidova_bedroom.gd" id="1_e0u4s"]
 [ext_resource type="PackedScene" uid="uid://bitkht85svrct" path="res://game/rooms/anna_demidova_bedroom/walkable_areas/floor/walkable_area_floor.tscn" id="2_i3ig8"]
@@ -11,7 +11,15 @@
 [ext_resource type="Texture2D" uid="uid://do3vmd0sg8i2m" path="res://Sprites/Props/furniture/BedfrontTwo.png" id="8_7w4bm"]
 [ext_resource type="PackedScene" uid="uid://cktix2kx53wxt" path="res://game/rooms/anna_demidova_bedroom/props/cabinet/prop_cabinet.tscn" id="9_b73wr"]
 [ext_resource type="Texture2D" uid="uid://1p0eltilpsro" path="res://Sprites/Props/furniture/CabinetTwo.png" id="10_0lfgb"]
+[ext_resource type="PackedScene" uid="uid://dqmyj7t3vidmh" path="res://game/rooms/anna_demidova_bedroom/props/alexi/prop_alexi.tscn" id="11_oto7c"]
 [ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="12_f82e3"]
+[ext_resource type="Texture2D" uid="uid://cmve8fcdlp6rl" path="res://Sprites/Characters/Alexei/Alexei.png" id="12_yosvc"]
+[ext_resource type="PackedScene" uid="uid://dbs41t76hclac" path="res://game/rooms/anna_demidova_bedroom/props/anastasia/prop_anastasia.tscn" id="13_mwog5"]
+[ext_resource type="Texture2D" uid="uid://b1q7wo7r32hyc" path="res://Sprites/Characters/Anatasia/Anatasia.png" id="14_c2swu"]
+[ext_resource type="PackedScene" uid="uid://bpsafqpgmgejm" path="res://game/rooms/anna_demidova_bedroom/props/olga/prop_olga.tscn" id="15_tim2m"]
+[ext_resource type="Texture2D" uid="uid://fux5rrdj8iyj" path="res://Sprites/Characters/Olga/Olga.png" id="16_vyjhw"]
+[ext_resource type="PackedScene" uid="uid://c2ic2a64p1rln" path="res://game/rooms/anna_demidova_bedroom/props/tatiana/prop_tatiana.tscn" id="17_5ym83"]
+[ext_resource type="Texture2D" uid="uid://h4v1ayf8rcp7" path="res://Sprites/Characters/Tatiana/Tatiana.png" id="18_hhk4x"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_mbx62"]
 vertices = PackedVector2Array(461, 64, 540, 52, 926, 356, 945, 530, 179, 356, 145, 167, -193, 43, 431, 35, -161, 162, -193, 87, -945, 514, -910, 324, -179, 359, -602, 89)
@@ -65,6 +73,30 @@ scale = Vector2(0.48, 0.48)
 texture = ExtResource("10_0lfgb")
 walk_to_point = Vector2(70.8333, 675)
 interaction_polygon = PackedVector2Array(-339.583, -466.667, 427.083, -470.833, 402.083, 500, -300, 504.167)
+
+[node name="Alexi" parent="Props" instance=ExtResource("11_oto7c")]
+position = Vector2(1067, 682)
+scale = Vector2(0.452059, 0.40891)
+texture = ExtResource("12_yosvc")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Anastasia" parent="Props" instance=ExtResource("13_mwog5")]
+position = Vector2(640, 671)
+scale = Vector2(0.589633, 0.503861)
+texture = ExtResource("14_c2swu")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Olga" parent="Props" instance=ExtResource("15_tim2m")]
+position = Vector2(486, 652)
+scale = Vector2(0.549935, 0.479219)
+texture = ExtResource("16_vyjhw")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Tatiana" parent="Props" instance=ExtResource("17_5ym83")]
+position = Vector2(1248, 612)
+scale = Vector2(-0.558014, 0.513041)
+texture = ExtResource("18_hhk4x")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

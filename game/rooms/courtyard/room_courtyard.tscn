@@ -1,8 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwptbbgdpxhy7"]
+[gd_scene load_steps=12 format=3 uid="uid://d4n0gbru7dbhd"]
 
 [ext_resource type="Script" path="res://game/rooms/courtyard/room_courtyard.gd" id="1_5eay2"]
-[ext_resource type="PackedScene" uid="uid://rx138m2o74p4" path="res://game/rooms/courtyard/props/background/prop_background.tscn" id="2_pqafk"]
+[ext_resource type="PackedScene" uid="uid://ch1y6fex43q78" path="res://game/rooms/courtyard/walkable_areas/floor/walkable_area_floor.tscn" id="2_eira6"]
+[ext_resource type="PackedScene" uid="uid://csh8iorf2uixs" path="res://game/rooms/courtyard/props/background/prop_background.tscn" id="2_pqafk"]
 [ext_resource type="Texture2D" uid="uid://cuh1jhj3388q1" path="res://Sprites/environment/CourtYard.jpg" id="3_eafiy"]
+[ext_resource type="PackedScene" uid="uid://vvnoxr5fnojj" path="res://game/rooms/courtyard/props/door_two_story_lodge/prop_door_two_story_lodge.tscn" id="4_4uq0g"]
+[ext_resource type="PackedScene" uid="uid://dhckcuep5ar5w" path="res://game/rooms/courtyard/hotspots/courtyard_gate/hotspot_courtyard_gate.tscn" id="4_ak50s"]
+[ext_resource type="PackedScene" uid="uid://w7fcnemmmkwm" path="res://game/rooms/courtyard/hotspots/main_house/hotspot_main_house.tscn" id="5_a5hub"]
+[ext_resource type="Texture2D" uid="uid://cd2d6a4if65v3" path="res://Sprites/Props/furniture/DoorFront_View_Ext.png" id="5_hddew"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="7_dwy5l"]
+[ext_resource type="PackedScene" uid="uid://byu5iyvvtfxfm" path="res://game/rooms/courtyard/hotspots/shed/hotspot_shed.tscn" id="8_a6tjx"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_r1hov"]
+vertices = PackedVector2Array(705, -164, 848, -45, 695, 152, -812, 152, -698, -173)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-698, -173, 705, -164, 848, -45, 695, 152, -812, 152)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
 
 [node name="RoomCourtyard" type="Node2D"]
 script = ExtResource("1_5eay2")
@@ -11,6 +25,13 @@ popochiu_placeholder = null
 
 [node name="WalkableAreas" type="Node2D" parent="."]
 
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_eira6")]
+position = Vector2(991, 902)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_r1hov")
+
 [node name="Props" type="Node2D" parent="."]
 
 [node name="Background" parent="Props" instance=ExtResource("2_pqafk")]
@@ -18,10 +39,34 @@ position = Vector2(960, 540)
 texture = ExtResource("3_eafiy")
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
+[node name="DoorTwoStoryLodge" parent="Props" instance=ExtResource("4_4uq0g")]
+position = Vector2(453, 338)
+scale = Vector2(0.400001, 0.520001)
+texture = ExtResource("5_hddew")
+walk_to_point = Vector2(24.9998, 809.613)
+interaction_polygon = PackedVector2Array(-312.5, -219.23, 414.999, -232.692, 414.999, 728.844, -322.5, 699.998)
+
 [node name="Hotspots" type="Node2D" parent="."]
+
+[node name="CourtyardGate" parent="Hotspots" instance=ExtResource("4_ak50s")]
+position = Vector2(891, 416)
+walk_to_point = Vector2(48, 347)
+interaction_polygon = PackedVector2Array(-184, -215, -4, -306, 170, -284, 165, 227, -175, 220)
+
+[node name="MainHouse" parent="Hotspots" instance=ExtResource("5_a5hub")]
+position = Vector2(1797, 602)
+walk_to_point = Vector2(-76, 221)
+interaction_polygon = PackedVector2Array(-25, -432, 37, -366, 42, 250, -46, 160)
+
+[node name="Shed" parent="Hotspots" instance=ExtResource("8_a6tjx")]
+position = Vector2(387, 975)
+interaction_polygon = PackedVector2Array(-180, -77, 270, -82, 317, 75, -244, 91)
 
 [node name="Regions" type="Node2D" parent="."]
 
 [node name="Markers" type="Node2D" parent="."]
 
 [node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="Characters" instance=ExtResource("7_dwy5l")]
+position = Vector2(1631, 859)

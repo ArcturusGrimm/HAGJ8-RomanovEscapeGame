@@ -1,0 +1,80 @@
+[gd_scene load_steps=14 format=3 uid="uid://civitbg0fssa7"]
+
+[ext_resource type="Script" path="res://game/rooms/shed/room_shed.gd" id="1_3pjmq"]
+[ext_resource type="PackedScene" uid="uid://cxduqyn1kvp0d" path="res://game/rooms/shed/props/background/prop_background.tscn" id="2_ueg4b"]
+[ext_resource type="PackedScene" uid="uid://om7ipf1u1nfh" path="res://game/rooms/shed/walkable_areas/floor/walkable_area_floor.tscn" id="2_v261x"]
+[ext_resource type="Texture2D" uid="uid://2l0p2wfa4mty" path="res://Sprites/environment/shed.jpg" id="3_ucytr"]
+[ext_resource type="PackedScene" uid="uid://848irtx0ay7i" path="res://game/rooms/shed/props/toolbox/prop_toolbox.tscn" id="4_yo242"]
+[ext_resource type="PackedScene" uid="uid://d0ovx5be6lpie" path="res://game/rooms/shed/props/door_courtyard/prop_door_courtyard.tscn" id="5_gqwsx"]
+[ext_resource type="Texture2D" uid="uid://ccysdldxw00x1" path="res://Sprites/Props/Hero Props/ToolBox.png" id="5_qisfp"]
+[ext_resource type="PackedScene" uid="uid://clyvtydk57rcr" path="res://game/rooms/shed/props/door_cellar/prop_door_cellar.tscn" id="6_3k2x1"]
+[ext_resource type="PackedScene" uid="uid://b0x16hyndb3fk" path="res://game/rooms/shed/hotspots/window/hotspot_window.tscn" id="6_46ne3"]
+[ext_resource type="Texture2D" uid="uid://cd2d6a4if65v3" path="res://Sprites/Props/furniture/DoorFront_View_Ext.png" id="6_xie6b"]
+[ext_resource type="Texture2D" uid="uid://dh2tcnagpiecl" path="res://Sprites/Props/furniture/DoorSideExt.png" id="8_5sw3e"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="9_1751b"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_gbp6o"]
+vertices = PackedVector2Array(835, 168, -766, 160, -579, -142, 467, -144)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-579, -142, 467, -144, 835, 168, -766, 160)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
+
+[node name="RoomShed" type="Node2D"]
+script = ExtResource("1_3pjmq")
+script_name = "Shed"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_v261x")]
+position = Vector2(853, 868)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_gbp6o")
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Background" parent="Props" instance=ExtResource("2_ueg4b")]
+position = Vector2(960, 540)
+texture = ExtResource("3_ucytr")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Toolbox" parent="Props" instance=ExtResource("4_yo242")]
+position = Vector2(834, 710)
+scale = Vector2(0.200001, 0.200001)
+texture = ExtResource("5_qisfp")
+walk_to_point = Vector2(0, 599.996)
+interaction_polygon = PackedVector2Array(-624.996, -279.998, 534.997, -289.998, 719.996, 399.998, -624.996, 399.998)
+
+[node name="DoorCourtyard" parent="Props" instance=ExtResource("5_gqwsx")]
+modulate = Color(1, 1, 1, 0.623529)
+position = Vector2(1420, 617)
+scale = Vector2(0.52, 0.64)
+texture = ExtResource("6_xie6b")
+walk_to_point = Vector2(-230.769, 575)
+interaction_polygon = PackedVector2Array(-321.154, -225, 403.846, -237.5, 419.231, 717.188, -315.385, 700)
+
+[node name="DoorCellar" parent="Props" instance=ExtResource("6_3k2x1")]
+position = Vector2(124, 407)
+scale = Vector2(-0.64, 0.695652)
+texture = ExtResource("8_5sw3e")
+walk_to_point = Vector2(-237.5, 602.313)
+interaction_polygon = PackedVector2Array(-217.188, -150.938, 175, -297.563, 175, 690, -196.875, 470.063)
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Window" parent="Hotspots" instance=ExtResource("6_46ne3")]
+position = Vector2(805, 249)
+walk_to_point = Vector2(-8, 513)
+interaction_polygon = PackedVector2Array(-136, -190, 149, -190, 155, 194, -126, 189)
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="Characters" instance=ExtResource("9_1751b")]
+position = Vector2(1104, 1026)

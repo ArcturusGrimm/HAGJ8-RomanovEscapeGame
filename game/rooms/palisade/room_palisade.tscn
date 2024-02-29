@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://vd2c4ed67afc"]
+
+[ext_resource type="Script" path="res://game/rooms/palisade/room_palisade.gd" id="1_hm8ax"]
+[ext_resource type="PackedScene" uid="uid://boeywhr7din7" path="res://game/rooms/palisade/walkable_areas/floor/walkable_area_floor.tscn" id="2_s7b3f"]
+[ext_resource type="PackedScene" uid="uid://dt7htu1ltgvi" path="res://game/rooms/palisade/props/background/prop_background.tscn" id="2_ukxfy"]
+[ext_resource type="Texture2D" uid="uid://2yromj4x16wy" path="res://Sprites/environment/palisade.jpg" id="3_t1it3"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="5_6icng"]
+[ext_resource type="PackedScene" uid="uid://ccuud88f8fxq" path="res://game/rooms/palisade/hotspots/gate/hotspot_gate.tscn" id="5_gvo82"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_wetdf"]
+vertices = PackedVector2Array(43, -74, 1985, -67, 2138, 254, -1607, 261, -399, -56, -1610, -71, -103, -298, -378, -305)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(3, 5, 4), PackedInt32Array(6, 0, 4, 7)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-1610, -71, -399, -56, -378, -305, -103, -298, 43, -74, 1985, -67, 2138, 254, -1607, 261)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
+
+[node name="RoomPalisade" type="Node2D"]
+script = ExtResource("1_hm8ax")
+script_name = "Palisade"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_s7b3f")]
+position = Vector2(703, 775)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_wetdf")
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Background" parent="Props" instance=ExtResource("2_ukxfy")]
+position = Vector2(960, 0)
+texture = ExtResource("3_t1it3")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Gate" parent="Hotspots" instance=ExtResource("5_gvo82")]
+position = Vector2(1598, 628)
+walk_to_point = Vector2(-67, 237)
+interaction_polygon = PackedVector2Array(23, -365, 313, -395, 299, 409, -17, 427)
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="Characters" instance=ExtResource("5_6icng")]
+position = Vector2(490, 608)

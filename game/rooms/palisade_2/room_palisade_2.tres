@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cvwdydwlvosbc"]
+
+[ext_resource type="Script" path="res://game/rooms/palisade_2/room_palisade_2_state.gd" id="1_mdj5f"]
+
+[resource]
+resource_name = "Palisade2"
+script = ExtResource("1_mdj5f")
+script_name = "Palisade2"
+scene = "res://game/rooms/palisade_2/room_palisade_2.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

@@ -13,7 +13,8 @@ func _on_click() -> void:
 	# something:
 	await C.player.walk_to_clicked()
 	await C.player.face_clicked()
-	E.goto_room('Courtyard')
+	await C.player.say("They've barred this door to the courtyard from the otherside")
+	#E.goto_room('Courtyard')
 
 
 # When the node is right clicked

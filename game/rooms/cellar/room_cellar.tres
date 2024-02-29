@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://76dcsiuaapq7"]
+
+[ext_resource type="Script" path="res://game/rooms/cellar/room_cellar_state.gd" id="1_qxomo"]
+
+[resource]
+resource_name = "Cellar"
+script = ExtResource("1_qxomo")
+script_name = "Cellar"
+scene = "res://game/rooms/cellar/room_cellar.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

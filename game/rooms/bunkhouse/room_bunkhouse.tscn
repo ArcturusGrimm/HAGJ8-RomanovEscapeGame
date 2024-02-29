@@ -1,0 +1,74 @@
+[gd_scene load_steps=13 format=3 uid="uid://cj80vdxmqorvv"]
+
+[ext_resource type="Script" path="res://game/rooms/bunkhouse/room_bunkhouse.gd" id="1_d876p"]
+[ext_resource type="PackedScene" uid="uid://yjsgl21hrbba" path="res://game/rooms/bunkhouse/walkable_areas/floor/walkable_area_floor.tscn" id="2_3edly"]
+[ext_resource type="PackedScene" uid="uid://dqsnhmy32c310" path="res://game/rooms/bunkhouse/props/background/prop_background.tscn" id="2_b3jb6"]
+[ext_resource type="Texture2D" uid="uid://d3ttuo37pgjhr" path="res://Sprites/environment/DiningRoom.jpg" id="3_vjorb"]
+[ext_resource type="PackedScene" uid="uid://ct5n8cfwqfel0" path="res://game/rooms/bunkhouse/props/door_courtyard/prop_door_courtyard.tscn" id="4_n124x"]
+[ext_resource type="PackedScene" uid="uid://cu3dyicu8ef55" path="res://game/rooms/bunkhouse/props/door_closet/prop_door_closet.tscn" id="5_34s7x"]
+[ext_resource type="Texture2D" uid="uid://cd2d6a4if65v3" path="res://Sprites/Props/furniture/DoorFront_View_Ext.png" id="6_qw7i4"]
+[ext_resource type="PackedScene" uid="uid://1kb1bycop0l8" path="res://game/rooms/bunkhouse/props/door_guard_room/prop_door_guard_room.tscn" id="6_xle2w"]
+[ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="8_4yuc6"]
+[ext_resource type="Texture2D" uid="uid://c48firkfrv6yw" path="res://Sprites/Props/furniture/DoorFront View.png" id="10_vmeul"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="11_ebugs"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ywyb3"]
+vertices = PackedVector2Array(525, -134, 877, 225, -824, 232, -836, 149, -602, -144)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-602, -144, 525, -134, 877, 225, -824, 232, -836, 149)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
+
+[node name="RoomBunkhouse" type="Node2D"]
+script = ExtResource("1_d876p")
+script_name = "Bunkhouse"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_3edly")]
+position = Vector2(970, 825)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_ywyb3")
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Background" parent="Props" instance=ExtResource("2_b3jb6")]
+position = Vector2(960, 540)
+texture = ExtResource("3_vjorb")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="DoorCourtyard" parent="Props" instance=ExtResource("4_n124x")]
+modulate = Color(1, 1, 1, 0.717647)
+position = Vector2(1326, 652)
+scale = Vector2(0.480002, 0.600002)
+texture = ExtResource("6_qw7i4")
+walk_to_point = Vector2(-297.915, 586.664)
+interaction_polygon = PackedVector2Array(-297.915, -216.666, 395.831, -216.666, 410.415, 714.997, -302.082, 706.664)
+
+[node name="DoorCloset" parent="Props" instance=ExtResource("5_34s7x")]
+position = Vector2(1726, 395)
+scale = Vector2(0.68, 0.72)
+texture = ExtResource("8_4yuc6")
+walk_to_point = Vector2(-251.471, 565.278)
+interaction_polygon = PackedVector2Array(-192.647, -151.389, 167.647, -286.111, 139.706, 698.611, -200, 459.722)
+
+[node name="DoorGuardRoom" parent="Props" instance=ExtResource("6_xle2w")]
+position = Vector2(532, 233)
+scale = Vector2(0.480001, 0.600001)
+texture = ExtResource("10_vmeul")
+walk_to_point = Vector2(50.0001, 824.998)
+interaction_polygon = PackedVector2Array(-333.333, -240, 414.583, -236.666, 400, 706.665, -308.333, 711.665)
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="Characters" instance=ExtResource("11_ebugs")]
+position = Vector2(1243, 1039)

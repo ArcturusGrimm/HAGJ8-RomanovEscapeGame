@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch1y6fex43q78"]
+
+[ext_resource type="Script" path="res://game/rooms/courtyard/walkable_areas/floor/walkable_area_floor.gd" id="1_ph72d"]
+
+[node name="Floor" type="Node2D"]
+script = ExtResource("1_ph72d")
+script_name = "Floor"
+description = "Floor"

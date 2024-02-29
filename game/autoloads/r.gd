@@ -23,8 +23,14 @@ const PRMessHall1 := preload('res://game/rooms/mess_hall_1/room_mess_hall_1.gd')
 const PRUpstairsMain := preload('res://game/rooms/upstairs_main/room_upstairs_main.gd')
 const PRStorageRoom1 := preload('res://game/rooms/storage_room_1/room_storage_room_1.gd')
 const PRBathroomDownstairs := preload('res://game/rooms/bathroom_downstairs/room_bathroom_downstairs.gd')
-const PRCourtyard := preload('res://game/rooms/courtyard/room_courtyard.gd')
 const PRUpstairsStaircase := preload('res://game/rooms/upstairs_staircase/room_upstairs_staircase.gd')
+const PRCourtyard := preload('res://game/rooms/courtyard/room_courtyard.gd')
+const PRShed := preload('res://game/rooms/shed/room_shed.gd')
+const PRCellar := preload('res://game/rooms/cellar/room_cellar.gd')
+const PRBunkhouse := preload('res://game/rooms/bunkhouse/room_bunkhouse.gd')
+const PRCloset := preload('res://game/rooms/closet/room_closet.gd')
+const PRPalisade := preload('res://game/rooms/palisade/room_palisade.gd')
+const PRPalisade2 := preload('res://game/rooms/palisade_2/room_palisade_2.gd')
 # ---- classes
 
 # nodes ----
@@ -49,8 +55,14 @@ var MessHall1: PRMessHall1 : get = get_MessHall1
 var UpstairsMain: PRUpstairsMain : get = get_UpstairsMain
 var StorageRoom1: PRStorageRoom1 : get = get_StorageRoom1
 var BathroomDownstairs: PRBathroomDownstairs : get = get_BathroomDownstairs
-var Courtyard: PRCourtyard : get = get_Courtyard
 var UpstairsStaircase: PRUpstairsStaircase : get = get_UpstairsStaircase
+var Courtyard: PRCourtyard : get = get_Courtyard
+var Shed: PRShed : get = get_Shed
+var Cellar: PRCellar : get = get_Cellar
+var Bunkhouse: PRBunkhouse : get = get_Bunkhouse
+var Closet: PRCloset : get = get_Closet
+var Palisade: PRPalisade : get = get_Palisade
+var Palisade2: PRPalisade2 : get = get_Palisade2
 # ---- nodes
 
 # functions ----
@@ -75,7 +87,13 @@ func get_MessHall1() -> PRMessHall1: return super.get_runtime_room('MessHall1')
 func get_UpstairsMain() -> PRUpstairsMain: return super.get_runtime_room('UpstairsMain')
 func get_StorageRoom1() -> PRStorageRoom1: return super.get_runtime_room('StorageRoom1')
 func get_BathroomDownstairs() -> PRBathroomDownstairs: return super.get_runtime_room('BathroomDownstairs')
-func get_Courtyard() -> PRCourtyard: return super.get_runtime_room('Courtyard')
 func get_UpstairsStaircase() -> PRUpstairsStaircase: return super.get_runtime_room('UpstairsStaircase')
+func get_Courtyard() -> PRCourtyard: return super.get_runtime_room('Courtyard')
+func get_Shed() -> PRShed: return super.get_runtime_room('Shed')
+func get_Cellar() -> PRCellar: return super.get_runtime_room('Cellar')
+func get_Bunkhouse() -> PRBunkhouse: return super.get_runtime_room('Bunkhouse')
+func get_Closet() -> PRCloset: return super.get_runtime_room('Closet')
+func get_Palisade() -> PRPalisade: return super.get_runtime_room('Palisade')
+func get_Palisade2() -> PRPalisade2: return super.get_runtime_room('Palisade2')
 # ---- functions
 

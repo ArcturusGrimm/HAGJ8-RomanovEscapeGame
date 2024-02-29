@@ -1,0 +1,63 @@
+[gd_scene load_steps=10 format=3 uid="uid://bwjqfu8hcvbss"]
+
+[ext_resource type="Script" path="res://game/rooms/palisade_2/room_palisade_2.gd" id="1_646b1"]
+[ext_resource type="PackedScene" uid="uid://blvvyntmouq2l" path="res://game/rooms/palisade_2/walkable_areas/floor/walkable_area_floor.tscn" id="2_8ntde"]
+[ext_resource type="PackedScene" uid="uid://h4chgvj3gcyx" path="res://game/rooms/palisade_2/props/background/prop_background.tscn" id="2_q5bat"]
+[ext_resource type="Texture2D" uid="uid://2yromj4x16wy" path="res://Sprites/environment/palisade.jpg" id="3_p7v5d"]
+[ext_resource type="PackedScene" uid="uid://dp1reakbo8f2v" path="res://game/rooms/palisade_2/hotspots/palisade_gate/hotspot_palisade_gate.tscn" id="5_8qf5u"]
+[ext_resource type="PackedScene" uid="uid://lsebe080daj7" path="res://game/rooms/palisade_2/hotspots/courtyard_gate/hotspot_courtyard_gate.tscn" id="6_pwv8h"]
+[ext_resource type="PackedScene" uid="uid://fjerv8yxcux4" path="res://game/rooms/palisade_2/hotspots/main_house_entrance/hotspot_main_house_entrance.tscn" id="7_0gkee"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="7_3savx"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ngp37"]
+vertices = PackedVector2Array(758, -118, 865, 55, 859, 216, -929, 213, -927, -121)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-927, -121, 758, -118, 865, 55, 859, 216, -929, 213)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
+
+[node name="RoomPalisade2" type="Node2D"]
+script = ExtResource("1_646b1")
+script_name = "Palisade2"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_8ntde")]
+position = Vector2(981, 820)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_ngp37")
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Background" parent="Props" instance=ExtResource("2_q5bat")]
+texture = ExtResource("3_p7v5d")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="PalisadeGate" parent="Hotspots" instance=ExtResource("5_8qf5u")]
+position = Vector2(1804, 615)
+walk_to_point = Vector2(-125, 238)
+interaction_polygon = PackedVector2Array(-44, -452, 109, -444, 111, 183, -49, 57)
+
+[node name="CourtyardGate" parent="Hotspots" instance=ExtResource("6_pwv8h")]
+position = Vector2(1320, 423)
+walk_to_point = Vector2(-45, 355)
+interaction_polygon = PackedVector2Array(-86, -228, 0, -287, 80, -218, 91, 228, -78, 228)
+
+[node name="MainHouseEntrance" parent="Hotspots" instance=ExtResource("7_0gkee")]
+position = Vector2(122, 540)
+walk_to_point = Vector2(208, 312)
+interaction_polygon = PackedVector2Array(-105, -351, 117, -348, 157, 501, -97, 493)
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="Characters" instance=ExtResource("7_3savx")]
+position = Vector2(287, 906)

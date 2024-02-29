@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=3 uid="uid://fkdxa42bccxw"]
+
+[ext_resource type="Script" path="res://game/rooms/cellar/room_cellar.gd" id="1_7otb1"]
+[ext_resource type="PackedScene" uid="uid://8pf3xiuo4q4d" path="res://game/rooms/cellar/walkable_areas/floor/walkable_area_floor.tscn" id="2_o8y1g"]
+[ext_resource type="PackedScene" uid="uid://dwuqutmpfx3qq" path="res://game/rooms/cellar/props/background/prop_background.tscn" id="2_s8hx1"]
+[ext_resource type="Texture2D" uid="uid://bsfrmuln6ublg" path="res://Sprites/environment/Cellar.jpg" id="3_ssd0u"]
+[ext_resource type="PackedScene" uid="uid://2k53otlrnktq" path="res://game/rooms/cellar/props/palisade_keys/prop_palisade_keys.tscn" id="6_ttjn4"]
+[ext_resource type="Texture2D" uid="uid://dhke36o4m7hne" path="res://Sprites/Props/Hero Props/Keys.png" id="7_oghit"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="9_akns8"]
+[ext_resource type="PackedScene" uid="uid://tt4s1griippg" path="res://game/rooms/cellar/props/door_shed/prop_door_shed.tscn" id="10_ux83r"]
+[ext_resource type="Texture2D" uid="uid://cd2d6a4if65v3" path="res://Sprites/Props/furniture/DoorFront_View_Ext.png" id="11_oct1r"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ytuh0"]
+vertices = PackedVector2Array(281, -158, 703, 154, -626, 143, -305, -169)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-305, -169, 281, -158, 703, 154, -626, 143)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
+
+[node name="RoomCellar" type="Node2D"]
+script = ExtResource("1_7otb1")
+script_name = "Cellar"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_o8y1g")]
+position = Vector2(1074, 913)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_ytuh0")
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Background" parent="Props" instance=ExtResource("2_s8hx1")]
+position = Vector2(960, 540)
+texture = ExtResource("3_ssd0u")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="DoorShed" parent="Props" instance=ExtResource("10_ux83r")]
+modulate = Color(1, 1, 1, 0.678431)
+position = Vector2(1584, 567)
+scale = Vector2(0.559999, 0.72)
+texture = ExtResource("11_oct1r")
+walk_to_point = Vector2(-430.358, 598.611)
+interaction_polygon = PackedVector2Array(-325.001, -237.5, 412.501, -237.5, 417.858, 726.389, -319.644, 719.444)
+
+[node name="PalisadeKeys" parent="Props" instance=ExtResource("6_ttjn4")]
+position = Vector2(1048, 387)
+scale = Vector2(0.120001, 0.120001)
+texture = ExtResource("7_oghit")
+walk_to_point = Vector2(54.9997, 2189.99)
+interaction_polygon = PackedVector2Array(-394.998, -549.997, 299.999, -604.996, 569.997, 674.996, -609.996, 594.996)
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="Characters" instance=ExtResource("9_akns8")]
+position = Vector2(1200, 1032)

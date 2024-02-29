@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fux5rrdj8iyj"
-path="res://.godot/imported/Olga.png-63057500e97371f1a6594365766f0542.ctex"
+uid="uid://587xtklyok3o"
+path="res://.godot/imported/NikWalkFR.png-30e61079f835e39bf28f419fd1937240.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/nikolaisprites/Olga.png"
-dest_files=["res://.godot/imported/Olga.png-63057500e97371f1a6594365766f0542.ctex"]
+source_file="res://game/characters/nikolai/animations/NikWalkFR.png"
+dest_files=["res://.godot/imported/NikWalkFR.png-30e61079f835e39bf28f419fd1937240.ctex"]
 
 [params]
 

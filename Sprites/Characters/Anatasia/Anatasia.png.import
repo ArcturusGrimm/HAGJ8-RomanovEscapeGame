@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h4v1ayf8rcp7"
-path="res://.godot/imported/Tatiana.png-b3049486989b8fcb663b29001c74478a.ctex"
+uid="uid://b1q7wo7r32hyc"
+path="res://.godot/imported/Anatasia.png-940b115834cb7ce629fd659ed61001a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/nikolaisprites/Tatiana.png"
-dest_files=["res://.godot/imported/Tatiana.png-b3049486989b8fcb663b29001c74478a.ctex"]
+source_file="res://Sprites/Characters/Anatasia/Anatasia.png"
+dest_files=["res://.godot/imported/Anatasia.png-940b115834cb7ce629fd659ed61001a3.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clrwie02kcn5g"
-path="res://.godot/imported/Guard3.png-989cf73ae1e35074346e56c1c83ff9a3.ctex"
+uid="uid://cmve8fcdlp6rl"
+path="res://.godot/imported/Alexei.png-d3abef22ca585bbe991895e6c964624a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/nikolaisprites/Guard3.png"
-dest_files=["res://.godot/imported/Guard3.png-989cf73ae1e35074346e56c1c83ff9a3.ctex"]
+source_file="res://Sprites/Characters/Alexei/Alexei.png"
+dest_files=["res://.godot/imported/Alexei.png-d3abef22ca585bbe991895e6c964624a.ctex"]
 
 [params]
 

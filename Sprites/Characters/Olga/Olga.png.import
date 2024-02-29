@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmejqbuxm77j5"
-path="res://.godot/imported/Guard2.png-dd3cb9c6e27473bcaa12a69caf281603.ctex"
+uid="uid://fux5rrdj8iyj"
+path="res://.godot/imported/Olga.png-63e236c335f3a431f472b07347773908.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/nikolaisprites/Guard2.png"
-dest_files=["res://.godot/imported/Guard2.png-dd3cb9c6e27473bcaa12a69caf281603.ctex"]
+source_file="res://Sprites/Characters/Olga/Olga.png"
+dest_files=["res://.godot/imported/Olga.png-63e236c335f3a431f472b07347773908.ctex"]
 
 [params]
 

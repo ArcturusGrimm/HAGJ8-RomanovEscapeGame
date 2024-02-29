@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chxdek16mfrd5"
-path="res://.godot/imported/Guard6.png-dfca94fe7844f0e48381d6e5ea25ec26.ctex"
+uid="uid://bk424skot61q4"
+path="res://.godot/imported/Nikolai.png-4adb523b007304adb8599be207d1d9ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/nikolaisprites/Guard6.png"
-dest_files=["res://.godot/imported/Guard6.png-dfca94fe7844f0e48381d6e5ea25ec26.ctex"]
+source_file="res://game/characters/nikolai/animations/Nikolai.png"
+dest_files=["res://.godot/imported/Nikolai.png-4adb523b007304adb8599be207d1d9ed.ctex"]
 
 [params]
 

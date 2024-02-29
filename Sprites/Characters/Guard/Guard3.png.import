@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://587xtklyok3o"
-path="res://.godot/imported/NikWalkFR.png-68ab0ee74fc014b394b97bcb8a3742d7.ctex"
+uid="uid://clrwie02kcn5g"
+path="res://.godot/imported/Guard3.png-2919eec32f5f31bd9b6ca3b916eab535.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/nikolaisprites/NikWalkFR.png"
-dest_files=["res://.godot/imported/NikWalkFR.png-68ab0ee74fc014b394b97bcb8a3742d7.ctex"]
+source_file="res://Sprites/Characters/Guard/Guard3.png"
+dest_files=["res://.godot/imported/Guard3.png-2919eec32f5f31bd9b6ca3b916eab535.ctex"]
 
 [params]
 

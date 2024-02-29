@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnscfp73pexkd"
-path="res://.godot/imported/Nikolai(5).png-fbe90d87c6c8598146167985089429b9.ctex"
+uid="uid://dt5lokcf1dypo"
+path="res://.godot/imported/Nikolai(1).png-cc8af7d87c399871bd86c65ddfe23f97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/characters/nikolai/animations/Nikolai(5).png"
-dest_files=["res://.godot/imported/Nikolai(5).png-fbe90d87c6c8598146167985089429b9.ctex"]
+source_file="res://Sprites/Characters/Nikolai/Nikolai(1).png"
+dest_files=["res://.godot/imported/Nikolai(1).png-cc8af7d87c399871bd86c65ddfe23f97.ctex"]
 
 [params]
 

@@ -14,7 +14,8 @@ func _on_click() -> void:
 	await C.player.walk_to_clicked()
 	await C.player.face_clicked()
 	await C.player.say("The key to the gate!")
-	I.PalisadeKeys.add()
+	Globals.PalisadeKey = true
+	disable()
 
 
 # When the node is right clicked

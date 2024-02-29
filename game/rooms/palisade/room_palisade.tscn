@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://vd2c4ed67afc"]
+[gd_scene load_steps=10 format=3 uid="uid://vd2c4ed67afc"]
 
 [ext_resource type="Script" path="res://game/rooms/palisade/room_palisade.gd" id="1_hm8ax"]
 [ext_resource type="PackedScene" uid="uid://boeywhr7din7" path="res://game/rooms/palisade/walkable_areas/floor/walkable_area_floor.tscn" id="2_s7b3f"]
 [ext_resource type="PackedScene" uid="uid://dt7htu1ltgvi" path="res://game/rooms/palisade/props/background/prop_background.tscn" id="2_ukxfy"]
 [ext_resource type="Texture2D" uid="uid://2yromj4x16wy" path="res://Sprites/environment/palisade.jpg" id="3_t1it3"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="5_6icng"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="5_6icng"]
 [ext_resource type="PackedScene" uid="uid://ccuud88f8fxq" path="res://game/rooms/palisade/hotspots/gate/hotspot_gate.tscn" id="5_gvo82"]
+[ext_resource type="PackedScene" uid="uid://cmwgartv45qdo" path="res://game/rooms/palisade/props/front_door/prop_front_door.tscn" id="5_rjc7d"]
+[ext_resource type="Texture2D" uid="uid://cd2d6a4if65v3" path="res://Sprites/Props/furniture/DoorFront_View_Ext.png" id="6_8qcws"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_wetdf"]
 vertices = PackedVector2Array(43, -74, 1985, -67, 2138, 254, -1607, 261, -399, -56, -1610, -71, -103, -298, -378, -305)
@@ -34,6 +36,13 @@ navigation_polygon = SubResource("NavigationPolygon_wetdf")
 position = Vector2(960, 0)
 texture = ExtResource("3_t1it3")
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="FrontDoor" parent="Props" instance=ExtResource("5_rjc7d")]
+position = Vector2(426, 138)
+scale = Vector2(0.440001, 0.480001)
+texture = ExtResource("6_8qcws")
+walk_to_point = Vector2(106.818, 897.916)
+interaction_polygon = PackedVector2Array(-304.545, -193.75, 404.544, -235.416, 415.908, 704.166, -288.636, 722.916)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

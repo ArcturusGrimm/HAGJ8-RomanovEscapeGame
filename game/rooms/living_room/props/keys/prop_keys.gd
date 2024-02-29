@@ -15,6 +15,7 @@ func _on_click() -> void:
 	await C.player.face_clicked()
 	await C.player.say("Now we can get outside!")
 	Globals.CommandantKey = true
+	disable()
 
 
 # When the node is right clicked

@@ -13,7 +13,7 @@ func _on_click() -> void:
 	# something:
 	await C.player.walk_to_clicked()
 	await C.player.face_clicked()
-	await E.goto_room('MessHall2')
+	await E.goto_room('FrontEntrance')
 
 
 # When the node is right clicked

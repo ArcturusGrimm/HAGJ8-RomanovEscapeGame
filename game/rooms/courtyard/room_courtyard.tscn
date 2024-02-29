@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dhckcuep5ar5w" path="res://game/rooms/courtyard/hotspots/courtyard_gate/hotspot_courtyard_gate.tscn" id="4_ak50s"]
 [ext_resource type="PackedScene" uid="uid://w7fcnemmmkwm" path="res://game/rooms/courtyard/hotspots/main_house/hotspot_main_house.tscn" id="5_a5hub"]
 [ext_resource type="Texture2D" uid="uid://cd2d6a4if65v3" path="res://Sprites/Props/furniture/DoorFront_View_Ext.png" id="5_hddew"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="7_dwy5l"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="7_dwy5l"]
 [ext_resource type="PackedScene" uid="uid://byu5iyvvtfxfm" path="res://game/rooms/courtyard/hotspots/shed/hotspot_shed.tscn" id="8_a6tjx"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_r1hov"]
@@ -43,8 +43,9 @@ interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 position = Vector2(453, 338)
 scale = Vector2(0.400001, 0.520001)
 texture = ExtResource("5_hddew")
+clickable = true
 walk_to_point = Vector2(24.9998, 809.613)
-interaction_polygon = PackedVector2Array(-312.5, -219.23, 414.999, -232.692, 414.999, 728.844, -322.5, 699.998)
+interaction_polygon = PackedVector2Array(-312.5, -219.23, 437.499, -255.769, 414.999, 728.844, -329.999, 699.999)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

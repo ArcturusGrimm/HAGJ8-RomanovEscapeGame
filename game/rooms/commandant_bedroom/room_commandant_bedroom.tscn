@@ -83,6 +83,7 @@ modulate = Color(1, 1, 1, 0.513726)
 position = Vector2(1469, 738)
 scale = Vector2(0.400002, 0.470004)
 texture = ExtResource("16_ir4kv")
+baseline = 712
 walk_to_point = Vector2(-434.997, 531.91)
 interaction_polygon = PackedVector2Array(-317.498, -225.53, 412.497, -229.785, 412.497, 689.356, -319.998, 704.249)
 

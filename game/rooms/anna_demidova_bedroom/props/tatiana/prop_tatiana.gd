@@ -16,7 +16,8 @@ func _on_click() -> void:
 	I.Tatiana.add()
 	if Globals.familyMembers < 4:
 		Globals.familyMembers += 1
-	else:
+		print(Globals.familyMembers)
+	if Globals.familyMembers == 4:
 		Globals.CollectedFamily = true
 
 

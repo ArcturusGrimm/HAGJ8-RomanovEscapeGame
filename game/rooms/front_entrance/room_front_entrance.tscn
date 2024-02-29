@@ -53,7 +53,8 @@ interaction_polygon = PackedVector2Array(-205.264, -147.369, 168.422, -301.317, 
 position = Vector2(1091, 493)
 scale = Vector2(0.520002, 0.589335)
 texture = ExtResource("11_543na")
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+walk_to_point = Vector2(-11.5384, 797.509)
+interaction_polygon = PackedVector2Array(-323.076, -218.891, 409.614, -215.497, 394.229, 710.971, -311.537, 716.061)
 
 [node name="DoorMessHall1" parent="Props" instance=ExtResource("5_clx5i")]
 modulate = Color(1, 1, 1, 0.576471)

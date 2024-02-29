@@ -9,13 +9,16 @@ extends PopochiuProp
 # When the node is clicked
 func _on_click() -> void:
 	# Replace the call to E.command_fallback() to implement your code.
-	E.command_fallback()
 	# E.g. you can make the character walk to the Prop and then say
 	# something:
-#	await C.player.walk_to_clicked()
-#	await C.player.face_clicked()
-#	await C.player.say("Not picking that up!")
-
+	await C.player.walk_to_clicked()
+	await C.player.face_clicked()
+	await C.player.face_clicked()
+	await C.player.say("A letter penned in my daughter Olga's hand. It reads:")
+	await C.player.say("Mighty Tsar, fear not. The bear is far away catching fish.")
+	await C.player.say("Its cubs will not bother our gathering.")
+	await C.player.say("Follow the path, cross right, and then immediatly left.")
+	await C.player.say("There we will unite.")
 
 # When the node is right clicked
 func _on_right_click() -> void:

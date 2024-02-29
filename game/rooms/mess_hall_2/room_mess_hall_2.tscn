@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bkdkpc4vhpmwk" path="res://Sprites/Props/furniture/chair.png" id="12_4pxg3"]
 [ext_resource type="PackedScene" uid="uid://bagksmv7gr336" path="res://game/rooms/mess_hall_2/props/chair_2/prop_chair_2.tscn" id="13_e071i"]
 [ext_resource type="PackedScene" uid="uid://b3wf6tf5objun" path="res://game/rooms/mess_hall_2/hotspots/secret_door_main/hotspot_secret_door_main.tscn" id="15_ihci8"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="16_7e6nk"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="16_7e6nk"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_1xk6a"]
 vertices = PackedVector2Array(395, 301, 303, 132, 573, 142, 909, 516, -600, 128, -375, 128, -465, 320, -670, 255, -929, 501)
@@ -49,7 +49,8 @@ interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 position = Vector2(1801, 502)
 scale = Vector2(0.64, 0.64)
 texture = ExtResource("5_xq18b")
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+walk_to_point = Vector2(-346.875, 540.625)
+interaction_polygon = PackedVector2Array(-218.75, -148.438, 125, -270.313, 145.313, 679.688, -195.313, 457.813)
 
 [node name="DoorWindow" parent="Props" instance=ExtResource("6_e28a3")]
 position = Vector2(1344, 315)

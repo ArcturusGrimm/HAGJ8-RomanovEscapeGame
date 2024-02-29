@@ -50,7 +50,7 @@ interaction_polygon = PackedVector2Array(-325.001, -237.5, 412.501, -237.5, 417.
 position = Vector2(1048, 387)
 scale = Vector2(0.120001, 0.120001)
 texture = ExtResource("7_oghit")
-walk_to_point = Vector2(54.9997, 2189.99)
+walk_to_point = Vector2(74.9997, 3799.97)
 interaction_polygon = PackedVector2Array(-394.998, -549.997, 299.999, -604.996, 569.997, 674.996, -609.996, 594.996)
 
 [node name="Hotspots" type="Node2D" parent="."]
@@ -62,4 +62,4 @@ interaction_polygon = PackedVector2Array(-394.998, -549.997, 299.999, -604.996, 
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="CharacterNikolai *" parent="Characters" instance=ExtResource("9_akns8")]
-position = Vector2(1200, 1032)
+position = Vector2(1312, 1048)

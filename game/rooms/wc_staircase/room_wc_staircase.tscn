@@ -54,6 +54,7 @@ interaction_polygon = PackedVector2Array(-315, -226.347, 422.5, -236.924, 422.5,
 position = Vector2(770, 674)
 scale = Vector2(1.2, 1.96)
 texture = ExtResource("8_sygya")
+baseline = 50
 walk_to_point = Vector2(-12.5, 82.653)
 interaction_polygon = PackedVector2Array(-185, -73.9796, 130.833, -82.653, 200, -56.6327, 203.333, 52.551, -206.666, 52.551, -206.666, -56.6327)
 
@@ -91,4 +92,4 @@ interaction_polygon = PackedVector2Array(-217.188, -147.059, 167.188, -308.824, 
 position = Vector2(1417, 778)
 
 [node name="CharacterGuard *" parent="Characters" instance=ExtResource("14_5eap2")]
-position = Vector2(769, 594)
+position = Vector2(769, 756)

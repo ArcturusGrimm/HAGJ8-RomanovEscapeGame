@@ -1,6 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2h7wxwo0cknx"]
+[gd_scene load_steps=13 format=3 uid="uid://d2h7wxwo0cknx"]
 
 [ext_resource type="Script" path="res://game/rooms/staircase_landing_2/room_staircase_landing_2.gd" id="1_g7ir5"]
+[ext_resource type="PackedScene" uid="uid://bga15pvfd8hl" path="res://game/rooms/staircase_landing_2/walkable_areas/floor/walkable_area_floor.tscn" id="2_54syx"]
+[ext_resource type="PackedScene" uid="uid://6o8a8b3fhsh" path="res://game/rooms/staircase_landing_2/props/background/prop_background.tscn" id="2_bfsir"]
+[ext_resource type="Texture2D" uid="uid://b7vv2y8vs7wj5" path="res://Sprites/environment/Main_Stairs.jpg" id="3_v5x7u"]
+[ext_resource type="PackedScene" uid="uid://bln40pb7t318p" path="res://game/rooms/staircase_landing_2/props/door_storage/prop_door_storage.tscn" id="4_nk8fa"]
+[ext_resource type="PackedScene" uid="uid://cuu1gq755ck7p" path="res://game/rooms/staircase_landing_2/props/door_bathroom/prop_door_bathroom.tscn" id="5_1dypj"]
+[ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="5_6k05n"]
+[ext_resource type="PackedScene" uid="uid://cel12gmxrmvsw" path="res://game/rooms/staircase_landing_2/props/door_courtyard/prop_door_courtyard.tscn" id="6_m58sh"]
+[ext_resource type="Texture2D" uid="uid://c48firkfrv6yw" path="res://Sprites/Props/furniture/DoorFront View.png" id="7_8ppxa"]
+[ext_resource type="Texture2D" uid="uid://dh2tcnagpiecl" path="res://Sprites/Props/furniture/DoorSideExt.png" id="9_n3rbl"]
+[ext_resource type="PackedScene" uid="uid://01vy8k6qja5" path="res://game/rooms/staircase_landing_2/hotspots/stairs/hotspot_stairs.tscn" id="11_sj75y"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_n7aa5"]
+vertices = PackedVector2Array(793, 36, -689, 54, -580, -60, 685, -60)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-580, -60, 685, -60, 793, 36, -689, 54)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
 
 [node name="RoomStaircaseLanding2" type="Node2D"]
 script = ExtResource("1_g7ir5")
@@ -9,9 +26,47 @@ popochiu_placeholder = null
 
 [node name="WalkableAreas" type="Node2D" parent="."]
 
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_54syx")]
+position = Vector2(897, 1001)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_n7aa5")
+
 [node name="Props" type="Node2D" parent="."]
 
+[node name="Background" parent="Props" instance=ExtResource("2_bfsir")]
+position = Vector2(960, 540)
+texture = ExtResource("3_v5x7u")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="DoorStorage" parent="Props" instance=ExtResource("4_nk8fa")]
+position = Vector2(1771, 522)
+scale = Vector2(0.799998, 0.799998)
+texture = ExtResource("5_6k05n")
+walk_to_point = Vector2(-232.501, 570.002)
+interaction_polygon = PackedVector2Array(-211.251, -153.75, 172.5, -297.501, 170, 706.252, -215.001, 461.251)
+
+[node name="DoorBathroom" parent="Props" instance=ExtResource("5_1dypj")]
+modulate = Color(1, 1, 1, 0.623529)
+position = Vector2(1237, 568)
+scale = Vector2(0.599998, 0.712499)
+texture = ExtResource("7_8ppxa")
+walk_to_point = Vector2(-285.001, 572.632)
+interaction_polygon = PackedVector2Array(-320.001, -221.755, 418.335, -225.965, 390.002, 711.58, -298.334, 704.562)
+
+[node name="DoorCourtyard" parent="Props" instance=ExtResource("6_m58sh")]
+position = Vector2(120, 580)
+scale = Vector2(-0.622403, 0.756526)
+texture = ExtResource("9_n3rbl")
+walk_to_point = Vector2(-404.883, 536.664)
+interaction_polygon = PackedVector2Array(-210.475, -152.011, 154.241, -292.125, 146.208, 680.744, -199.228, 463.963)
+
 [node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Stairs" parent="Hotspots" instance=ExtResource("11_sj75y")]
+position = Vector2(587, 469)
+interaction_polygon = PackedVector2Array(-580, -289, 24, -148, 307, 114, 282, 452, -207, 162, -318, 14, -580, -138)
 
 [node name="Regions" type="Node2D" parent="."]
 

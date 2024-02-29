@@ -1,9 +1,9 @@
 @tool
 extends PopochiuRoom
 
-const Data := preload('room_courtyard_staircase_state.gd')
+const Data := preload('room_bathroom_downstairs_state.gd')
 
-var state: Data = load('res://game/rooms/courtyard_staircase/room_courtyard_staircase.tres')
+var state: Data = load('res://game/rooms/bathroom_downstairs/room_bathroom_downstairs.tres')
 
 
 #region Virtual ####################################################################################

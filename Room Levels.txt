@@ -36,16 +36,17 @@ Downstairs Two-Story Lodge
 
 Downstairs Main House
 	bathroom downstairs
-	courtyard staircase
 	empty interior
 	foyer
-	front entrance
+	front entrance-
 	guard room 1
 	guard room 2
 	interior 1
-	living room
-	mess hall 1
-	mess hall 2
+	living room-
+	mess hall 1-
+	mess hall 2-
 	side entrance
 	storage closet 1
 	storage room 1
+	staircase landing 1-
+	staircase landing 2-

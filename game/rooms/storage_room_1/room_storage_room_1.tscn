@@ -1,10 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://bwyuc1dtqa846"]
+[gd_scene load_steps=2 format=3 uid="uid://ci3kwnl1xpc4p"]
 
-[ext_resource type="Script" path="res://game/rooms/courtyard_staircase/room_courtyard_staircase.gd" id="1_8hwb7"]
+[ext_resource type="Script" path="res://game/rooms/storage_room_1/room_storage_room_1.gd" id="1_brqlj"]
 
-[node name="RoomCourtyardStaircase" type="Node2D"]
-script = ExtResource("1_8hwb7")
-script_name = "CourtyardStaircase"
+[node name="RoomStorageRoom1" type="Node2D"]
+script = ExtResource("1_brqlj")
+script_name = "StorageRoom1"
 popochiu_placeholder = null
 
 [node name="WalkableAreas" type="Node2D" parent="."]

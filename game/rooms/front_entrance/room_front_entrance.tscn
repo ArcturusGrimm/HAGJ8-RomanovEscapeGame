@@ -1,6 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://bm68y6a258tqa"]
+[gd_scene load_steps=14 format=3 uid="uid://bm68y6a258tqa"]
 
 [ext_resource type="Script" path="res://game/rooms/front_entrance/room_front_entrance.gd" id="1_xkdh1"]
+[ext_resource type="PackedScene" uid="uid://lldkyebjawcs" path="res://game/rooms/front_entrance/walkable_areas/floor/walkable_area_floor.tscn" id="2_4mwvk"]
+[ext_resource type="PackedScene" uid="uid://dkd1cxm2xbbhu" path="res://game/rooms/front_entrance/props/background/prop_background.tscn" id="2_vgxhs"]
+[ext_resource type="Texture2D" uid="uid://b7vv2y8vs7wj5" path="res://Sprites/environment/Main_Stairs.jpg" id="3_qgskw"]
+[ext_resource type="PackedScene" uid="uid://cc8c7d3m3wd7s" path="res://game/rooms/front_entrance/props/front_door/prop_front_door.tscn" id="4_ri4qr"]
+[ext_resource type="PackedScene" uid="uid://dwt42d3ulv4ru" path="res://game/rooms/front_entrance/hotspots/upstairs_main/hotspot_upstairs_main.tscn" id="5_b1lgu"]
+[ext_resource type="PackedScene" uid="uid://blvwp4pjmf7a" path="res://game/rooms/front_entrance/props/door_mess_hall_1/prop_door_mess_hall_1.tscn" id="5_clx5i"]
+[ext_resource type="Texture2D" uid="uid://dh2tcnagpiecl" path="res://Sprites/Props/furniture/DoorSideExt.png" id="5_d83me"]
+[ext_resource type="PackedScene" uid="uid://cxxodh4k50bgf" path="res://game/rooms/front_entrance/props/door_mess_hall_2/prop_door_mess_hall_2.tscn" id="6_qlssi"]
+[ext_resource type="Texture2D" uid="uid://c48firkfrv6yw" path="res://Sprites/Props/furniture/DoorFront View.png" id="7_kak5e"]
+[ext_resource type="PackedScene" uid="uid://dkf1lewkvws50" path="res://game/rooms/front_entrance/props/door_courtyard/prop_door_courtyard.tscn" id="10_m46su"]
+[ext_resource type="Texture2D" uid="uid://cd2d6a4if65v3" path="res://Sprites/Props/furniture/DoorFront_View_Ext.png" id="11_543na"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_23t1v"]
+vertices = PackedVector2Array(855, 67, -908, 65, -900, -60, 694, -75)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-900, -60, 694, -75, 855, 67, -908, 65)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
 
 [node name="RoomFrontEntrance" type="Node2D"]
 script = ExtResource("1_xkdh1")
@@ -9,9 +27,56 @@ popochiu_placeholder = null
 
 [node name="WalkableAreas" type="Node2D" parent="."]
 
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_4mwvk")]
+position = Vector2(926, 998)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_23t1v")
+
 [node name="Props" type="Node2D" parent="."]
 
+[node name="Background" parent="Props" instance=ExtResource("2_vgxhs")]
+position = Vector2(960, 540)
+texture = ExtResource("3_qgskw")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="FrontDoor" parent="Props" instance=ExtResource("4_ri4qr")]
+position = Vector2(1778, 546)
+scale = Vector2(0.759998, 0.759998)
+texture = ExtResource("5_d83me")
+walk_to_point = Vector2(-278.948, 526.318)
+interaction_polygon = PackedVector2Array(-205.264, -147.369, 168.422, -301.317, 163.158, 688.16, -205.264, 463.159)
+
+[node name="DoorCourtyard" parent="Props" instance=ExtResource("10_m46su")]
+position = Vector2(1091, 493)
+scale = Vector2(0.520002, 0.589335)
+texture = ExtResource("11_543na")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="DoorMessHall1" parent="Props" instance=ExtResource("5_clx5i")]
+modulate = Color(1, 1, 1, 0.576471)
+position = Vector2(223, 612)
+scale = Vector2(0.52, 0.649999)
+texture = ExtResource("7_kak5e")
+baseline = 723
+walk_to_point = Vector2(473.077, 623.078)
+interaction_polygon = PackedVector2Array(-325, -229.231, 425, -229.231, 403.846, 713.847, -300, 703.078)
+
+[node name="DoorMessHall2" parent="Props" instance=ExtResource("6_qlssi")]
+modulate = Color(1, 1, 1, 0.564706)
+position = Vector2(1377, 624)
+scale = Vector2(0.517074, 0.637073)
+texture = ExtResource("7_kak5e")
+baseline = 701
+walk_to_point = Vector2(-384.858, 598.048)
+interaction_polygon = PackedVector2Array(-309.434, -219.755, 427.405, -235.452, 408.065, 722.052, -309.434, 722.052)
+
 [node name="Hotspots" type="Node2D" parent="."]
+
+[node name="UpstairsMain" parent="Hotspots" instance=ExtResource("5_b1lgu")]
+position = Vector2(524, 475)
+interaction_polygon = PackedVector2Array(-525, -302, 45, -185, 371, 151, 348, 412, -519, -16)
 
 [node name="Regions" type="Node2D" parent="."]
 

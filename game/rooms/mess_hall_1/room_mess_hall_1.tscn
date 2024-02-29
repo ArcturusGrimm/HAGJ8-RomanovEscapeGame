@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://do3mu4slc5n1x"]
+[gd_scene load_steps=14 format=3 uid="uid://do3mu4slc5n1x"]
 
 [ext_resource type="Script" path="res://game/rooms/mess_hall_1/room_mess_hall_1.gd" id="1_5sraq"]
 [ext_resource type="PackedScene" uid="uid://cjwesrfgykaxt" path="res://game/rooms/mess_hall_1/walkable_areas/floor/walkable_area_floor.tscn" id="2_26ujm"]
@@ -10,11 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://tte0igu0bcpl" path="res://Sprites/Props/furniture/DoorSide.png" id="7_mh2cm"]
 [ext_resource type="PackedScene" uid="uid://brpct3cf5owhq" path="res://game/rooms/mess_hall_1/props/china_cabinet/prop_china_cabinet.tscn" id="8_oaagn"]
 [ext_resource type="Texture2D" uid="uid://4nu1x0upu0wt" path="res://Sprites/Props/furniture/ChinaCabinet.png" id="9_7rp3o"]
+[ext_resource type="Texture2D" uid="uid://mj5nuvaweaoq" path="res://Sprites/Props/furniture/table.png" id="10_qj8n7"]
+[ext_resource type="PackedScene" uid="uid://dgl61wdes8ykv" path="res://game/rooms/mess_hall_1/props/table/prop_table.tscn" id="11_e50ld"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_ycgbk"]
-vertices = PackedVector2Array(690, 175, 907, 367, 938, 517, -944, 526, -938, 315, -734, 165)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-734, 165, 690, 175, 907, 367, 938, 517, -944, 526, -938, 315)])
+vertices = PackedVector2Array(690, 175, 907, 367, 565, 362, 455, 240, -734, 165, -501, 242, -938, 315, -597, 376, -944, 526, 938, 517)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 0, 3, 5), PackedInt32Array(6, 4, 5, 7, 8), PackedInt32Array(2, 1, 9, 8, 7)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-734, 165, 690, 175, 907, 367, 938, 517, -944, 526, -938, 315), PackedVector2Array(-501, 242, -597, 376, 565, 362, 455, 240)])
 source_geometry_group_name = &"navigation_polygon_source_group"
 agent_radius = 0.0
 
@@ -39,15 +41,6 @@ position = Vector2(960, 540)
 texture = ExtResource("3_q67gx")
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
-[node name="DoorMessHall" parent="Props" instance=ExtResource("4_5tih8")]
-modulate = Color(1, 1, 1, 0.556863)
-position = Vector2(449, 646)
-scale = Vector2(0.480005, 0.600002)
-texture = ExtResource("5_d0l21")
-baseline = 721
-walk_to_point = Vector2(477.079, 526.665)
-interaction_polygon = PackedVector2Array(-327.08, -231.666, 416.663, -236.666, 441.662, 721.664, -327.08, 719.997)
-
 [node name="DoorFront" parent="Props" instance=ExtResource("5_0kswm")]
 position = Vector2(1814, 484)
 scale = Vector2(0.544697, 0.544697)
@@ -61,6 +54,21 @@ scale = Vector2(0.32, 0.32)
 texture = ExtResource("9_7rp3o")
 walk_to_point = Vector2(65.6246, 1040.63)
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Table" parent="Props" instance=ExtResource("11_e50ld")]
+position = Vector2(974, 708)
+scale = Vector2(0.913241, 0.473241)
+texture = ExtResource("10_qj8n7")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="DoorMessHall" parent="Props" instance=ExtResource("4_5tih8")]
+modulate = Color(1, 1, 1, 0.556863)
+position = Vector2(449, 646)
+scale = Vector2(0.480005, 0.600002)
+texture = ExtResource("5_d0l21")
+baseline = 721
+walk_to_point = Vector2(477.079, 526.665)
+interaction_polygon = PackedVector2Array(-327.08, -231.666, 416.663, -236.666, 441.662, 721.664, -327.08, 719.997)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

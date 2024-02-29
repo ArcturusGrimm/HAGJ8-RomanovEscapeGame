@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://djjtelds5u0nt" path="res://Sprites/nikolaisprites/NikWalkFL.png" id="7_fb058"]
 [ext_resource type="Texture2D" uid="uid://587xtklyok3o" path="res://Sprites/nikolaisprites/NikWalkFR.png" id="8_cx6ys"]
 
-[sub_resource type="Animation" id="Animation_6m8pd"]
-resource_name = "walk"
+[sub_resource type="Animation" id="Animation_2ghd5"]
+length = 0.001
 
 [sub_resource type="Animation" id="Animation_ujuvt"]
 resource_name = "idle"
@@ -27,8 +27,8 @@ tracks/0/keys = {
 "values": []
 }
 
-[sub_resource type="Animation" id="Animation_2ghd5"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_6m8pd"]
+resource_name = "walk"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tlut5"]
 _data = {
@@ -94,19 +94,16 @@ cursor = 8
 interaction_polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 
 [node name="InteractionPolygon" type="CollisionPolygon2D" parent="."]
-visible = false
 polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 
 [node name="ScalingPolygon" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)
 
 [node name="BaselineHelper" type="Line2D" parent="."]
-visible = false
 points = PackedVector2Array(-10000, 0, 10000, 0)
 width = 1.0
 
 [node name="WalkToHelper" type="Marker2D" parent="."]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="WalkToHelper"]
 offset_left = -2.5
@@ -127,7 +124,6 @@ scale = Vector2(0.52, 0.52)
 texture = SubResource("AnimatedTexture_1ebpu")
 
 [node name="DialogPos" type="Marker2D" parent="."]
-visible = false
 position = Vector2(0, -546)
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]

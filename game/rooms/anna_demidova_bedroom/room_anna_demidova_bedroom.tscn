@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://8fiikq8xpush"]
+[gd_scene load_steps=14 format=3 uid="uid://8fiikq8xpush"]
 
 [ext_resource type="Script" path="res://game/rooms/anna_demidova_bedroom/room_anna_demidova_bedroom.gd" id="1_e0u4s"]
 [ext_resource type="PackedScene" uid="uid://bitkht85svrct" path="res://game/rooms/anna_demidova_bedroom/walkable_areas/floor/walkable_area_floor.tscn" id="2_i3ig8"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://do3vmd0sg8i2m" path="res://Sprites/Props/furniture/BedfrontTwo.png" id="8_7w4bm"]
 [ext_resource type="PackedScene" uid="uid://cktix2kx53wxt" path="res://game/rooms/anna_demidova_bedroom/props/cabinet/prop_cabinet.tscn" id="9_b73wr"]
 [ext_resource type="Texture2D" uid="uid://1p0eltilpsro" path="res://Sprites/Props/furniture/CabinetTwo.png" id="10_0lfgb"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="12_f82e3"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_mbx62"]
 vertices = PackedVector2Array(461, 64, 540, 52, 926, 356, 945, 530, 179, 356, 145, 167, -193, 43, 431, 35, -161, 162, -193, 87, -945, 514, -910, 324, -179, 359, -602, 89)
@@ -72,5 +73,8 @@ interaction_polygon = PackedVector2Array(-93, -196, 106, -195, 104, 183, -86, 18
 [node name="Regions" type="Node2D" parent="."]
 
 [node name="Markers" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="." instance=ExtResource("12_f82e3")]
+position = Vector2(1630, 1049)
 
 [node name="Characters" type="Node2D" parent="."]

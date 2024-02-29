@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3jqa0tsjpqit"]
+[gd_scene load_steps=2 format=3 uid="uid://s8q5r5unpwul"]
 
 [ext_resource type="Script" path="res://game/rooms/upstairs_staircase/props/stairs_down/prop_stairs_down.gd" id="1_l7ytc"]
 

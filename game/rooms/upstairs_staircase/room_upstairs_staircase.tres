@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dxvyrga6fhr7p"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bg2bg60n608dw"]
 
 [ext_resource type="Script" path="res://game/rooms/upstairs_staircase/room_upstairs_staircase_state.gd" id="1_hkcrr"]
 

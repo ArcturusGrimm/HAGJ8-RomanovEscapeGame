@@ -7,7 +7,6 @@ const PRGrandDuchessBedroom := preload('res://game/rooms/grand_duchess_bedroom/r
 const PRDiningRoom := preload('res://game/rooms/dining_room/room_dining_room.gd')
 const PRAnnaDemidovaBedroom := preload('res://game/rooms/anna_demidova_bedroom/room_anna_demidova_bedroom.gd')
 const PRSalon := preload('res://game/rooms/salon/room_salon.gd')
-const PRUpstairsStaircase := preload('res://game/rooms/upstairs_staircase/room_upstairs_staircase.gd')
 const PRCommandantHallway := preload('res://game/rooms/commandant_hallway/room_commandant_hallway.gd')
 const PRCommandantBedroom := preload('res://game/rooms/commandant_bedroom/room_commandant_bedroom.gd')
 const PRKitchen := preload('res://game/rooms/kitchen/room_kitchen.gd')
@@ -24,6 +23,8 @@ const PRMessHall1 := preload('res://game/rooms/mess_hall_1/room_mess_hall_1.gd')
 const PRUpstairsMain := preload('res://game/rooms/upstairs_main/room_upstairs_main.gd')
 const PRStorageRoom1 := preload('res://game/rooms/storage_room_1/room_storage_room_1.gd')
 const PRBathroomDownstairs := preload('res://game/rooms/bathroom_downstairs/room_bathroom_downstairs.gd')
+const PRCourtyard := preload('res://game/rooms/courtyard/room_courtyard.gd')
+const PRUpstairsStaircase := preload('res://game/rooms/upstairs_staircase/room_upstairs_staircase.gd')
 # ---- classes
 
 # nodes ----
@@ -32,7 +33,6 @@ var GrandDuchessBedroom: PRGrandDuchessBedroom : get = get_GrandDuchessBedroom
 var DiningRoom: PRDiningRoom : get = get_DiningRoom
 var AnnaDemidovaBedroom: PRAnnaDemidovaBedroom : get = get_AnnaDemidovaBedroom
 var Salon: PRSalon : get = get_Salon
-var UpstairsStaircase: PRUpstairsStaircase : get = get_UpstairsStaircase
 var CommandantHallway: PRCommandantHallway : get = get_CommandantHallway
 var CommandantBedroom: PRCommandantBedroom : get = get_CommandantBedroom
 var Kitchen: PRKitchen : get = get_Kitchen
@@ -49,6 +49,8 @@ var MessHall1: PRMessHall1 : get = get_MessHall1
 var UpstairsMain: PRUpstairsMain : get = get_UpstairsMain
 var StorageRoom1: PRStorageRoom1 : get = get_StorageRoom1
 var BathroomDownstairs: PRBathroomDownstairs : get = get_BathroomDownstairs
+var Courtyard: PRCourtyard : get = get_Courtyard
+var UpstairsStaircase: PRUpstairsStaircase : get = get_UpstairsStaircase
 # ---- nodes
 
 # functions ----
@@ -57,7 +59,6 @@ func get_GrandDuchessBedroom() -> PRGrandDuchessBedroom: return super.get_runtim
 func get_DiningRoom() -> PRDiningRoom: return super.get_runtime_room('DiningRoom')
 func get_AnnaDemidovaBedroom() -> PRAnnaDemidovaBedroom: return super.get_runtime_room('AnnaDemidovaBedroom')
 func get_Salon() -> PRSalon: return super.get_runtime_room('Salon')
-func get_UpstairsStaircase() -> PRUpstairsStaircase: return super.get_runtime_room('UpstairsStaircase')
 func get_CommandantHallway() -> PRCommandantHallway: return super.get_runtime_room('CommandantHallway')
 func get_CommandantBedroom() -> PRCommandantBedroom: return super.get_runtime_room('CommandantBedroom')
 func get_Kitchen() -> PRKitchen: return super.get_runtime_room('Kitchen')
@@ -74,5 +75,7 @@ func get_MessHall1() -> PRMessHall1: return super.get_runtime_room('MessHall1')
 func get_UpstairsMain() -> PRUpstairsMain: return super.get_runtime_room('UpstairsMain')
 func get_StorageRoom1() -> PRStorageRoom1: return super.get_runtime_room('StorageRoom1')
 func get_BathroomDownstairs() -> PRBathroomDownstairs: return super.get_runtime_room('BathroomDownstairs')
+func get_Courtyard() -> PRCourtyard: return super.get_runtime_room('Courtyard')
+func get_UpstairsStaircase() -> PRUpstairsStaircase: return super.get_runtime_room('UpstairsStaircase')
 # ---- functions
 

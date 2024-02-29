@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://drpnlwekigbx6"]
+[gd_scene load_steps=2 format=3 uid="uid://ctvbt8gjye5en"]
 
 [ext_resource type="Script" path="res://game/rooms/upstairs_staircase/props/door_dining/prop_door_dining.gd" id="1_fgydd"]
 

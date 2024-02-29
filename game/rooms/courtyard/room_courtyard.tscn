@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwptbbgdpxhy7"]
+
+[ext_resource type="Script" path="res://game/rooms/courtyard/room_courtyard.gd" id="1_5eay2"]
+[ext_resource type="PackedScene" uid="uid://rx138m2o74p4" path="res://game/rooms/courtyard/props/background/prop_background.tscn" id="2_pqafk"]
+[ext_resource type="Texture2D" uid="uid://cuh1jhj3388q1" path="res://Sprites/environment/CourtYard.jpg" id="3_eafiy"]
+
+[node name="RoomCourtyard" type="Node2D"]
+script = ExtResource("1_5eay2")
+script_name = "Courtyard"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Background" parent="Props" instance=ExtResource("2_pqafk")]
+position = Vector2(960, 540)
+texture = ExtResource("3_eafiy")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]

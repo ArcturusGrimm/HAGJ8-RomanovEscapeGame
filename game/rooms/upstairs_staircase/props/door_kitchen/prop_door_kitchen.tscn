@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://bi6bb50o302eu"]
+[gd_scene load_steps=2 format=3 uid="uid://ccn3dso34rljt"]
 
 [ext_resource type="Script" path="res://game/rooms/upstairs_staircase/props/door_kitchen/prop_door_kitchen.gd" id="1_bk5dg"]
 

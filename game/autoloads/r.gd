@@ -31,6 +31,7 @@ const PRBunkhouse := preload('res://game/rooms/bunkhouse/room_bunkhouse.gd')
 const PRCloset := preload('res://game/rooms/closet/room_closet.gd')
 const PRPalisade := preload('res://game/rooms/palisade/room_palisade.gd')
 const PRPalisade2 := preload('res://game/rooms/palisade_2/room_palisade_2.gd')
+const PREscape := preload('res://game/rooms/escape/room_escape.gd')
 # ---- classes
 
 # nodes ----
@@ -63,6 +64,7 @@ var Bunkhouse: PRBunkhouse : get = get_Bunkhouse
 var Closet: PRCloset : get = get_Closet
 var Palisade: PRPalisade : get = get_Palisade
 var Palisade2: PRPalisade2 : get = get_Palisade2
+var Escape: PREscape : get = get_Escape
 # ---- nodes
 
 # functions ----
@@ -95,5 +97,6 @@ func get_Bunkhouse() -> PRBunkhouse: return super.get_runtime_room('Bunkhouse')
 func get_Closet() -> PRCloset: return super.get_runtime_room('Closet')
 func get_Palisade() -> PRPalisade: return super.get_runtime_room('Palisade')
 func get_Palisade2() -> PRPalisade2: return super.get_runtime_room('Palisade2')
+func get_Escape() -> PREscape: return super.get_runtime_room('Escape')
 # ---- functions
 

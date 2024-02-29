@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://coh8ysfjfce4w" path="res://game/rooms/tsar_tsarina_bedroom/props/letter/prop_letter.tscn" id="11_b5lc4"]
 [ext_resource type="Texture2D" uid="uid://b1fsf5tthvxsf" path="res://Sprites/Props/Hero Props/paperNote.png" id="12_fex4t"]
 [ext_resource type="PackedScene" uid="uid://bhr7pxx5gqh0a" path="res://game/rooms/tsar_tsarina_bedroom/props/dresser/prop_dresser.tscn" id="13_iylna"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="14_dk5uv"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="14_dk5uv"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_k7orw"]
 vertices = PackedVector2Array(799, 493, 919, 521, -895, 502, 271, 495, -271, 177, -755, 171, -569, 99, -183, 87, 805, 275, 775, 363, -913, 373, -121, 367, 297, 365, -151, 45, 423, 49, 591, 91)

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://ycw4cjroj6d0"]
+
+[ext_resource type="Script" path="res://game/rooms/escape/room_escape_state.gd" id="1_b70bs"]
+
+[resource]
+resource_name = "Escape"
+script = ExtResource("1_b70bs")
+script_name = "Escape"
+scene = "res://game/rooms/escape/room_escape.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

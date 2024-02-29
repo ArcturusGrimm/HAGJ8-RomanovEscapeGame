@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://wjj6627o0048"
-path="res://.godot/imported/Winning.wav-f5132f0d4378badccc76c2a8bda0b4b9.sample"
+path="res://.godot/imported/Winning.wav-f3faa96978055c34b3f30cbe1961e368.sample"
 
 [deps]
 
-source_file="res://music/Winning.wav"
-dest_files=["res://.godot/imported/Winning.wav-f5132f0d4378badccc76c2a8bda0b4b9.sample"]
+source_file="res://game/rooms/escape/Winning.wav"
+dest_files=["res://.godot/imported/Winning.wav-f3faa96978055c34b3f30cbe1961e368.sample"]
 
 [params]
 

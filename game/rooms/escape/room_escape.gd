@@ -1,9 +1,9 @@
 @tool
 extends PopochiuRoom
 
-const Data := preload('room_tsar_tsarina_bedroom_state.gd')
+const Data := preload('room_escape_state.gd')
 
-var state: Data = load('res://game/rooms/tsar_tsarina_bedroom/room_tsar_tsarina_bedroom.tres')
+var state: Data = load('res://game/rooms/escape/room_escape.tres')
 
 
 #region Virtual ####################################################################################
@@ -17,9 +17,10 @@ func _on_room_entered() -> void:
 # is visible.
 func _on_room_transition_finished() -> void:
 	# You can use await E.queue([]) to excecute a sequence of instructions
-	A.main_theme.play()
-	C.player.say("I should read that note on the desk")
-	pass
+	A.main_theme.stop()
+	A.winning.play()
+	await C.player.say("We did it! We successfully escaped!")
+	await C.player.say("(There is no more game. Enjoy the victory theme or close out whenever you want.)")
 
 
 # What happens before Popochiu unloads the room.

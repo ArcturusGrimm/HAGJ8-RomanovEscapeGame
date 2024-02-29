@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://n7ufq0ovwexb"]
+
+[ext_resource type="Script" path="res://game/rooms/escape/room_escape.gd" id="1_qojtf"]
+[ext_resource type="PackedScene" uid="uid://bir1mqbg01pv6" path="res://game/rooms/escape/props/background/prop_background.tscn" id="2_0t7lp"]
+[ext_resource type="PackedScene" uid="uid://c4raa2ac4pax0" path="res://game/rooms/escape/walkable_areas/floor/walkable_area_floor.tscn" id="2_jo4at"]
+[ext_resource type="Texture2D" uid="uid://des3o8ao55a3u" path="res://Sprites/environment/Czar's room.jpg" id="3_dy1n1"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="4_t0rdo"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_dw5dn"]
+vertices = PackedVector2Array(594, 181, -598, 204, -466, -149, 468, -156)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-466, -149, 468, -156, 594, 181, -598, 204)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
+
+[node name="RoomEscape" type="Node2D"]
+script = ExtResource("1_qojtf")
+script_name = "Escape"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Floor" parent="WalkableAreas" instance=ExtResource("2_jo4at")]
+position = Vector2(980, 814)
+
+[node name="Perimeter" type="NavigationRegion2D" parent="WalkableAreas/Floor"]
+modulate = Color(0, 1, 0, 1)
+navigation_polygon = SubResource("NavigationPolygon_dw5dn")
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Background" parent="Props" instance=ExtResource("2_0t7lp")]
+position = Vector2(960, 540)
+texture = ExtResource("3_dy1n1")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterNikolai *" parent="Characters" instance=ExtResource("4_t0rdo")]
+position = Vector2(976, 940)

@@ -104,4 +104,4 @@ interaction_polygon = PackedVector2Array(-213.332, -149.999, 186.666, -305.713, 
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="CharacterNikolai *" parent="Characters" instance=ExtResource("18_kd51m")]
-position = Vector2(263, 851)
+position = Vector2(1596, 886)

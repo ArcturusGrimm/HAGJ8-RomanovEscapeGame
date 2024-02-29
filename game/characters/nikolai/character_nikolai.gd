@@ -41,14 +41,13 @@ func _on_item_used(item: PopochiuInventoryItem) -> void:
 
 # Use it to play the idle animation for the character
 func _play_idle() -> void:
-	super()
+	$AnimationPlayer.play('idle')
 
 
 # Use it to play the walk animation for the character
 # target_pos can be used to know the movement direction
-func _play_walk(target_pos: Vector2) -> void:
-	super(target_pos)
-
+func _play_walk(_target_pos: Vector2) -> void:
+	$AnimationPlayer.play('walk')
 
 # Use it to play the talk animation for the character
 func _play_talk() -> void:

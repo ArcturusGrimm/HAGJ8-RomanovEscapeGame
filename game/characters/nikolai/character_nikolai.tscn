@@ -1,7 +1,86 @@
-[gd_scene load_steps=3 format=3 uid="uid://du7rk6ognccw5"]
+[gd_scene load_steps=21 format=3 uid="uid://du7rk6ognccw5"]
 
 [ext_resource type="Script" path="res://game/characters/nikolai/character_nikolai.gd" id="1_ed7ug"]
-[ext_resource type="Texture2D" uid="uid://bfopuekd18nif" path="res://Sprites/Characters/Nikolai/Nikolai.png" id="2_6fjcj"]
+[ext_resource type="Texture2D" uid="uid://bk424skot61q4" path="res://Sprites/nikolaisprites/Nikolai.png" id="2_qiyjk"]
+[ext_resource type="Texture2D" uid="uid://dt5lokcf1dypo" path="res://Sprites/nikolaisprites/Nikolai(1).png" id="3_pmj8g"]
+[ext_resource type="Texture2D" uid="uid://dhl4q866cgqyv" path="res://Sprites/nikolaisprites/Nikolai(2).png" id="4_vwhw0"]
+[ext_resource type="Texture2D" uid="uid://yrp47dplbdr3" path="res://Sprites/nikolaisprites/Nikolai(3).png" id="5_lu4ax"]
+[ext_resource type="Texture2D" uid="uid://dnscfp73pexkd" path="res://Sprites/nikolaisprites/Nikolai(5).png" id="6_3rwlg"]
+[ext_resource type="Texture2D" uid="uid://djjtelds5u0nt" path="res://Sprites/nikolaisprites/NikWalkFL.png" id="7_fb058"]
+[ext_resource type="Texture2D" uid="uid://587xtklyok3o" path="res://Sprites/nikolaisprites/NikWalkFR.png" id="8_cx6ys"]
+
+[sub_resource type="Animation" id="Animation_6m8pd"]
+resource_name = "walk"
+
+[sub_resource type="Animation" id="Animation_ujuvt"]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="Animation" id="Animation_2ghd5"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tlut5"]
+_data = {
+"RESET": SubResource("Animation_2ghd5"),
+"idle": SubResource("Animation_ujuvt"),
+"walk": SubResource("Animation_6m8pd")
+}
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_1ebpu"]
+resource_name = "idle"
+frames = 5
+speed_scale = 2.0
+frame_0/texture = ExtResource("2_qiyjk")
+frame_1/texture = ExtResource("3_pmj8g")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4_vwhw0")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("5_lu4ax")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("6_3rwlg")
+frame_4/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_71wpl"]
+resource_name = "walk"
+frames = 2
+speed_scale = 2.0
+frame_0/texture = ExtResource("7_fb058")
+frame_1/texture = ExtResource("8_cx6ys")
+frame_1/duration = 1.0
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_8whle"]
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_oixov"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mo8pc"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2rqpv"]
+advance_mode = 2
+advance_condition = &"_play_walk"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_csr25"]
+advance_mode = 2
+advance_condition = &"_play_idle"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_p7rno"]
+states/Start/position = Vector2(168, 100)
+states/idle/node = SubResource("AnimationNodeBlendSpace2D_8whle")
+states/idle/position = Vector2(339, 100)
+states/walk/node = SubResource("AnimationNodeBlendSpace2D_oixov")
+states/walk/position = Vector2(546, 103)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_mo8pc"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_2rqpv"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_csr25")]
 
 [node name="CharacterNikolai" type="Area2D"]
 script = ExtResource("1_ed7ug")
@@ -34,11 +113,32 @@ offset_bottom = 2.5
 color = Color(0, 1, 1, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tlut5")
+}
+next/idle = &"walk"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -256)
 scale = Vector2(0.52, 0.52)
-texture = ExtResource("2_6fjcj")
+texture = SubResource("AnimatedTexture_1ebpu")
 
 [node name="DialogPos" type="Marker2D" parent="."]
 position = Vector2(0, -546)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1, -254)
+scale = Vector2(0.6, 0.515275)
+texture = SubResource("AnimatedTexture_71wpl")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tlut5")
+}
+tree_root = SubResource("AnimationNodeStateMachine_p7rno")
+anim_player = NodePath("../AnimationPlayer")
+parameters/conditions/_play_idle = false
+parameters/conditions/_play_walk = false
+parameters/idle/blend_position = Vector2(0, 0)
+parameters/walk/blend_position = Vector2(0, 0)

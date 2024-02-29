@@ -284,8 +284,13 @@ sprite_frames = SubResource("SpriteFrames_1bbe3")
 animation = &"gui"
 
 [node name="DialogText" parent="." instance=ExtResource("3_p6sdq")]
-layout_mode = 1
-scale = Vector2(2.54136, 1.87305)
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="HoverText" parent="." instance=ExtResource("4_s5r6u")]
 layout_mode = 1
@@ -326,9 +331,12 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -126.0
-offset_right = -4.0
+offset_left = -465.0
+offset_top = -49.0
+offset_right = -343.0
+offset_bottom = -25.0
 grow_horizontal = 0
+scale = Vector2(3.8, 3.8)
 theme_override_styles/panel = SubResource("StyleBoxTexture_3b8bi")
 
 [node name="Popups" type="Control" parent="."]

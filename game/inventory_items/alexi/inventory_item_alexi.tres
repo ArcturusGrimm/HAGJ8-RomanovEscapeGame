@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://de0twhvsms1d7"]
+
+[ext_resource type="Script" path="res://game/inventory_items/alexi/inventory_item_alexi_state.gd" id="1_u0gpb"]
+
+[resource]
+resource_name = "Alexi"
+script = ExtResource("1_u0gpb")
+script_name = "Alexi"
+scene = "res://game/inventory_items/alexi/inventory_item_alexi.tscn"

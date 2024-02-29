@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cktix2kx53wxt" path="res://game/rooms/anna_demidova_bedroom/props/cabinet/prop_cabinet.tscn" id="9_b73wr"]
 [ext_resource type="Texture2D" uid="uid://1p0eltilpsro" path="res://Sprites/Props/furniture/CabinetTwo.png" id="10_0lfgb"]
 [ext_resource type="PackedScene" uid="uid://dqmyj7t3vidmh" path="res://game/rooms/anna_demidova_bedroom/props/alexi/prop_alexi.tscn" id="11_oto7c"]
-[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_nikolai.tscn" id="12_f82e3"]
+[ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="12_f82e3"]
 [ext_resource type="Texture2D" uid="uid://cmve8fcdlp6rl" path="res://Sprites/Characters/Alexei/Alexei.png" id="12_yosvc"]
 [ext_resource type="PackedScene" uid="uid://dbs41t76hclac" path="res://game/rooms/anna_demidova_bedroom/props/anastasia/prop_anastasia.tscn" id="13_mwog5"]
 [ext_resource type="Texture2D" uid="uid://b1q7wo7r32hyc" path="res://Sprites/Characters/Anatasia/Anatasia.png" id="14_c2swu"]
@@ -63,8 +63,8 @@ position = Vector2(944, 659)
 scale = Vector2(0.320002, 0.320002)
 texture = ExtResource("8_7w4bm")
 clickable = true
-baseline = 209
-walk_to_point = Vector2(-581.245, 724.994)
+baseline = 143
+walk_to_point = Vector2(1034.37, 912.494)
 interaction_polygon = PackedVector2Array(-353.122, -162.499, 424.997, -168.749, 546.871, 534.371, -424.997, 521.871)
 
 [node name="Cabinet" parent="Props" instance=ExtResource("9_b73wr")]
@@ -78,25 +78,41 @@ interaction_polygon = PackedVector2Array(-339.583, -466.667, 427.083, -470.833, 
 position = Vector2(1067, 682)
 scale = Vector2(0.452059, 0.40891)
 texture = ExtResource("12_yosvc")
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+link_to_item = "Alexi"
+clickable = true
+baseline = 352
+walk_to_point = Vector2(42.0299, 569.807)
+interaction_polygon = PackedVector2Array(-64.1509, -332.592, 68.5752, -347.265, 170.332, -4.89111, 119.453, 325.255, -22.1211, 339.928, -64.1509, 14.6731)
 
 [node name="Anastasia" parent="Props" instance=ExtResource("13_mwog5")]
 position = Vector2(640, 671)
 scale = Vector2(0.589633, 0.503861)
 texture = ExtResource("14_c2swu")
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+link_to_item = "Anastasia"
+clickable = true
+baseline = 424
+walk_to_point = Vector2(32.2234, 525.939)
+interaction_polygon = PackedVector2Array(-67.8389, -394.95, 74.6227, -390.981, 128.894, 45.6476, 103.454, 402.889, -79.7106, 398.92, -79.7106, 11.9081)
 
 [node name="Olga" parent="Props" instance=ExtResource("15_tim2m")]
 position = Vector2(486, 652)
 scale = Vector2(0.549935, 0.479219)
 texture = ExtResource("16_vyjhw")
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+link_to_item = "Olga"
+clickable = true
+baseline = 429
+walk_to_point = Vector2(-20.0024, 525.856)
+interaction_polygon = PackedVector2Array(-109.104, -415.259, 98.1934, -446.56, 138.198, 419.432, -125.469, 450.733, -154.564, 31.3009)
 
 [node name="Tatiana" parent="Props" instance=ExtResource("17_5ym83")]
 position = Vector2(1248, 612)
 scale = Vector2(-0.558014, 0.513041)
 texture = ExtResource("18_hhk4x")
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+link_to_item = "Tatiana"
+clickable = true
+baseline = 421
+walk_to_point = Vector2(-19.7128, 495.087)
+interaction_polygon = PackedVector2Array(-94.9797, -401.527, 94.9797, -417.121, 102.148, 403.476, -111.108, 440.511, -170.247, 23.3899)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

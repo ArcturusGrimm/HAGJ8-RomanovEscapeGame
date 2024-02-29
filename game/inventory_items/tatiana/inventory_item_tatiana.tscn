@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch4rgeg14cpot"]
+
+[ext_resource type="Script" path="res://game/inventory_items/tatiana/inventory_item_tatiana.gd" id="1_8xgsn"]
+[ext_resource type="Texture2D" uid="uid://cnelttug762wb" path="res://Sprites/Characters/Tatiana/TatianaHead.png" id="1_cuui2"]
+
+[node name="ItemTatiana" type="TextureRect"]
+texture_filter = 1
+custom_minimum_size = Vector2(150, 125)
+size_flags_horizontal = 3
+size_flags_vertical = 4
+mouse_filter = 0
+texture = ExtResource("1_cuui2")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("1_8xgsn")
+script_name = "Tatiana"
+description = "Tatiana"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bdjidh8r7mb4c"]
+
+[ext_resource type="Script" path="res://game/inventory_items/olga/inventory_item_olga_state.gd" id="1_soj3t"]
+
+[resource]
+resource_name = "Olga"
+script = ExtResource("1_soj3t")
+script_name = "Olga"
+scene = "res://game/inventory_items/olga/inventory_item_olga.tscn"

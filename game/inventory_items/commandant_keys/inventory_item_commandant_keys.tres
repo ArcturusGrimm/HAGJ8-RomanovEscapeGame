@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://ch6lj31ouj8u4"]
+
+[ext_resource type="Script" path="res://game/inventory_items/commandant_keys/inventory_item_commandant_keys_state.gd" id="1_vfvqc"]
+
+[resource]
+resource_name = "CommandantKeys"
+script = ExtResource("1_vfvqc")
+script_name = "CommandantKeys"
+scene = "res://game/inventory_items/commandant_keys/inventory_item_commandant_keys.tscn"

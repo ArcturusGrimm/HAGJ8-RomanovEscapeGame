@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://brjq6pmp2y1gg"]
+
+[ext_resource type="Texture2D" uid="uid://camnl4xdch3mn" path="res://Sprites/Props/Hero Props/Documents.png" id="1_iyi6i"]
+[ext_resource type="Script" path="res://game/inventory_items/documents/inventory_item_documents.gd" id="1_sklby"]
+
+[node name="ItemDocuments" type="TextureRect"]
+texture_filter = 1
+custom_minimum_size = Vector2(150, 125)
+scale = Vector2(0.119999, 0.119999)
+size_flags_horizontal = 3
+size_flags_vertical = 4
+mouse_filter = 0
+texture = ExtResource("1_iyi6i")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("1_sklby")
+script_name = "Documents"
+description = "Documents"

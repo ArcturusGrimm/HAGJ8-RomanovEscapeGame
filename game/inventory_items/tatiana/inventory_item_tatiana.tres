@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c4hdjuhtpvm5c"]
+
+[ext_resource type="Script" path="res://game/inventory_items/tatiana/inventory_item_tatiana_state.gd" id="1_onrkb"]
+
+[resource]
+resource_name = "Tatiana"
+script = ExtResource("1_onrkb")
+script_name = "Tatiana"
+scene = "res://game/inventory_items/tatiana/inventory_item_tatiana.tscn"

@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://s8q5r5unpwul" path="res://game/rooms/upstairs_staircase/props/stairs_down/prop_stairs_down.tscn" id="7_cmoqw"]
 [ext_resource type="Texture2D" uid="uid://dsex45whufxs2" path="res://Sprites/Props/Downstairs_hole.png" id="9_mbnbk"]
 [ext_resource type="PackedScene" uid="uid://du7rk6ognccw5" path="res://game/characters/nikolai/character_Nikolai.tscn" id="10_hi0hy"]
-[ext_resource type="PackedScene" uid="uid://cerfs0068glx8" path="res://game/characters/guard/character_guard.tscn" id="11_c6r8m"]
+[ext_resource type="PackedScene" path="res://game/characters/guard/character_guard.tscn" id="11_c6r8m"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_ne8tp"]
 vertices = PackedVector2Array(396, -129, 679, -120, 949, 159, -881, 163, 102, -133, -582, -232, -259, -232, 111, -252)

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://demf5icwlt6v3"]
+
+[ext_resource type="Texture2D" uid="uid://chfqye8ani02w" path="res://Sprites/Characters/Alexei/AlexeiHead.png" id="1_3sxi0"]
+[ext_resource type="Script" path="res://game/inventory_items/alexi/inventory_item_alexi.gd" id="1_wpjtg"]
+
+[node name="ItemAlexi" type="TextureRect"]
+texture_filter = 1
+custom_minimum_size = Vector2(150, 125)
+size_flags_horizontal = 3
+size_flags_vertical = 4
+mouse_filter = 0
+texture = ExtResource("1_3sxi0")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("1_wpjtg")
+script_name = "Alexi"
+description = "Alexi"

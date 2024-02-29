@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2fwvp7jwvo5b"]
+
+[ext_resource type="Script" path="res://game/inventory_items/commandant_keys/inventory_item_commandant_keys.gd" id="1_6s680"]
+[ext_resource type="Texture2D" uid="uid://dhke36o4m7hne" path="res://Sprites/Props/Hero Props/Keys.png" id="1_ko37s"]
+
+[node name="ItemCommandantKeys" type="TextureRect"]
+texture_filter = 1
+custom_minimum_size = Vector2(150, 125)
+scale = Vector2(0.127706, 0.127706)
+size_flags_horizontal = 3
+size_flags_vertical = 4
+mouse_filter = 0
+texture = ExtResource("1_ko37s")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("1_6s680")
+script_name = "CommandantKeys"
+description = "Commandant Keys"

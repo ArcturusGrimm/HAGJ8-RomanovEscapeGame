@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://4j7ftlhpecro"]
+
+[ext_resource type="Texture2D" uid="uid://dhke36o4m7hne" path="res://Sprites/Props/Hero Props/Keys.png" id="1_qb3px"]
+[ext_resource type="Script" path="res://game/inventory_items/palisade_keys/inventory_item_palisade_keys.gd" id="1_vdh7h"]
+
+[node name="ItemPalisadeKeys" type="TextureRect"]
+texture_filter = 1
+custom_minimum_size = Vector2(150, 125)
+scale = Vector2(0.16, 0.16)
+size_flags_horizontal = 3
+size_flags_vertical = 4
+mouse_filter = 0
+texture = ExtResource("1_qb3px")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("1_vdh7h")
+script_name = "PalisadeKeys"
+description = "Palisade Keys"

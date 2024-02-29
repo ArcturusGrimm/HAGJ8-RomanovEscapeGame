@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2xj8ksc5lv6g"]
+
+[ext_resource type="Script" path="res://game/inventory_items/anastasia/inventory_item_anastasia.gd" id="1_mhh1h"]
+[ext_resource type="Texture2D" uid="uid://ddy56pj6dc3sf" path="res://Sprites/Characters/Anatasia/AnatasiaHead.png" id="1_n1c5c"]
+
+[node name="ItemAnastasia" type="TextureRect"]
+texture_filter = 1
+custom_minimum_size = Vector2(150, 125)
+size_flags_horizontal = 3
+size_flags_vertical = 4
+mouse_filter = 0
+texture = ExtResource("1_n1c5c")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("1_mhh1h")
+script_name = "Anastasia"
+description = "Anastasia"

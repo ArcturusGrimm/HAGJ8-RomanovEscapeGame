@@ -73,6 +73,7 @@ interaction_polygon = PackedVector2Array(-552.51, -78.1255, 495.009, -101.563, 5
 position = Vector2(1283, 496)
 scale = Vector2(0.0799976, 0.0799976)
 texture = ExtResource("13_ke6wj")
+link_to_item = "Documents"
 baseline = 600
 walk_to_point = Vector2(-662.52, 3112.59)
 interaction_polygon = PackedVector2Array(-812.524, -325.01, 925.028, -350.011, 850.024, 537.516, -812.524, 575.017)

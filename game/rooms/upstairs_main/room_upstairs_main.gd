@@ -1,9 +1,9 @@
 @tool
 extends PopochiuRoom
 
-const Data := preload('room_terrace_upstairs_state.gd')
+const Data := preload('room_upstairs_main_state.gd')
 
-var state: Data = load('res://game/rooms/terrace_upstairs/room_terrace_upstairs.tres')
+var state: Data = load('res://game/rooms/upstairs_main/room_upstairs_main.tres')
 
 
 #region Virtual ####################################################################################

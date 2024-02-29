@@ -1,18 +1,18 @@
 Upstairs Main house
 	Anna Demidova Bedroom-
-	Bathroom upstairs/
+	Bathroom upstairs-
 	commandant bedroom-
 	commandant hallway-
 	dining room-
 	grand duchess bedroom-
 	kitchen-
 	salon-
-	terrace upstairs/
+	terrace upstairs-xx
 	tsar and tsarina bedroom-
-	upstairs main entrance/
-	upstairs staircase/
-	water closet staircase/
-	water closet upstairs/
+	upstairs main entrance-
+	upstairs staircase-
+	water closet staircase-
+	water closet upstairs-
 
 Outside
 	Backyard 1

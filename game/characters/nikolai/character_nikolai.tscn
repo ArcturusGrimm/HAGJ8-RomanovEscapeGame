@@ -6,6 +6,7 @@
 [node name="CharacterNikolai" type="Area2D"]
 script = ExtResource("1_ed7ug")
 flips_when = 2
+walk_speed = 400.0
 popochiu_placeholder = null
 script_name = "Nikolai"
 description = "Nikolai"

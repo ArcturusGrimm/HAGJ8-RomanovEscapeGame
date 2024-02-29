@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://du7rk6ognccw5"]
+[gd_scene load_steps=15 format=3 uid="uid://du7rk6ognccw5"]
 
 [ext_resource type="Script" path="res://game/characters/nikolai/character_nikolai.gd" id="1_ed7ug"]
 [ext_resource type="Texture2D" uid="uid://bk424skot61q4" path="res://Sprites/Characters/Nikolai/Nikolai.png" id="2_p3cbo"]
@@ -35,6 +35,19 @@ _data = {
 "idle": SubResource("Animation_ujuvt"),
 "walk": SubResource("Animation_6m8pd")
 }
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_5ovgy"]
+frames = 5
+speed_scale = 3.0
+frame_0/texture = ExtResource("2_p3cbo")
+frame_1/texture = ExtResource("3_a0nvo")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4_ye5ns")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("5_uhavq")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("6_27rds")
+frame_4/duration = 1.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8hlg8"]
 animations = [{
@@ -109,12 +122,15 @@ next/idle = &"walk"
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -256)
 scale = Vector2(0.52, 0.52)
-texture = ExtResource("2_p3cbo")
+texture = SubResource("AnimatedTexture_5ovgy")
 
 [node name="DialogPos" type="Marker2D" parent="."]
 position = Vector2(0, -546)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 visible = false
+position = Vector2(1.74999, -254)
+scale = Vector2(0.514167, 0.524949)
 sprite_frames = SubResource("SpriteFrames_8hlg8")
 animation = &"idle"
+frame_progress = 0.441465
